@@ -1,83 +1,97 @@
-# mall-admin-web
-<p>
-  <a href="#公众号"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%85%AC%E4%BC%97%E5%8F%B7-macrozheng-blue.svg" alt="公众号"></a>
-  <a href="#公众号"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E4%BA%A4%E6%B5%81-%E5%BE%AE%E4%BF%A1%E7%BE%A4-2BA245.svg" alt="交流"></a>
-  <a href="https://github.com/macrozheng/mall"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%90%8E%E5%8F%B0%E9%A1%B9%E7%9B%AE-mall-blue.svg" alt="后台项目"></a>
-  <a href="https://github.com/macrozheng/mall-swarm"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/Cloud%E7%89%88%E6%9C%AC-mall--swarm-brightgreen.svg" alt="SpringCloud版本"></a>
-  <a href="https://gitee.com/macrozheng/mall-admin-web"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E7%A0%81%E4%BA%91-%E9%A1%B9%E7%9B%AE%E5%9C%B0%E5%9D%80-orange.svg" alt="码云"></a>
-</p>
+## **依赖项 npm:axios:0.18.0 vulnerable**
 
-## 前言
+升级到 1.7.8
 
-该项目为前后端分离项目的前端部分，后端项目`mall`地址：[传送门](https://github.com/macrozheng/mall) 。
+CVE-2019-10742，分数: 7.5
 
-## 项目介绍
+Axios up to and including 0.18.0 allows attackers to cause a denial of service (application crash) by continuing to accepting content after maxContentLength is exceeded.
 
-`mall-admin-web`是一个电商后台管理系统的前端项目，基于Vue+Element实现。主要包括商品管理、订单管理、会员管理、促销管理、运营管理、内容管理、统计报表、财务管理、权限管理、设置等功能。
+阅读更多: https://www.mend.io/vulnerability-database/CVE-2019-10742?utm_source=JetBrains
 
-### 项目演示
+CVE-2021-3749，分数: 7.5
 
-项目在线演示地址：[https://www.macrozheng.com/admin/](https://www.macrozheng.com/admin/)
+axios is vulnerable to Inefficient Regular Expression Complexity
 
-![后台管理系统功能演示](http://img.macrozheng.com/mall/project/mall_admin_show.png)
+阅读更多: https://www.mend.io/vulnerability-database/CVE-2021-3749?utm_source=JetBrains
 
-### 技术选型
+WS-2023-0439，分数: 7.5
 
-| 技术              | 说明                  | 官网                                                         |
-| ----------------- | --------------------- | ------------------------------------------------------------ |
-| Vue               | 前端框架              | [https://vuejs.org/](https://vuejs.org/)                     |
-| Vue-router        | 路由框架              | [https://router.vuejs.org/](https://router.vuejs.org/)       |
-| Vuex              | 全局状态管理框架      | [https://vuex.vuejs.org/](https://vuex.vuejs.org/)           |
-| Element           | 前端UI框架            | [https://element.eleme.io/](https://element.eleme.io/)       |
-| Axios             | 前端HTTP框架          | [https://github.com/axios/axios](https://github.com/axios/axios) |
-| v-charts          | 基于Echarts的图表框架 | [https://v-charts.js.org/](https://v-charts.js.org/)         |
-| Js-cookie         | cookie管理工具        | [https://github.com/js-cookie/js-cookie](https://github.com/js-cookie/js-cookie) |
-| nprogress         | 进度条控件            | [https://github.com/rstacruz/nprogress](https://github.com/rstacruz/nprogress) |
-| vue-element-admin | 项目脚手架参考        | [https://github.com/PanJiaChen/vue-element-admin](https://github.com/PanJiaChen/vue-element-admin) |
+Axios is vulnerable to Regular Expression Denial of Service (ReDoS). When a manipulated string is provided as input to the format method, the regular expression exhibits a time complexity of O(n^2). Server becomes unable to provide normal service due to the excessive cost and time wasted in processing vulnerable regular expressions.
 
-### 项目布局
+阅读更多: https://www.mend.io/vulnerability-database/WS-2023-0439?utm_source=JetBrains
 
-``` lua
-src -- 源码目录
-├── api -- axios网络请求定义
-├── assets -- 静态图片资源文件
-├── components -- 通用组件封装
-├── icons -- svg矢量图片文件
-├── router -- vue-router路由配置
-├── store -- vuex的状态管理
-├── styles -- 全局css样式
-├── utils -- 工具类
-└── views -- 前端页面
-    ├── home -- 首页
-    ├── layout -- 通用页面加载框架
-    ├── login -- 登录页
-    ├── oms -- 订单模块页面
-    ├── pms -- 商品模块页面
-    └── sms -- 营销模块页面
-```
+CVE-2023-45857，分数: 6.5
 
-## 搭建步骤
-- 下载node并安装：[https://nodejs.org/dist/v12.14.0/node-v12.14.0-x64.msi](https://nodejs.org/dist/v12.14.0/node-v12.14.0-x64.msi);
-- 该项目为前后端分离项目，访问本地访问接口需搭建后台环境，搭建请参考后端项目[传送门](https://github.com/macrozheng/mall);
-- 访问在线接口无需搭建后台环境，只需将`config/dev.env.js`文件中的`BASE_API`改为[https://admin-api.macrozheng.com](https://admin-api.macrozheng.com)即可;
-- 如果你对接的是[mall-swarm](https://github.com/macrozheng/mall-swarm) 微服务后台的话，所有接口都需要通过网关访问，需要将`config/dev.env.js`文件中的`BASE_API`改为[http://localhost:8201/mall-admin](http://localhost:8201/mall-admin) ；
-- 克隆源代码到本地，使用IDEA打开，并完成编译;
-- 在IDEA命令行中运行命令：`npm install`,下载相关依赖;
-- 在IDEA命令行中运行命令：`npm run dev`,运行项目;
-- 访问地址：[http://localhost:8090](http://localhost:8090) 即可打开后台管理系统页面;
-- 具体部署过程请参考：[mall前端项目的安装与部署](https://www.macrozheng.com/mall/deploy/mall_deploy_web.html)
-- 前端自动化部署请参考：[使用Jenkins一键打包部署前端应用，就是这么6！](https://www.macrozheng.com/mall/reference/jenkins_vue.html)
+An issue discovered in Axios 1.5.1 inadvertently reveals the confidential XSRF-TOKEN stored in cookies by including it in the HTTP header X-XSRF-TOKEN for every request made to any host allowing attackers to view sensitive information.
 
-## 公众号
+阅读更多: https://www.mend.io/vulnerability-database/CVE-2023-45857?utm_source=JetBrains
 
-学习不走弯路，关注公众号「**macrozheng**」，回复「**学习路线**」，获取mall项目专属学习路线！
+CVE-2020-28168，分数: 5.9
 
-加微信群交流，公众号后台回复「**加群**」即可。
+Axios NPM package 0.21.0 contains a Server-Side Request Forgery (SSRF) vulnerability where an attacker is able to bypass a proxy by providing a URL that responds with a redirect to a restricted host or IP address.
 
-![公众号图片](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/banner/qrcode_for_macrozheng_258.jpg)
+阅读更多: https://www.mend.io/vulnerability-database/CVE-2020-28168?utm_source=JetBrains
 
-## 许可证
+CVE-2024-57965，分数: 0
 
-[Apache License 2.0](https://github.com/macrozheng/mall-admin-web/blob/master/LICENSE)
+In axios before 1.7.8, lib/helpers/isURLSameOrigin.js does not use a URL object when determining an origin, and has a potentially unwanted setAttribute('href',href) call. NOTE: some parties feel that the code change only addresses a warning message from a SAST tool and does not fix a vulnerability.
 
-Copyright (c) 2018-2024 macrozheng
+阅读更多: https://www.mend.io/vulnerability-database/CVE-2024-57965?utm_source=JetBrains
+
+---
+## **依赖项 npm:shelljs:0.7.8 vulnerable**
+
+升级到 0.8.5
+
+CVE-2022-0144，分数: 7.1
+
+shelljs is vulnerable to Improper Privilege Management
+
+阅读更多: https://www.mend.io/vulnerability-database/CVE-2022-0144?utm_source=JetBrains
+
+---
+
+## **依赖项 npm:vue-template-compiler:2.7.16 vulnerable**
+
+CVE-2024-6783，分数: 4.8
+
+A vulnerability has been discovered in Vue, that allows an attacker to perform XSS via prototype pollution. The attacker could change the prototype chain of some properties such as `Object.prototype.staticClass` or `Object.prototype.staticStyle` to execute arbitrary JavaScript code.
+
+阅读更多: https://www.mend.io/vulnerability-database/CVE-2024-6783?utm_source=JetBrains
+
+---
+
+## **依赖项 npm:webpack:3.12.0 vulnerable**
+
+升级到 5.94.0
+
+CVE-2024-43788，分数: 6.4
+
+Webpack is a module bundler. Its main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of transforming, bundling, or packaging just about any resource or asset. The webpack developers have discovered a DOM Clobbering vulnerability in Webpack’s `AutoPublicPathRuntimeModule`. The DOM Clobbering gadget in the module can lead to cross-site scripting (XSS) in web pages where scriptless attacker-controlled HTML elements (e.g., an `img` tag with an unsanitized `name` attribute) are present. Real-world exploitation of this gadget has been observed in the Canvas LMS which allows a XSS attack to happen through a javascript code compiled by Webpack (the vulnerable part is from Webpack). DOM Clobbering is a type of code-reuse attack where the attacker first embeds a piece of non-script, seemingly benign HTML markups in the webpage (e.g. through a post or comment) and leverages the gadgets (pieces of js code) living in the existing javascript code to transform it into executable code. This vulnerability can lead to cross-site scripting (XSS) on websites that include Webpack-generated files and allow users to inject certain scriptless HTML tags with improperly sanitized name or id attributes. This issue has been addressed in release version 5.94.0. All users are advised to upgrade. There are no known workarounds for this issue.
+
+阅读更多: https://www.mend.io/vulnerability-database/CVE-2024-43788?utm_source=JetBrains
+
+---
+
+## **依赖项 npm:webpack-bundle-analyzer:2.13.1 vulnerable**
+
+升级到 3.3.2
+
+WS-2019-0058，分数: 6.3
+
+Versions of webpack-bundle-analyzer prior to 3.3.2 are vulnerable to Cross-Site Scripting. The package uses JSON.stringify() without properly escaping input which may lead to Cross-Site Scripting.
+
+阅读更多: https://www.mend.io/vulnerability-database/WS-2019-0058?utm_source=JetBrains
+
+---
+
+## **依赖项 npm:webpack-dev-server:2.11.5 vulnerable**
+
+升级到 3.1.11
+
+CVE-2018-14732，分数: 7.5
+
+An issue was discovered in lib/Server.js in webpack-dev-server before 3.1.6. Attackers are able to steal developer's code because the origin of requests is not checked by the WebSocket server, which is used for HMR (Hot Module Replacement). Anyone can receive the HMR message sent by the WebSocket server via a ws://127.0.0.1:8080/ connection from any origin.
+
+阅读更多: https://www.mend.io/vulnerability-database/CVE-2018-14732?utm_source=JetBrains
+

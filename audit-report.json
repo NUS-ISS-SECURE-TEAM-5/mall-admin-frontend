@@ -1,0 +1,4016 @@
+{
+  "actions": [
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 1085685,
+          "path": "webpack>yargs>os-locale>mem",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1088811,
+          "path": "webpack>yargs>yargs-parser",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1098094,
+          "path": "webpack>watchpack>watchpack-chokidar2>chokidar>anymatch>micromatch>braces",
+          "dev": true,
+          "optional": true,
+          "bundled": false
+        },
+        {
+          "id": 1098681,
+          "path": "webpack>watchpack>watchpack-chokidar2>chokidar>anymatch>micromatch",
+          "dev": true,
+          "optional": true,
+          "bundled": false
+        },
+        {
+          "id": 1100562,
+          "path": "webpack>yargs>os-locale>execa>cross-spawn",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "webpack",
+      "target": "5.98.0"
+    },
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 1085724,
+          "path": "css-loader>cssnano>postcss-svgo>svgo>js-yaml",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1089565,
+          "path": "css-loader>cssnano>postcss-svgo>is-svg",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1089718,
+          "path": "css-loader>cssnano>postcss-colormin>colormin>color>color-string",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093539,
+          "path": "css-loader>icss-utils>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093539,
+          "path": "css-loader>cssnano>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093539,
+          "path": "css-loader>cssnano>autoprefixer>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093539,
+          "path": "css-loader>cssnano>postcss-calc>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093539,
+          "path": "css-loader>cssnano>postcss-colormin>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093539,
+          "path": "css-loader>cssnano>postcss-convert-values>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093539,
+          "path": "css-loader>cssnano>postcss-discard-comments>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093539,
+          "path": "css-loader>cssnano>postcss-discard-duplicates>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093539,
+          "path": "css-loader>cssnano>postcss-discard-empty>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093539,
+          "path": "css-loader>cssnano>postcss-discard-overridden>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093539,
+          "path": "css-loader>cssnano>postcss-discard-unused>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093539,
+          "path": "css-loader>cssnano>postcss-filter-plugins>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093539,
+          "path": "css-loader>cssnano>postcss-merge-idents>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093539,
+          "path": "css-loader>cssnano>postcss-merge-longhand>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093539,
+          "path": "css-loader>cssnano>postcss-merge-rules>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093539,
+          "path": "css-loader>cssnano>postcss-minify-font-values>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093539,
+          "path": "css-loader>cssnano>postcss-minify-gradients>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093539,
+          "path": "css-loader>cssnano>postcss-minify-params>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093539,
+          "path": "css-loader>cssnano>postcss-minify-selectors>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093539,
+          "path": "css-loader>cssnano>postcss-normalize-charset>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093539,
+          "path": "css-loader>cssnano>postcss-normalize-url>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093539,
+          "path": "css-loader>cssnano>postcss-ordered-values>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093539,
+          "path": "css-loader>cssnano>postcss-reduce-idents>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093539,
+          "path": "css-loader>cssnano>postcss-reduce-initial>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093539,
+          "path": "css-loader>cssnano>postcss-reduce-transforms>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093539,
+          "path": "css-loader>cssnano>postcss-svgo>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093539,
+          "path": "css-loader>cssnano>postcss-unique-selectors>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093539,
+          "path": "css-loader>cssnano>postcss-zindex>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093539,
+          "path": "css-loader>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094081,
+          "path": "css-loader>cssnano>postcss-svgo>is-svg",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "css-loader>icss-utils>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "css-loader>cssnano>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "css-loader>cssnano>autoprefixer>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "css-loader>cssnano>postcss-calc>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "css-loader>cssnano>postcss-colormin>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "css-loader>cssnano>postcss-convert-values>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "css-loader>cssnano>postcss-discard-comments>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "css-loader>cssnano>postcss-discard-duplicates>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "css-loader>cssnano>postcss-discard-empty>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "css-loader>cssnano>postcss-discard-overridden>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "css-loader>cssnano>postcss-discard-unused>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "css-loader>cssnano>postcss-filter-plugins>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "css-loader>cssnano>postcss-merge-idents>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "css-loader>cssnano>postcss-merge-longhand>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "css-loader>cssnano>postcss-merge-rules>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "css-loader>cssnano>postcss-minify-font-values>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "css-loader>cssnano>postcss-minify-gradients>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "css-loader>cssnano>postcss-minify-params>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "css-loader>cssnano>postcss-minify-selectors>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "css-loader>cssnano>postcss-normalize-charset>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "css-loader>cssnano>postcss-normalize-url>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "css-loader>cssnano>postcss-ordered-values>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "css-loader>cssnano>postcss-reduce-idents>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "css-loader>cssnano>postcss-reduce-initial>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "css-loader>cssnano>postcss-reduce-transforms>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "css-loader>cssnano>postcss-svgo>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "css-loader>cssnano>postcss-unique-selectors>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "css-loader>cssnano>postcss-zindex>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "css-loader>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1095058,
+          "path": "css-loader>cssnano>postcss-svgo>svgo>js-yaml",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "css-loader",
+      "target": "7.1.2"
+    },
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 1086436,
+          "path": "node-notifier",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "node-notifier",
+      "target": "10.0.1"
+    },
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 1087544,
+          "path": "copy-webpack-plugin>serialize-javascript",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094077,
+          "path": "copy-webpack-plugin>cacache>ssri",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1095131,
+          "path": "copy-webpack-plugin>serialize-javascript",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1102339,
+          "path": "copy-webpack-plugin>serialize-javascript",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "copy-webpack-plugin",
+      "target": "13.0.0"
+    },
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 1087645,
+          "path": "webpack-dev-server",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1088227,
+          "path": "webpack-dev-server>selfsigned>node-forge",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1088229,
+          "path": "webpack-dev-server>selfsigned>node-forge",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1088746,
+          "path": "webpack-dev-server>selfsigned>node-forge",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1088783,
+          "path": "webpack-dev-server>yargs>yargs-parser",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1089877,
+          "path": "webpack-dev-server>sockjs",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093719,
+          "path": "webpack-dev-server>selfsigned>node-forge",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1095006,
+          "path": "webpack-dev-server>sockjs-client>eventsource",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1095100,
+          "path": "webpack-dev-server>internal-ip>meow>trim-newlines",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1096729,
+          "path": "webpack-dev-server>webpack-dev-middleware",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1098094,
+          "path": "webpack-dev-server>chokidar>braces",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1098681,
+          "path": "webpack-dev-server>chokidar>anymatch>micromatch",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1098681,
+          "path": "webpack-dev-server>http-proxy-middleware>micromatch",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1100223,
+          "path": "webpack-dev-server>http-proxy-middleware",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1102319,
+          "path": "webpack-dev-server>ansi-html",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1102321,
+          "path": "webpack-dev-server>selfsigned>node-forge",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1102322,
+          "path": "webpack-dev-server>selfsigned>node-forge",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "webpack-dev-server",
+      "target": "5.2.0"
+    },
+    {
+      "isMajor": false,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 1088208,
+          "path": "shelljs",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1095126,
+          "path": "shelljs",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "shelljs",
+      "target": "0.8.5"
+    },
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 1089270,
+          "path": "webpack-bundle-analyzer>ejs",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1091716,
+          "path": "webpack-bundle-analyzer",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1098366,
+          "path": "webpack-bundle-analyzer>ejs",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1098395,
+          "path": "webpack-bundle-analyzer>ws",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "webpack-bundle-analyzer",
+      "target": "4.10.2"
+    },
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 1090049,
+          "path": "axios",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1091722,
+          "path": "axios",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1092623,
+          "path": "axios>follow-redirects",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1096353,
+          "path": "axios>follow-redirects",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1096856,
+          "path": "axios>follow-redirects",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1097679,
+          "path": "axios",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1102323,
+          "path": "axios>follow-redirects",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1102326,
+          "path": "axios",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "axios",
+      "target": "1.8.1"
+    },
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 1093539,
+          "path": "autoprefixer>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "autoprefixer>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "autoprefixer",
+      "target": "10.4.20"
+    },
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 1093780,
+          "path": "url-loader>mime",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "url-loader",
+      "target": "4.1.1"
+    },
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 1094088,
+          "path": "html-webpack-plugin>loader-utils",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1096543,
+          "path": "html-webpack-plugin>loader-utils>json5",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "html-webpack-plugin",
+      "target": "5.6.3"
+    },
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 1094544,
+          "path": "optimize-css-assets-webpack-plugin>cssnano>cssnano-preset-default>css-declaration-sorter>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "optimize-css-assets-webpack-plugin>cssnano>cssnano-preset-default>cssnano-util-raw-cache>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "optimize-css-assets-webpack-plugin>cssnano>cssnano-preset-default>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "optimize-css-assets-webpack-plugin>cssnano>cssnano-preset-default>postcss-calc>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "optimize-css-assets-webpack-plugin>cssnano>cssnano-preset-default>postcss-merge-longhand>stylehacks>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "optimize-css-assets-webpack-plugin>cssnano>cssnano-preset-default>postcss-normalize-display-values>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "optimize-css-assets-webpack-plugin>cssnano>cssnano-preset-default>postcss-normalize-positions>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "optimize-css-assets-webpack-plugin>cssnano>cssnano-preset-default>postcss-normalize-repeat-style>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "optimize-css-assets-webpack-plugin>cssnano>cssnano-preset-default>postcss-normalize-string>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "optimize-css-assets-webpack-plugin>cssnano>cssnano-preset-default>postcss-normalize-timing-functions>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "optimize-css-assets-webpack-plugin>cssnano>cssnano-preset-default>postcss-normalize-unicode>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "optimize-css-assets-webpack-plugin>cssnano>cssnano-preset-default>postcss-normalize-whitespace>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "optimize-css-assets-webpack-plugin>cssnano>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1095141,
+          "path": "optimize-css-assets-webpack-plugin>cssnano>cssnano-preset-default>postcss-svgo>svgo>css-select>nth-check",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "optimize-css-assets-webpack-plugin",
+      "target": "6.0.1"
+    },
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 1097682,
+          "path": "retire>request>tough-cookie",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "retire",
+      "target": "5.2.5"
+    },
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 1100238,
+          "path": "vue",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "vue",
+      "target": "3.5.13"
+    },
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 1100238,
+          "path": "v-distpicker>vue",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "v-distpicker",
+      "target": "2.1.0"
+    },
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 1101086,
+          "path": "echarts>zrender",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "echarts",
+      "target": "5.6.0"
+    },
+    {
+      "action": "update",
+      "resolves": [
+        {
+          "id": 1085724,
+          "path": "vue-loader>postcss-load-config>cosmiconfig>js-yaml",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1095058,
+          "path": "vue-loader>postcss-load-config>cosmiconfig>js-yaml",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "js-yaml",
+      "target": "3.14.1",
+      "depth": 4
+    },
+    {
+      "action": "update",
+      "resolves": [
+        {
+          "id": 1092623,
+          "path": "webpack-dev-server>http-proxy-middleware>http-proxy>follow-redirects",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1096353,
+          "path": "webpack-dev-server>http-proxy-middleware>http-proxy>follow-redirects",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1096856,
+          "path": "webpack-dev-server>http-proxy-middleware>http-proxy>follow-redirects",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1102323,
+          "path": "webpack-dev-server>http-proxy-middleware>http-proxy>follow-redirects",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "follow-redirects",
+      "target": "1.15.9",
+      "depth": 4
+    },
+    {
+      "action": "review",
+      "module": "postcss",
+      "resolves": [
+        {
+          "id": 1093539,
+          "path": "svg-sprite-loader>svg-baker>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093539,
+          "path": "svg-sprite-loader>svg-baker-runtime>svg-baker>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "svg-sprite-loader>svg-baker>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094544,
+          "path": "svg-sprite-loader>svg-baker-runtime>svg-baker>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ]
+    },
+    {
+      "action": "review",
+      "module": "json5",
+      "resolves": [
+        {
+          "id": 1096543,
+          "path": "babel-core>json5",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ]
+    },
+    {
+      "action": "review",
+      "module": "request",
+      "resolves": [
+        {
+          "id": 1096727,
+          "path": "retire>request",
+          "dev": true,
+          "bundled": false,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "action": "review",
+      "module": "babel-traverse",
+      "resolves": [
+        {
+          "id": 1096879,
+          "path": "babel-core>babel-traverse",
+          "dev": true,
+          "bundled": false,
+          "optional": false
+        },
+        {
+          "id": 1096879,
+          "path": "babel-core>babel-template>babel-traverse",
+          "dev": true,
+          "bundled": false,
+          "optional": false
+        },
+        {
+          "id": 1096879,
+          "path": "babel-core>babel-helpers>babel-template>babel-traverse",
+          "dev": true,
+          "bundled": false,
+          "optional": false
+        },
+        {
+          "id": 1096879,
+          "path": "babel-preset-env>babel-plugin-transform-es2015-classes>babel-helper-function-name>babel-template>babel-traverse",
+          "dev": true,
+          "bundled": false,
+          "optional": false
+        },
+        {
+          "id": 1096879,
+          "path": "babel-preset-env>babel-plugin-transform-async-to-generator>babel-helper-remap-async-to-generator>babel-helper-function-name>babel-template>babel-traverse",
+          "dev": true,
+          "bundled": false,
+          "optional": false
+        },
+        {
+          "id": 1096879,
+          "path": "babel-preset-stage-2>babel-preset-stage-3>babel-plugin-transform-async-to-generator>babel-helper-remap-async-to-generator>babel-helper-function-name>babel-template>babel-traverse",
+          "dev": true,
+          "bundled": false,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "action": "review",
+      "module": "ajv",
+      "resolves": [
+        {
+          "id": 1097685,
+          "path": "extract-text-webpack-plugin>schema-utils>ajv",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ]
+    },
+    {
+      "action": "review",
+      "module": "braces",
+      "resolves": [
+        {
+          "id": 1098094,
+          "path": "svg-sprite-loader>svg-baker>micromatch>braces",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1098094,
+          "path": "svg-sprite-loader>svg-baker-runtime>svg-baker>micromatch>braces",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ]
+    },
+    {
+      "action": "review",
+      "module": "micromatch",
+      "resolves": [
+        {
+          "id": 1098681,
+          "path": "svg-sprite-loader>svg-baker>micromatch",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1098681,
+          "path": "svg-sprite-loader>svg-baker-runtime>svg-baker>micromatch",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ]
+    },
+    {
+      "action": "review",
+      "module": "vue-template-compiler",
+      "resolves": [
+        {
+          "id": 1098721,
+          "path": "vue-template-compiler",
+          "dev": true,
+          "bundled": false,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "action": "review",
+      "module": "html-minifier",
+      "resolves": [
+        {
+          "id": 1100303,
+          "path": "html-webpack-plugin>html-minifier",
+          "dev": true,
+          "bundled": false,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "action": "review",
+      "module": "ip",
+      "resolves": [
+        {
+          "id": 1101851,
+          "path": "webpack-dev-server>ip",
+          "dev": true,
+          "bundled": false,
+          "optional": false
+        },
+        {
+          "id": 1101851,
+          "path": "webpack-dev-server>bonjour>multicast-dns>dns-packet>ip",
+          "dev": true,
+          "bundled": false,
+          "optional": false
+        }
+      ]
+    }
+  ],
+  "advisories": {
+    "1085685": {
+      "findings": [
+        {
+          "version": "1.1.0",
+          "paths": [
+            "webpack>yargs>os-locale>mem"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://github.com/sindresorhus/mem/commit/da4e4398cb27b602de3bd55f746efa9b4a31702b\n- https://bugzilla.redhat.com/show_bug.cgi?id=1623744\n- https://www.npmjs.com/advisories/1084\n- https://snyk.io/vuln/npm:mem:20180117\n- https://github.com/advisories/GHSA-4xcv-9jjx-gfj3",
+      "created": "2019-07-05T21:07:58.000Z",
+      "id": 1085685,
+      "npm_advisory_id": null,
+      "overview": "Versions of `mem` prior to 4.0.0 are vulnerable to Denial of Service (DoS).  The package fails to remove old values from the cache even after a value passes its `maxAge` property. This may allow attackers to exhaust the system's memory if they are able to abuse the application logging.\n\n\n## Recommendation\n\nUpgrade to version 4.0.0 or later.",
+      "reported_by": null,
+      "title": "Denial of Service in mem",
+      "metadata": null,
+      "cves": [],
+      "access": "public",
+      "severity": "moderate",
+      "module_name": "mem",
+      "vulnerable_versions": "<4.0.0",
+      "github_advisory_id": "GHSA-4xcv-9jjx-gfj3",
+      "recommendation": "Upgrade to version 4.0.0 or later",
+      "patched_versions": ">=4.0.0",
+      "updated": "2023-01-09T05:01:45.000Z",
+      "cvss": {
+        "score": 5.1,
+        "vectorString": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+      },
+      "cwe": [
+        "CWE-400"
+      ],
+      "url": "https://github.com/advisories/GHSA-4xcv-9jjx-gfj3"
+    },
+    "1085724": {
+      "findings": [
+        {
+          "version": "3.7.0",
+          "paths": [
+            "vue-loader>postcss-load-config>cosmiconfig>js-yaml",
+            "css-loader>cssnano>postcss-svgo>svgo>js-yaml"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://github.com/nodeca/js-yaml/issues/475\n- https://github.com/nodeca/js-yaml/commit/a567ef3c6e61eb319f0bfc2671d91061afb01235\n- https://www.npmjs.com/advisories/788\n- https://www.npmjs.com/advisories/788/versions\n- https://snyk.io/vuln/SNYK-JS-JSYAML-173999\n- https://github.com/advisories/GHSA-2pr6-76vf-7546",
+      "created": "2019-06-05T14:35:29.000Z",
+      "id": 1085724,
+      "npm_advisory_id": null,
+      "overview": "Versions of `js-yaml` prior to 3.13.0 are vulnerable to Denial of Service. By parsing a carefully-crafted YAML file, the node process stalls and may exhaust system resources leading to a Denial of Service.\n\n\n## Recommendation\n\nUpgrade to version 3.13.0.",
+      "reported_by": null,
+      "title": "Denial of Service in js-yaml",
+      "metadata": null,
+      "cves": [],
+      "access": "public",
+      "severity": "moderate",
+      "module_name": "js-yaml",
+      "vulnerable_versions": "<3.13.0",
+      "github_advisory_id": "GHSA-2pr6-76vf-7546",
+      "recommendation": "Upgrade to version 3.13.0 or later",
+      "patched_versions": ">=3.13.0",
+      "updated": "2023-01-09T05:01:39.000Z",
+      "cvss": {
+        "score": 5.9,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "cwe": [
+        "CWE-400"
+      ],
+      "url": "https://github.com/advisories/GHSA-2pr6-76vf-7546"
+    },
+    "1086436": {
+      "findings": [
+        {
+          "version": "5.4.5",
+          "paths": [
+            "node-notifier"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2020-7789\n- https://snyk.io/vuln/SNYK-JS-NODENOTIFIER-1035794\n- https://github.com/mikaelbr/node-notifier/commit/5d62799dab88505a709cd032653b2320c5813fce\n- https://github.com/mikaelbr/node-notifier/blob/master/lib/utils.js%23L303\n- https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1050371\n- https://github.com/advisories/GHSA-5fw9-fq32-wv5p",
+      "created": "2020-12-21T16:04:07.000Z",
+      "id": 1086436,
+      "npm_advisory_id": null,
+      "overview": "This affects the package node-notifier before 8.0.1. It allows an attacker to run arbitrary commands on Linux machines due to the options params not being sanitised when being passed an array.",
+      "reported_by": null,
+      "title": "OS Command Injection in node-notifier",
+      "metadata": null,
+      "cves": [
+        "CVE-2020-7789"
+      ],
+      "access": "public",
+      "severity": "moderate",
+      "module_name": "node-notifier",
+      "vulnerable_versions": "<8.0.1",
+      "github_advisory_id": "GHSA-5fw9-fq32-wv5p",
+      "recommendation": "Upgrade to version 8.0.1 or later",
+      "patched_versions": ">=8.0.1",
+      "updated": "2023-01-09T05:04:30.000Z",
+      "cvss": {
+        "score": 5.6,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L"
+      },
+      "cwe": [
+        "CWE-78"
+      ],
+      "url": "https://github.com/advisories/GHSA-5fw9-fq32-wv5p"
+    },
+    "1087544": {
+      "findings": [
+        {
+          "version": "1.9.1",
+          "paths": [
+            "copy-webpack-plugin>serialize-javascript"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://github.com/yahoo/serialize-javascript/security/advisories/GHSA-h9rv-jmmf-4pgx\n- https://nvd.nist.gov/vuln/detail/CVE-2019-16769\n- https://github.com/advisories/GHSA-h9rv-jmmf-4pgx\n- https://www.npmjs.com/advisories/1426",
+      "created": "2019-12-05T18:44:37.000Z",
+      "id": 1087544,
+      "npm_advisory_id": null,
+      "overview": "Versions of `serialize-javascript` prior to 2.1.1 are vulnerable to Cross-Site Scripting (XSS). The package fails to sanitize serialized regular expressions. This vulnerability does not affect Node.js applications.\n\n\n## Recommendation\n\nUpgrade to version 2.1.1 or later.",
+      "reported_by": null,
+      "title": "Cross-Site Scripting in serialize-javascript",
+      "metadata": null,
+      "cves": [
+        "CVE-2019-16769"
+      ],
+      "access": "public",
+      "severity": "moderate",
+      "module_name": "serialize-javascript",
+      "vulnerable_versions": "<2.1.1",
+      "github_advisory_id": "GHSA-h9rv-jmmf-4pgx",
+      "recommendation": "Upgrade to version 2.1.1 or later",
+      "patched_versions": ">=2.1.1",
+      "updated": "2023-01-09T05:03:08.000Z",
+      "cvss": {
+        "score": 4.2,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:L"
+      },
+      "cwe": [
+        "CWE-79"
+      ],
+      "url": "https://github.com/advisories/GHSA-h9rv-jmmf-4pgx"
+    },
+    "1087645": {
+      "findings": [
+        {
+          "version": "2.11.5",
+          "paths": [
+            "webpack-dev-server"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2018-14732\n- https://github.com/webpack/webpack-dev-server/commit/f18e5adf123221a1015be63e1ca2491ca45b8d10\n- https://www.npmjs.com/advisories/725\n- https://github.com/webpack/webpack-dev-server/issues/1445\n- https://github.com/webpack/webpack-dev-server/blob/master/CHANGELOG.md#3111-2018-12-21\n- https://github.com/webpack/webpack-dev-server/issues/1620\n- https://github.com/advisories/GHSA-cf66-xwfp-gvc4",
+      "created": "2019-01-04T17:40:59.000Z",
+      "id": 1087645,
+      "npm_advisory_id": null,
+      "overview": "Versions of `webpack-dev-server` before 3.1.10 are missing origin validation on the websocket server. This vulnerability allows a remote attacker to steal a developer's source code because the origin of requests to the websocket server that is used for Hot Module Replacement (HMR) are not validated.\n\n\n## Recommendation\nFor `webpack-dev-server` update to version 3.1.11 or later.",
+      "reported_by": null,
+      "title": "Missing Origin Validation in webpack-dev-server",
+      "metadata": null,
+      "cves": [
+        "CVE-2018-14732"
+      ],
+      "access": "public",
+      "severity": "high",
+      "module_name": "webpack-dev-server",
+      "vulnerable_versions": "<3.1.11",
+      "github_advisory_id": "GHSA-cf66-xwfp-gvc4",
+      "recommendation": "Upgrade to version 3.1.11 or later",
+      "patched_versions": ">=3.1.11",
+      "updated": "2023-01-09T05:03:00.000Z",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+      },
+      "cwe": [
+        "CWE-20"
+      ],
+      "url": "https://github.com/advisories/GHSA-cf66-xwfp-gvc4"
+    },
+    "1088208": {
+      "findings": [
+        {
+          "version": "0.7.8",
+          "paths": [
+            "shelljs"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://github.com/shelljs/shelljs/security/advisories/GHSA-64g7-mvw6-v9qj\n- https://huntr.dev/bounties/50996581-c08e-4eed-a90e-c0bac082679c/\n- https://github.com/advisories/GHSA-64g7-mvw6-v9qj",
+      "created": "2022-01-14T21:09:50.000Z",
+      "id": 1088208,
+      "npm_advisory_id": null,
+      "overview": "### Impact\nOutput from the synchronous version of `shell.exec()` may be visible to other users on the same system. You may be affected if you execute `shell.exec()` in multi-user Mac, Linux, or WSL environments, or if you execute `shell.exec()` as the root user.\n\nOther shelljs functions (including the asynchronous version of `shell.exec()`) are not impacted.\n\n### Patches\nPatched in shelljs 0.8.5\n\n### Workarounds\nRecommended action is to upgrade to 0.8.5.\n\n### References\nhttps://huntr.dev/bounties/50996581-c08e-4eed-a90e-c0bac082679c/\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Ask at https://github.com/shelljs/shelljs/issues/1058\n* Open an issue at https://github.com/shelljs/shelljs/issues/new\n",
+      "reported_by": null,
+      "title": "Improper Privilege Management in shelljs",
+      "metadata": null,
+      "cves": [],
+      "access": "public",
+      "severity": "moderate",
+      "module_name": "shelljs",
+      "vulnerable_versions": "<0.8.5",
+      "github_advisory_id": "GHSA-64g7-mvw6-v9qj",
+      "recommendation": "Upgrade to version 0.8.5 or later",
+      "patched_versions": ">=0.8.5",
+      "updated": "2023-01-11T05:03:39.000Z",
+      "cvss": {
+        "score": 0,
+        "vectorString": null
+      },
+      "cwe": [
+        "CWE-269"
+      ],
+      "url": "https://github.com/advisories/GHSA-64g7-mvw6-v9qj"
+    },
+    "1088227": {
+      "findings": [
+        {
+          "version": "0.10.0",
+          "paths": [
+            "webpack-dev-server>selfsigned>node-forge"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://github.com/digitalbazaar/forge/security/advisories/GHSA-5rrq-pxf6-6jx5\n- https://github.com/advisories/GHSA-5rrq-pxf6-6jx5",
+      "created": "2022-01-08T00:22:42.000Z",
+      "id": 1088227,
+      "npm_advisory_id": null,
+      "overview": "### Impact\nThe `forge.debug` API had a potential prototype pollution issue if called with untrusted input. The API was only used for internal debug purposes in a safe way and never documented or advertised.  It is suspected that uses of this API, if any exist, would likely not have used untrusted inputs in a vulnerable way.\n\n### Patches\nThe `forge.debug` API and related functions were removed in 1.0.0.\n\n### Workarounds\nDon't use the `forge.debug` API directly or indirectly with untrusted input.\n\n### References\n- https://www.huntr.dev/bounties/1-npm-node-forge/\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Open an issue in [forge](https://github.com/digitalbazaar/forge).\n* Email us at support@digitalbazaar.com.",
+      "reported_by": null,
+      "title": "Prototype Pollution in node-forge debug API.",
+      "metadata": null,
+      "cves": [],
+      "access": "public",
+      "severity": "low",
+      "module_name": "node-forge",
+      "vulnerable_versions": "<1.0.0",
+      "github_advisory_id": "GHSA-5rrq-pxf6-6jx5",
+      "recommendation": "Upgrade to version 1.0.0 or later",
+      "patched_versions": ">=1.0.0",
+      "updated": "2023-01-11T05:03:14.000Z",
+      "cvss": {
+        "score": 0,
+        "vectorString": null
+      },
+      "cwe": [
+        "CWE-1321"
+      ],
+      "url": "https://github.com/advisories/GHSA-5rrq-pxf6-6jx5"
+    },
+    "1088229": {
+      "findings": [
+        {
+          "version": "0.10.0",
+          "paths": [
+            "webpack-dev-server>selfsigned>node-forge"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://github.com/digitalbazaar/forge/security/advisories/GHSA-gf8q-jrpm-jvxq\n- https://nvd.nist.gov/vuln/detail/CVE-2022-0122\n- https://www.huntr.dev/bounties/41852c50-3c6d-4703-8c55-4db27164a4ae\n- https://github.com/advisories/GHSA-gf8q-jrpm-jvxq",
+      "created": "2022-01-08T00:22:02.000Z",
+      "id": 1088229,
+      "npm_advisory_id": null,
+      "overview": "### Impact\nThe regex used for the `forge.util.parseUrl` API would not properly parse certain inputs resulting in a parsed data structure that could lead to undesired behavior.\n\n### Patches\n`forge.util.parseUrl` and other very old related URL APIs were removed in 1.0.0 in favor of letting applications use the more modern WHATWG URL Standard API.\n\n### Workarounds\nEnsure code does not directly or indirectly call `forge.util.parseUrl` with untrusted input.\n\n### References\n- https://www.huntr.dev/bounties/41852c50-3c6d-4703-8c55-4db27164a4ae/\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Open an issue in [forge](https://github.com/digitalbazaar/forge)\n* Email us at support@digitalbazaar.com\n",
+      "reported_by": null,
+      "title": "URL parsing in node-forge could lead to undesired behavior.",
+      "metadata": null,
+      "cves": [],
+      "access": "public",
+      "severity": "low",
+      "module_name": "node-forge",
+      "vulnerable_versions": "<1.0.0",
+      "github_advisory_id": "GHSA-gf8q-jrpm-jvxq",
+      "recommendation": "Upgrade to version 1.0.0 or later",
+      "patched_versions": ">=1.0.0",
+      "updated": "2023-01-11T05:08:11.000Z",
+      "cvss": {
+        "score": 0,
+        "vectorString": null
+      },
+      "cwe": [
+        "CWE-601"
+      ],
+      "url": "https://github.com/advisories/GHSA-gf8q-jrpm-jvxq"
+    },
+    "1088746": {
+      "findings": [
+        {
+          "version": "0.10.0",
+          "paths": [
+            "webpack-dev-server>selfsigned>node-forge"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://github.com/digitalbazaar/forge/security/advisories/GHSA-2r2c-g63r-vccr\n- https://nvd.nist.gov/vuln/detail/CVE-2022-24773\n- https://github.com/digitalbazaar/forge/commit/3f0b49a0573ef1bb7af7f5673c0cfebf00424df1\n- https://github.com/digitalbazaar/forge/commit/bb822c02df0b61211836472e29b9790cc541cdb2\n- https://github.com/advisories/GHSA-2r2c-g63r-vccr",
+      "created": "2022-03-18T23:10:48.000Z",
+      "id": 1088746,
+      "npm_advisory_id": null,
+      "overview": "### Impact\n\nRSA PKCS#1 v1.5 signature verification code is not properly checking `DigestInfo` for a proper ASN.1 structure. This can lead to successful verification with signatures that contain invalid structures but a valid digest.\n\n### Patches\n\nThe issue has been addressed in `node-forge` `1.3.0`.\n\n### For more information\n\nIf you have any questions or comments about this advisory:\n* Open an issue in [forge](https://github.com/digitalbazaar/forge)\n* Email us at [example email address](mailto:security@digitalbazaar.com)",
+      "reported_by": null,
+      "title": "Improper Verification of Cryptographic Signature in `node-forge`",
+      "metadata": null,
+      "cves": [
+        "CVE-2022-24773"
+      ],
+      "access": "public",
+      "severity": "moderate",
+      "module_name": "node-forge",
+      "vulnerable_versions": "<1.3.0",
+      "github_advisory_id": "GHSA-2r2c-g63r-vccr",
+      "recommendation": "Upgrade to version 1.3.0 or later",
+      "patched_versions": ">=1.3.0",
+      "updated": "2023-01-27T05:00:57.000Z",
+      "cvss": {
+        "score": 5.3,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+      },
+      "cwe": [
+        "CWE-347"
+      ],
+      "url": "https://github.com/advisories/GHSA-2r2c-g63r-vccr"
+    },
+    "1088783": {
+      "findings": [
+        {
+          "version": "4.2.1",
+          "paths": [
+            "webpack-dev-server>yargs>yargs-parser"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://snyk.io/vuln/SNYK-JS-YARGSPARSER-560381\n- https://www.npmjs.com/advisories/1500\n- https://github.com/yargs/yargs-parser/commit/63810ca1ae1a24b08293a4d971e70e058c7a41e2\n- https://nvd.nist.gov/vuln/detail/CVE-2020-7608\n- https://github.com/yargs/yargs-parser/commit/1c417bd0b42b09c475ee881e36d292af4fa2cc36\n- https://github.com/advisories/GHSA-p9pc-299p-vxgp",
+      "created": "2020-09-04T18:00:54.000Z",
+      "id": 1088783,
+      "npm_advisory_id": null,
+      "overview": "Affected versions of `yargs-parser` are vulnerable to prototype pollution. Arguments are not properly sanitized, allowing an attacker to modify the prototype of `Object`, causing the addition or modification of an existing property that will exist on all objects.  \nParsing the argument `--foo.__proto__.bar baz'` adds a `bar` property with value `baz` to all objects. This is only exploitable if attackers have control over the arguments being passed to `yargs-parser`.\n\n\n\n## Recommendation\n\nUpgrade to versions 13.1.2, 15.0.1, 18.1.1 or later.",
+      "reported_by": null,
+      "title": "yargs-parser Vulnerable to Prototype Pollution",
+      "metadata": null,
+      "cves": [
+        "CVE-2020-7608"
+      ],
+      "access": "public",
+      "severity": "moderate",
+      "module_name": "yargs-parser",
+      "vulnerable_versions": "<=5.0.0",
+      "github_advisory_id": "GHSA-p9pc-299p-vxgp",
+      "recommendation": "Upgrade to version 5.0.1 or later",
+      "patched_versions": ">=5.0.1",
+      "updated": "2023-01-27T05:00:51.000Z",
+      "cvss": {
+        "score": 5.3,
+        "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+      },
+      "cwe": [
+        "CWE-915",
+        "CWE-1321"
+      ],
+      "url": "https://github.com/advisories/GHSA-p9pc-299p-vxgp"
+    },
+    "1088811": {
+      "findings": [
+        {
+          "version": "7.0.0",
+          "paths": [
+            "webpack>yargs>yargs-parser"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://snyk.io/vuln/SNYK-JS-YARGSPARSER-560381\n- https://www.npmjs.com/advisories/1500\n- https://github.com/yargs/yargs-parser/commit/63810ca1ae1a24b08293a4d971e70e058c7a41e2\n- https://nvd.nist.gov/vuln/detail/CVE-2020-7608\n- https://github.com/yargs/yargs-parser/commit/1c417bd0b42b09c475ee881e36d292af4fa2cc36\n- https://github.com/advisories/GHSA-p9pc-299p-vxgp",
+      "created": "2020-09-04T18:00:54.000Z",
+      "id": 1088811,
+      "npm_advisory_id": null,
+      "overview": "Affected versions of `yargs-parser` are vulnerable to prototype pollution. Arguments are not properly sanitized, allowing an attacker to modify the prototype of `Object`, causing the addition or modification of an existing property that will exist on all objects.  \nParsing the argument `--foo.__proto__.bar baz'` adds a `bar` property with value `baz` to all objects. This is only exploitable if attackers have control over the arguments being passed to `yargs-parser`.\n\n\n\n## Recommendation\n\nUpgrade to versions 13.1.2, 15.0.1, 18.1.1 or later.",
+      "reported_by": null,
+      "title": "yargs-parser Vulnerable to Prototype Pollution",
+      "metadata": null,
+      "cves": [
+        "CVE-2020-7608"
+      ],
+      "access": "public",
+      "severity": "moderate",
+      "module_name": "yargs-parser",
+      "vulnerable_versions": ">=6.0.0 <13.1.2",
+      "github_advisory_id": "GHSA-p9pc-299p-vxgp",
+      "recommendation": "Upgrade to version 13.1.2 or later",
+      "patched_versions": ">=13.1.2",
+      "updated": "2023-01-27T05:00:51.000Z",
+      "cvss": {
+        "score": 5.3,
+        "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+      },
+      "cwe": [
+        "CWE-915",
+        "CWE-1321"
+      ],
+      "url": "https://github.com/advisories/GHSA-p9pc-299p-vxgp"
+    },
+    "1089270": {
+      "findings": [
+        {
+          "version": "2.7.4",
+          "paths": [
+            "webpack-bundle-analyzer>ejs"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2022-29078\n- https://eslam.io/posts/ejs-server-side-template-injection-rce/\n- https://github.com/mde/ejs/commit/15ee698583c98dadc456639d6245580d17a24baf\n- https://github.com/mde/ejs/releases\n- https://security.netapp.com/advisory/ntap-20220804-0001/\n- https://github.com/advisories/GHSA-phwq-j96m-2c2q",
+      "created": "2022-04-26T00:00:40.000Z",
+      "id": 1089270,
+      "npm_advisory_id": null,
+      "overview": "The ejs (aka Embedded JavaScript templates) package 3.1.6 for Node.js allows server-side template injection in settings[view options][outputFunctionName]. This is parsed as an internal option, and overwrites the outputFunctionName option with an arbitrary OS command (which is executed upon template compilation).",
+      "reported_by": null,
+      "title": "ejs template injection vulnerability",
+      "metadata": null,
+      "cves": [
+        "CVE-2022-29078"
+      ],
+      "access": "public",
+      "severity": "critical",
+      "module_name": "ejs",
+      "vulnerable_versions": "<3.1.7",
+      "github_advisory_id": "GHSA-phwq-j96m-2c2q",
+      "recommendation": "Upgrade to version 3.1.7 or later",
+      "patched_versions": ">=3.1.7",
+      "updated": "2023-01-30T05:02:57.000Z",
+      "cvss": {
+        "score": 9.8,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+      },
+      "cwe": [
+        "CWE-74"
+      ],
+      "url": "https://github.com/advisories/GHSA-phwq-j96m-2c2q"
+    },
+    "1089565": {
+      "findings": [
+        {
+          "version": "2.1.0",
+          "paths": [
+            "css-loader>cssnano>postcss-svgo>is-svg"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2021-29059\n- https://github.com/sindresorhus/is-svg/releases/tag/v4.3.0\n- https://github.com/yetingli/PoCs/blob/main/CVE-2021-29059/IS-SVG.md\n- https://github.com/yetingli/SaveResults/blob/main/js/is-svg.js\n- https://www.npmjs.com/package/is-svg\n- https://github.com/sindresorhus/is-svg/commit/732fc72779840c45a30817d3fe28e12058592b02\n- https://github.com/advisories/GHSA-r8j5-h5cx-65gg",
+      "created": "2021-12-10T19:02:37.000Z",
+      "id": 1089565,
+      "npm_advisory_id": null,
+      "overview": "A vulnerability was discovered in IS-SVG version 4.3.1 and below where a Regular Expression Denial of Service (ReDOS) occurs if the application is provided and checks a crafted invalid SVG string.",
+      "reported_by": null,
+      "title": "ReDOS in IS-SVG",
+      "metadata": null,
+      "cves": [
+        "CVE-2021-29059"
+      ],
+      "access": "public",
+      "severity": "high",
+      "module_name": "is-svg",
+      "vulnerable_versions": ">=2.1.0 <4.3.0",
+      "github_advisory_id": "GHSA-r8j5-h5cx-65gg",
+      "recommendation": "Upgrade to version 4.3.0 or later",
+      "patched_versions": ">=4.3.0",
+      "updated": "2023-02-01T05:05:59.000Z",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "cwe": [
+        "CWE-770"
+      ],
+      "url": "https://github.com/advisories/GHSA-r8j5-h5cx-65gg"
+    },
+    "1089718": {
+      "findings": [
+        {
+          "version": "0.3.0",
+          "paths": [
+            "css-loader>cssnano>postcss-colormin>colormin>color>color-string"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2021-29060\n- https://github.com/Qix-/color-string/commit/0789e21284c33d89ebc4ab4ca6f759b9375ac9d3\n- https://github.com/Qix-/color-string/releases/tag/1.5.5\n- https://github.com/yetingli/PoCs/blob/main/CVE-2021-29060/Color-String.md\n- https://github.com/yetingli/SaveResults/blob/main/js/color-string.js\n- https://www.npmjs.com/package/color-string\n- https://github.com/advisories/GHSA-257v-vj4p-3w2h",
+      "created": "2021-06-22T01:14:09.000Z",
+      "id": 1089718,
+      "npm_advisory_id": null,
+      "overview": "In the npm package `color-string`, there is a  ReDos (Regular Expression Denial of Service) vulnerability regarding an exponential time complexity for\nlinearly increasing input lengths for `hwb()` color strings.\n\nStrings reaching more than 5000 characters would see several\nmilliseconds of processing time; strings reaching more than\n50,000 characters began seeing 1500ms (1.5s) of processing time.\n\nThe cause was due to a the regular expression that parses\nhwb() strings - specifically, the hue value - where\nthe integer portion of the hue value used a 0-or-more quantifier\nshortly thereafter followed by a 1-or-more quantifier.\n\nThis caused excessive backtracking and a cartesian scan,\nresulting in exponential time complexity given a linear\nincrease in input length.",
+      "reported_by": null,
+      "title": "Regular Expression Denial of Service (ReDOS)",
+      "metadata": null,
+      "cves": [
+        "CVE-2021-29060"
+      ],
+      "access": "public",
+      "severity": "moderate",
+      "module_name": "color-string",
+      "vulnerable_versions": "<1.5.5",
+      "github_advisory_id": "GHSA-257v-vj4p-3w2h",
+      "recommendation": "Upgrade to version 1.5.5 or later",
+      "patched_versions": ">=1.5.5",
+      "updated": "2023-02-01T05:05:59.000Z",
+      "cvss": {
+        "score": 5.3,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+      },
+      "cwe": [
+        "CWE-770"
+      ],
+      "url": "https://github.com/advisories/GHSA-257v-vj4p-3w2h"
+    },
+    "1089877": {
+      "findings": [
+        {
+          "version": "0.3.19",
+          "paths": [
+            "webpack-dev-server>sockjs"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2020-7693\n- https://github.com/sockjs/sockjs-node/issues/252\n- https://github.com/sockjs/sockjs-node/pull/265\n- https://github.com/sockjs/sockjs-node/commit/dd7e642cd69ee74385825816d30642c43e051d16\n- https://github.com/andsnw/sockjs-dos-py\n- https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-575448\n- https://snyk.io/vuln/SNYK-JS-SOCKJS-575261\n- https://www.npmjs.com/package/sockjs\n- https://github.com/advisories/GHSA-c9g6-9335-x697",
+      "created": "2021-04-13T15:27:51.000Z",
+      "id": 1089877,
+      "npm_advisory_id": null,
+      "overview": "Incorrect handling of Upgrade header with the value websocket leads in crashing of containers hosting sockjs apps. This affects the package sockjs before 0.3.20.",
+      "reported_by": null,
+      "title": "Improper Input Validation in SocksJS-Node",
+      "metadata": null,
+      "cves": [
+        "CVE-2020-7693"
+      ],
+      "access": "public",
+      "severity": "moderate",
+      "module_name": "sockjs",
+      "vulnerable_versions": "<0.3.20",
+      "github_advisory_id": "GHSA-c9g6-9335-x697",
+      "recommendation": "Upgrade to version 0.3.20 or later",
+      "patched_versions": ">=0.3.20",
+      "updated": "2023-02-01T05:05:24.000Z",
+      "cvss": {
+        "score": 5.3,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+      },
+      "cwe": [
+        "CWE-20"
+      ],
+      "url": "https://github.com/advisories/GHSA-c9g6-9335-x697"
+    },
+    "1090049": {
+      "findings": [
+        {
+          "version": "0.18.0",
+          "paths": [
+            "axios"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2020-28168\n- https://github.com/axios/axios/issues/3369\n- https://github.com/axios/axios/commit/c7329fefc890050edd51e40e469a154d0117fc55\n- https://snyk.io/vuln/SNYK-JS-AXIOS-1038255\n- https://www.npmjs.com/package/axios\n- https://www.npmjs.com/advisories/1594\n- https://lists.apache.org/thread.html/r954d80fd18e9dafef6e813963eb7e08c228151c2b6268ecd63b35d1f@%3Ccommits.druid.apache.org%3E\n- https://lists.apache.org/thread.html/r25d53acd06f29244b8a103781b0339c5e7efee9099a4d52f0c230e4a@%3Ccommits.druid.apache.org%3E\n- https://lists.apache.org/thread.html/rdfd2901b8b697a3f6e2c9c6ecc688fd90d7f881937affb5144d61d6e@%3Ccommits.druid.apache.org%3E\n- https://cert-portal.siemens.com/productcert/pdf/ssa-637483.pdf\n- https://github.com/advisories/GHSA-4w2v-q235-vp99",
+      "created": "2021-01-04T20:59:40.000Z",
+      "id": 1090049,
+      "npm_advisory_id": null,
+      "overview": "Axios NPM package 0.21.0 contains a Server-Side Request Forgery (SSRF) vulnerability where an attacker is able to bypass a proxy by providing a URL that responds with a redirect to a restricted host or IP address.",
+      "reported_by": null,
+      "title": "Axios vulnerable to Server-Side Request Forgery",
+      "metadata": null,
+      "cves": [
+        "CVE-2020-28168"
+      ],
+      "access": "public",
+      "severity": "moderate",
+      "module_name": "axios",
+      "vulnerable_versions": "<0.21.1",
+      "github_advisory_id": "GHSA-4w2v-q235-vp99",
+      "recommendation": "Upgrade to version 0.21.1 or later",
+      "patched_versions": ">=0.21.1",
+      "updated": "2023-02-01T05:05:04.000Z",
+      "cvss": {
+        "score": 5.9,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+      },
+      "cwe": [
+        "CWE-918"
+      ],
+      "url": "https://github.com/advisories/GHSA-4w2v-q235-vp99"
+    },
+    "1091716": {
+      "findings": [
+        {
+          "version": "2.13.1",
+          "paths": [
+            "webpack-bundle-analyzer"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://github.com/webpack-contrib/webpack-bundle-analyzer/issues/263\n- https://github.com/webpack-contrib/webpack-bundle-analyzer/pull/264\n- https://snyk.io/vuln/SNYK-JS-WEBPACKBUNDLEANALYZER-174190\n- https://www.npmjs.com/advisories/826\n- https://github.com/webpack-contrib/webpack-bundle-analyzer/commit/20f2b4c553ee343f491faf63e39427fba9908c7c\n- https://github.com/advisories/GHSA-pgr8-jg6h-8gw6",
+      "created": "2019-05-23T09:26:20.000Z",
+      "id": 1091716,
+      "npm_advisory_id": null,
+      "overview": "Versions of `webpack-bundle-analyzer` prior to 3.3.2 are vulnerable to Cross-Site Scripting. The package uses `JSON.stringify()` without properly escaping input which may lead to Cross-Site Scripting.\n\n\n## Recommendation\n\nUpgrade to version 3.3.2 or later.",
+      "reported_by": null,
+      "title": "Cross-Site Scripting in webpack-bundle-analyzer",
+      "metadata": null,
+      "cves": [],
+      "access": "public",
+      "severity": "moderate",
+      "module_name": "webpack-bundle-analyzer",
+      "vulnerable_versions": "<3.3.2",
+      "github_advisory_id": "GHSA-pgr8-jg6h-8gw6",
+      "recommendation": "Upgrade to version 3.3.2 or later",
+      "patched_versions": ">=3.3.2",
+      "updated": "2023-04-13T18:42:30.000Z",
+      "cvss": {
+        "score": 6.3,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L"
+      },
+      "cwe": [
+        "CWE-79"
+      ],
+      "url": "https://github.com/advisories/GHSA-pgr8-jg6h-8gw6"
+    },
+    "1091722": {
+      "findings": [
+        {
+          "version": "0.18.0",
+          "paths": [
+            "axios"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2019-10742\n- https://app.snyk.io/vuln/SNYK-JS-AXIOS-174505\n- https://github.com/axios/axios/issues/1098\n- https://github.com/axios/axios/pull/1485\n- https://snyk.io/vuln/SNYK-JS-AXIOS-174505\n- https://www.npmjs.com/advisories/880\n- https://github.com/axios/axios/commit/acabfbdf00a58bb866c9d070e8a10d1d0dbeb572\n- https://github.com/advisories/GHSA-42xw-2xvc-qx8m",
+      "created": "2019-05-29T18:04:45.000Z",
+      "id": 1091722,
+      "npm_advisory_id": null,
+      "overview": "Versions of `axios` prior to 0.18.1 are vulnerable to Denial of Service. If a request exceeds the `maxContentLength` property, the package prints an error but does not stop the request. This may cause high CPU usage and lead to Denial of Service.\n\n\n## Recommendation\n\nUpgrade to 0.18.1 or later.",
+      "reported_by": null,
+      "title": "Denial of Service in axios",
+      "metadata": null,
+      "cves": [
+        "CVE-2019-10742"
+      ],
+      "access": "public",
+      "severity": "high",
+      "module_name": "axios",
+      "vulnerable_versions": "<=0.18.0",
+      "github_advisory_id": "GHSA-42xw-2xvc-qx8m",
+      "recommendation": "Upgrade to version 0.18.1 or later",
+      "patched_versions": ">=0.18.1",
+      "updated": "2023-04-14T19:12:35.000Z",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "cwe": [
+        "CWE-20",
+        "CWE-755"
+      ],
+      "url": "https://github.com/advisories/GHSA-42xw-2xvc-qx8m"
+    },
+    "1092623": {
+      "findings": [
+        {
+          "version": "1.4.1",
+          "paths": [
+            "axios>follow-redirects",
+            "webpack-dev-server>http-proxy-middleware>http-proxy>follow-redirects"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2022-0536\n- https://github.com/follow-redirects/follow-redirects/commit/62e546a99c07c3ee5e4e0718c84a6ca127c5c445\n- https://huntr.dev/bounties/7cf2bf90-52da-4d59-8028-a73b132de0db\n- https://github.com/advisories/GHSA-pw2r-vq6v-hr8c",
+      "created": "2022-02-10T00:00:31.000Z",
+      "id": 1092623,
+      "npm_advisory_id": null,
+      "overview": "Exposure of Sensitive Information to an Unauthorized Actor in NPM follow-redirects prior to 1.14.8.",
+      "reported_by": null,
+      "title": "Exposure of Sensitive Information to an Unauthorized Actor in follow-redirects",
+      "metadata": null,
+      "cves": [
+        "CVE-2022-0536"
+      ],
+      "access": "public",
+      "severity": "moderate",
+      "module_name": "follow-redirects",
+      "vulnerable_versions": "<1.14.8",
+      "github_advisory_id": "GHSA-pw2r-vq6v-hr8c",
+      "recommendation": "Upgrade to version 1.14.8 or later",
+      "patched_versions": ">=1.14.8",
+      "updated": "2023-07-21T19:16:17.000Z",
+      "cvss": {
+        "score": 5.9,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+      },
+      "cwe": [
+        "CWE-200",
+        "CWE-212"
+      ],
+      "url": "https://github.com/advisories/GHSA-pw2r-vq6v-hr8c"
+    },
+    "1093539": {
+      "findings": [
+        {
+          "version": "6.0.23",
+          "paths": [
+            "autoprefixer>postcss",
+            "css-loader>icss-utils>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss",
+            "css-loader>cssnano>autoprefixer>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-calc>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-colormin>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-convert-values>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-discard-comments>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-discard-duplicates>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-discard-empty>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-discard-overridden>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-discard-unused>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-filter-plugins>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-merge-idents>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-merge-longhand>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-merge-rules>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-minify-font-values>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-minify-gradients>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-minify-params>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-minify-selectors>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-normalize-charset>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-normalize-url>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-ordered-values>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-reduce-idents>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-reduce-initial>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-reduce-transforms>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-svgo>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-unique-selectors>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-zindex>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "svg-sprite-loader>svg-baker>postcss",
+            "svg-sprite-loader>svg-baker-runtime>svg-baker>postcss"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2021-23382\n- https://github.com/postcss/postcss/commit/2b1d04c867995e55124e0a165b7c6622c1735956\n- https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1255641\n- https://snyk.io/vuln/SNYK-JS-POSTCSS-1255640\n- https://github.com/postcss/postcss/releases/tag/7.0.36\n- https://github.com/advisories/GHSA-566m-qj78-rww5",
+      "created": "2022-01-07T00:21:36.000Z",
+      "id": 1093539,
+      "npm_advisory_id": null,
+      "overview": "The package postcss versions before 7.0.36 or between 8.0.0 and 8.2.13 are vulnerable to Regular Expression Denial of Service (ReDoS) via getAnnotationURL() and loadAnnotation() in lib/previous-map.js. The vulnerable regexes are caused mainly by the sub-pattern \n```regex\n\\/\\*\\s* sourceMappingURL=(.*)\n```\n\n### PoC\n```js\nvar postcss = require(\"postcss\")\nfunction build_attack(n) {\n    var ret = \"a{}\"\n    for (var i = 0; i < n; i++) {\n        ret += \"/*# sourceMappingURL=\"\n    }\n    return ret + \"!\";\n}\n```\n```js\npostcss.parse('a{}/*# sourceMappingURL=a.css.map */') for (var i = 1; i <= 500000; i++) {\n    if (i % 1000 == 0) {\n        var time = Date.now();\n        var attack_str = build_attack(i) try {\n            postcss.parse(attack_str) var time_cost = Date.now() - time;\n            console.log(\"attack_str.length: \" + attack_str.length + \": \" + time_cost + \" ms\");\n        } catch (e) {\n            var time_cost = Date.now() - time;\n            console.log(\"attack_str.length: \" + attack_str.length + \": \" + time_cost + \" ms\");\n        }\n    }\n}\n```",
+      "reported_by": null,
+      "title": "Regular Expression Denial of Service in postcss",
+      "metadata": null,
+      "cves": [
+        "CVE-2021-23382"
+      ],
+      "access": "public",
+      "severity": "moderate",
+      "module_name": "postcss",
+      "vulnerable_versions": "<7.0.36",
+      "github_advisory_id": "GHSA-566m-qj78-rww5",
+      "recommendation": "Upgrade to version 7.0.36 or later",
+      "patched_versions": ">=7.0.36",
+      "updated": "2023-09-08T19:35:15.000Z",
+      "cvss": {
+        "score": 5.3,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+      },
+      "cwe": [
+        "CWE-400"
+      ],
+      "url": "https://github.com/advisories/GHSA-566m-qj78-rww5"
+    },
+    "1093719": {
+      "findings": [
+        {
+          "version": "0.10.0",
+          "paths": [
+            "webpack-dev-server>selfsigned>node-forge"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2022-0122\n- https://github.com/digitalbazaar/forge/commit/db8016c805371e72b06d8e2edfe0ace0df934a5e\n- https://huntr.dev/bounties/41852c50-3c6d-4703-8c55-4db27164a4ae\n- https://github.com/advisories/GHSA-8fr3-hfg3-gpgp",
+      "created": "2022-01-21T23:36:19.000Z",
+      "id": 1093719,
+      "npm_advisory_id": null,
+      "overview": "parseUrl functionality in node-forge mishandles certain uses of backslash such as `https:/\\/\\/\\` and interprets the URI as a relative path. ",
+      "reported_by": null,
+      "title": "Open Redirect in node-forge",
+      "metadata": null,
+      "cves": [
+        "CVE-2022-0122"
+      ],
+      "access": "public",
+      "severity": "moderate",
+      "module_name": "node-forge",
+      "vulnerable_versions": "<1.0.0",
+      "github_advisory_id": "GHSA-8fr3-hfg3-gpgp",
+      "recommendation": "Upgrade to version 1.0.0 or later",
+      "patched_versions": ">=1.0.0",
+      "updated": "2023-09-11T22:42:43.000Z",
+      "cvss": {
+        "score": 6.1,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+      },
+      "cwe": [
+        "CWE-601"
+      ],
+      "url": "https://github.com/advisories/GHSA-8fr3-hfg3-gpgp"
+    },
+    "1093780": {
+      "findings": [
+        {
+          "version": "1.3.6",
+          "paths": [
+            "url-loader>mime"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2017-16138\n- https://github.com/broofa/node-mime/issues/167\n- https://github.com/broofa/mime/commit/1df903fdeb9ae7eaa048795b8d580ce2c98f40b0\n- https://github.com/broofa/mime/commit/855d0c4b8b22e4a80b9401a81f2872058eae274d\n- https://github.com/advisories/GHSA-wrvr-8mpx-r7pp",
+      "created": "2018-07-20T16:20:52.000Z",
+      "id": 1093780,
+      "npm_advisory_id": null,
+      "overview": "Affected versions of `mime` are vulnerable to regular expression denial of service when a mime lookup is performed on untrusted user input.\n\n\n## Recommendation\n\nUpdate to version 2.0.3 or later.",
+      "reported_by": null,
+      "title": "mime Regular Expression Denial of Service when MIME lookup performed on untrusted user input",
+      "metadata": null,
+      "cves": [
+        "CVE-2017-16138"
+      ],
+      "access": "public",
+      "severity": "high",
+      "module_name": "mime",
+      "vulnerable_versions": "<1.4.1",
+      "github_advisory_id": "GHSA-wrvr-8mpx-r7pp",
+      "recommendation": "Upgrade to version 1.4.1 or later",
+      "patched_versions": ">=1.4.1",
+      "updated": "2023-09-12T18:28:55.000Z",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "cwe": [
+        "CWE-400"
+      ],
+      "url": "https://github.com/advisories/GHSA-wrvr-8mpx-r7pp"
+    },
+    "1094077": {
+      "findings": [
+        {
+          "version": "5.3.0",
+          "paths": [
+            "copy-webpack-plugin>cacache>ssri"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2021-27290\n- https://github.com/npm/ssri/commit/76e223317d971f19e4db8191865bdad5edee40d2\n- https://doyensec.com/resources/Doyensec_Advisory_ssri_redos.pdf\n- https://github.com/yetingli/SaveResults/blob/main/pdf/ssri-redos.pdf\n- https://github.com/npm/ssri/commit/b30dfdb00bb94ddc49a25a85a18fb27afafdfbb1\n- https://www.npmjs.com/package/ssri\n- https://github.com/npm/ssri/pull/20#issuecomment-842677644\n- https://npmjs.com\n- https://www.oracle.com/security-alerts/cpuoct2021.html\n- https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf\n- https://github.com/npm/ssri/commit/809c84d09ea87c3857fa171d42914586899d4538\n- https://github.com/advisories/GHSA-vx3p-948g-6vhq",
+      "created": "2021-03-19T21:24:36.000Z",
+      "id": 1094077,
+      "npm_advisory_id": null,
+      "overview": "npm `ssri` 5.2.2-6.0.1 and 7.0.0-8.0.0, processes SRIs using a regular expression which is vulnerable to a denial of service. Malicious SRIs could take an extremely long time to process, leading to denial of service. This issue only affects consumers using the strict option.",
+      "reported_by": null,
+      "title": "Regular Expression Denial of Service (ReDoS)",
+      "metadata": null,
+      "cves": [
+        "CVE-2021-27290"
+      ],
+      "access": "public",
+      "severity": "high",
+      "module_name": "ssri",
+      "vulnerable_versions": ">=5.2.2 <6.0.2",
+      "github_advisory_id": "GHSA-vx3p-948g-6vhq",
+      "recommendation": "Upgrade to version 6.0.2 or later",
+      "patched_versions": ">=6.0.2",
+      "updated": "2023-09-21T21:52:28.000Z",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "cwe": [
+        "CWE-400"
+      ],
+      "url": "https://github.com/advisories/GHSA-vx3p-948g-6vhq"
+    },
+    "1094081": {
+      "findings": [
+        {
+          "version": "2.1.0",
+          "paths": [
+            "css-loader>cssnano>postcss-svgo>is-svg"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2021-28092\n- https://github.com/sindresorhus/is-svg/commit/01f8a087fab8a69c3ac9085fbb16035907ab6a5b\n- https://github.com/sindresorhus/is-svg/releases\n- https://github.com/sindresorhus/is-svg/releases/tag/v4.2.2\n- https://www.npmjs.com/package/is-svg\n- https://security.netapp.com/advisory/ntap-20210513-0008/\n- https://github.com/advisories/GHSA-7r28-3m3f-r2pr",
+      "created": "2021-03-19T21:25:50.000Z",
+      "id": 1094081,
+      "npm_advisory_id": null,
+      "overview": "The is-svg package 2.1.0 through 4.2.1 for Node.js uses a regular expression that is vulnerable to Regular Expression Denial of Service (ReDoS). If an attacker provides a malicious string, is-svg will get stuck processing the input.",
+      "reported_by": null,
+      "title": "Regular Expression Denial of Service (ReDoS)",
+      "metadata": null,
+      "cves": [
+        "CVE-2021-28092"
+      ],
+      "access": "public",
+      "severity": "high",
+      "module_name": "is-svg",
+      "vulnerable_versions": ">=2.1.0 <4.2.2",
+      "github_advisory_id": "GHSA-7r28-3m3f-r2pr",
+      "recommendation": "Upgrade to version 4.2.2 or later",
+      "patched_versions": ">=4.2.2",
+      "updated": "2023-09-21T22:04:01.000Z",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "cwe": [
+        "CWE-400"
+      ],
+      "url": "https://github.com/advisories/GHSA-7r28-3m3f-r2pr"
+    },
+    "1094088": {
+      "findings": [
+        {
+          "version": "0.2.17",
+          "paths": [
+            "html-webpack-plugin>loader-utils"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2022-37601\n- https://github.com/webpack/loader-utils/issues/212\n- https://github.com/webpack/loader-utils/releases/tag/v2.0.3\n- https://github.com/webpack/loader-utils/pull/217\n- https://github.com/webpack/loader-utils/pull/220\n- https://github.com/webpack/loader-utils/releases/tag/v1.4.1\n- https://github.com/webpack/loader-utils/issues/212#issuecomment-1319192884\n- https://github.com/xmldom/xmldom/issues/436#issuecomment-1319412826\n- https://dl.acm.org/doi/abs/10.1145/3488932.3497769\n- https://dl.acm.org/doi/pdf/10.1145/3488932.3497769\n- https://lists.debian.org/debian-lts-announce/2022/12/msg00044.html\n- http://users.encs.concordia.ca/~mmannan/publications/JS-vulnerability-aisaccs2022.pdf\n- https://github.com/webpack/loader-utils/commit/f4e48a232fae900237c3e5ff7b57ce9e1c734de1\n- https://github.com/webpack/loader-utils/commit/4504e34c4796a5836ef70458327351675aed48a5\n- https://github.com/webpack/loader-utils/commit/a93cf6f4702012030f6b5ee8340d5c95ec1c7d4c\n- https://github.com/advisories/GHSA-76p3-8jx3-jpfq",
+      "created": "2022-10-13T12:00:28.000Z",
+      "id": 1094088,
+      "npm_advisory_id": null,
+      "overview": "Prototype pollution vulnerability in function parseQuery in parseQuery.js in webpack loader-utils prior to version 2.0.3 via the name variable in parseQuery.js.",
+      "reported_by": null,
+      "title": "Prototype pollution in webpack loader-utils",
+      "metadata": null,
+      "cves": [
+        "CVE-2022-37601"
+      ],
+      "access": "public",
+      "severity": "critical",
+      "module_name": "loader-utils",
+      "vulnerable_versions": "<1.4.1",
+      "github_advisory_id": "GHSA-76p3-8jx3-jpfq",
+      "recommendation": "Upgrade to version 1.4.1 or later",
+      "patched_versions": ">=1.4.1",
+      "updated": "2023-09-21T22:15:51.000Z",
+      "cvss": {
+        "score": 9.8,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+      },
+      "cwe": [
+        "CWE-1321"
+      ],
+      "url": "https://github.com/advisories/GHSA-76p3-8jx3-jpfq"
+    },
+    "1094544": {
+      "findings": [
+        {
+          "version": "6.0.23",
+          "paths": [
+            "autoprefixer>postcss",
+            "css-loader>icss-utils>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss",
+            "css-loader>cssnano>autoprefixer>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-calc>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-colormin>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-convert-values>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-discard-comments>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-discard-duplicates>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-discard-empty>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-discard-overridden>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-discard-unused>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-filter-plugins>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-merge-idents>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-merge-longhand>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-merge-rules>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-minify-font-values>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-minify-gradients>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-minify-params>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-minify-selectors>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-normalize-charset>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-normalize-url>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-ordered-values>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-reduce-idents>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-reduce-initial>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-reduce-transforms>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-svgo>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-unique-selectors>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>cssnano>postcss-zindex>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "css-loader>postcss"
+          ]
+        },
+        {
+          "version": "7.0.39",
+          "paths": [
+            "optimize-css-assets-webpack-plugin>cssnano>cssnano-preset-default>css-declaration-sorter>postcss"
+          ]
+        },
+        {
+          "version": "7.0.39",
+          "paths": [
+            "optimize-css-assets-webpack-plugin>cssnano>cssnano-preset-default>cssnano-util-raw-cache>postcss"
+          ]
+        },
+        {
+          "version": "7.0.39",
+          "paths": [
+            "optimize-css-assets-webpack-plugin>cssnano>cssnano-preset-default>postcss",
+            "optimize-css-assets-webpack-plugin>cssnano>cssnano-preset-default>postcss-calc>postcss"
+          ]
+        },
+        {
+          "version": "7.0.39",
+          "paths": [
+            "optimize-css-assets-webpack-plugin>cssnano>cssnano-preset-default>postcss-merge-longhand>stylehacks>postcss"
+          ]
+        },
+        {
+          "version": "7.0.39",
+          "paths": [
+            "optimize-css-assets-webpack-plugin>cssnano>cssnano-preset-default>postcss-normalize-display-values>postcss"
+          ]
+        },
+        {
+          "version": "7.0.39",
+          "paths": [
+            "optimize-css-assets-webpack-plugin>cssnano>cssnano-preset-default>postcss-normalize-positions>postcss"
+          ]
+        },
+        {
+          "version": "7.0.39",
+          "paths": [
+            "optimize-css-assets-webpack-plugin>cssnano>cssnano-preset-default>postcss-normalize-repeat-style>postcss"
+          ]
+        },
+        {
+          "version": "7.0.39",
+          "paths": [
+            "optimize-css-assets-webpack-plugin>cssnano>cssnano-preset-default>postcss-normalize-string>postcss"
+          ]
+        },
+        {
+          "version": "7.0.39",
+          "paths": [
+            "optimize-css-assets-webpack-plugin>cssnano>cssnano-preset-default>postcss-normalize-timing-functions>postcss"
+          ]
+        },
+        {
+          "version": "7.0.39",
+          "paths": [
+            "optimize-css-assets-webpack-plugin>cssnano>cssnano-preset-default>postcss-normalize-unicode>postcss"
+          ]
+        },
+        {
+          "version": "7.0.39",
+          "paths": [
+            "optimize-css-assets-webpack-plugin>cssnano>cssnano-preset-default>postcss-normalize-whitespace>postcss"
+          ]
+        },
+        {
+          "version": "7.0.39",
+          "paths": [
+            "optimize-css-assets-webpack-plugin>cssnano>postcss"
+          ]
+        },
+        {
+          "version": "5.2.18",
+          "paths": [
+            "svg-sprite-loader>svg-baker>postcss",
+            "svg-sprite-loader>svg-baker-runtime>svg-baker>postcss"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2023-44270\n- https://github.com/postcss/postcss/commit/58cc860b4c1707510c9cd1bc1fa30b423a9ad6c5\n- https://github.com/postcss/postcss/blob/main/lib/tokenize.js#L25\n- https://github.com/postcss/postcss/releases/tag/8.4.31\n- https://github.com/github/advisory-database/issues/2820\n- https://github.com/advisories/GHSA-7fh5-64p2-3v2j",
+      "created": "2023-09-30T00:31:10.000Z",
+      "id": 1094544,
+      "npm_advisory_id": null,
+      "overview": "An issue was discovered in PostCSS before 8.4.31. It affects linters using PostCSS to parse external Cascading Style Sheets (CSS). There may be `\\r` discrepancies, as demonstrated by `@font-face{ font:(\\r/*);}` in a rule.\n\nThis vulnerability affects linters using PostCSS to parse external untrusted CSS. An attacker can prepare CSS in such a way that it will contains parts parsed by PostCSS as a CSS comment. After processing by PostCSS, it will be included in the PostCSS output in CSS nodes (rules, properties) despite being originally included in a comment.",
+      "reported_by": null,
+      "title": "PostCSS line return parsing error",
+      "metadata": null,
+      "cves": [
+        "CVE-2023-44270"
+      ],
+      "access": "public",
+      "severity": "moderate",
+      "module_name": "postcss",
+      "vulnerable_versions": "<8.4.31",
+      "github_advisory_id": "GHSA-7fh5-64p2-3v2j",
+      "recommendation": "Upgrade to version 8.4.31 or later",
+      "patched_versions": ">=8.4.31",
+      "updated": "2023-11-05T05:05:37.000Z",
+      "cvss": {
+        "score": 5.3,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+      },
+      "cwe": [
+        "CWE-74",
+        "CWE-144"
+      ],
+      "url": "https://github.com/advisories/GHSA-7fh5-64p2-3v2j"
+    },
+    "1095006": {
+      "findings": [
+        {
+          "version": "0.1.6",
+          "paths": [
+            "webpack-dev-server>sockjs-client>eventsource"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2022-1650\n- https://github.com/eventsource/eventsource/commit/10ee0c4881a6ba2fe65ec18ed195ac35889583c4\n- https://huntr.dev/bounties/dc9e467f-be5d-4945-867d-1044d27e9b8e\n- https://github.com/EventSource/eventsource/pull/273#issuecomment-1127624508\n- https://github.com/EventSource/eventsource/commit/f9f6416567bff62c1af2f4314be51d9870e94bc2\n- https://lists.debian.org/debian-lts-announce/2022/12/msg00021.html\n- https://github.com/advisories/GHSA-6h5x-7c5m-7cr7",
+      "created": "2022-05-13T00:01:12.000Z",
+      "id": 1095006,
+      "npm_advisory_id": null,
+      "overview": "When fetching an url with a link to an external site (Redirect), the users Cookies & Autorisation headers are leaked to the third party application. According to the same-origin-policy, the header should be \"sanitized.\"",
+      "reported_by": null,
+      "title": "Exposure of Sensitive Information in eventsource",
+      "metadata": null,
+      "cves": [
+        "CVE-2022-1650"
+      ],
+      "access": "public",
+      "severity": "critical",
+      "module_name": "eventsource",
+      "vulnerable_versions": "<1.1.1",
+      "github_advisory_id": "GHSA-6h5x-7c5m-7cr7",
+      "recommendation": "Upgrade to version 1.1.1 or later",
+      "patched_versions": ">=1.1.1",
+      "updated": "2023-11-28T23:43:16.000Z",
+      "cvss": {
+        "score": 9.3,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N"
+      },
+      "cwe": [
+        "CWE-200",
+        "CWE-212"
+      ],
+      "url": "https://github.com/advisories/GHSA-6h5x-7c5m-7cr7"
+    },
+    "1095058": {
+      "findings": [
+        {
+          "version": "3.7.0",
+          "paths": [
+            "vue-loader>postcss-load-config>cosmiconfig>js-yaml",
+            "css-loader>cssnano>postcss-svgo>svgo>js-yaml"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://github.com/nodeca/js-yaml/pull/480\n- https://www.npmjs.com/advisories/813\n- https://github.com/nodeca/js-yaml/pull/480/commits/e18afbf1edcafb7add2c4c7b22abc8d6ebc2fa61\n- https://github.com/advisories/GHSA-8j8c-7jfh-h6hx",
+      "created": "2019-06-04T20:14:07.000Z",
+      "id": 1095058,
+      "npm_advisory_id": null,
+      "overview": "Versions of `js-yaml` prior to 3.13.1 are vulnerable to Code Injection. The `load()` function may execute arbitrary code injected through a malicious YAML file. Objects that have `toString` as key, JavaScript code as value and are used as explicit mapping keys allow attackers to execute the supplied code through the `load()` function. The `safeLoad()` function is unaffected.\n\nAn example payload is \n`{ toString: !<tag:yaml.org,2002:js/function> 'function (){return Date.now()}' } : 1` \nwhich returns the object \n{\n  \"1553107949161\": 1\n}\n\n\n## Recommendation\n\nUpgrade to version 3.13.1.",
+      "reported_by": null,
+      "title": "Code Injection in js-yaml",
+      "metadata": null,
+      "cves": [],
+      "access": "public",
+      "severity": "high",
+      "module_name": "js-yaml",
+      "vulnerable_versions": "<3.13.1",
+      "github_advisory_id": "GHSA-8j8c-7jfh-h6hx",
+      "recommendation": "Upgrade to version 3.13.1 or later",
+      "patched_versions": ">=3.13.1",
+      "updated": "2023-11-29T20:43:52.000Z",
+      "cvss": {
+        "score": 0,
+        "vectorString": null
+      },
+      "cwe": [
+        "CWE-94"
+      ],
+      "url": "https://github.com/advisories/GHSA-8j8c-7jfh-h6hx"
+    },
+    "1095100": {
+      "findings": [
+        {
+          "version": "1.0.0",
+          "paths": [
+            "webpack-dev-server>internal-ip>meow>trim-newlines"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2021-33623\n- https://github.com/sindresorhus/trim-newlines/commit/25246c6ce5eea1c82d448998733a6302a4350d91\n- https://github.com/sindresorhus/trim-newlines/releases/tag/v4.0.1\n- https://www.npmjs.com/package/trim-newlines\n- https://security.netapp.com/advisory/ntap-20210702-0007/\n- https://lists.debian.org/debian-lts-announce/2022/12/msg00033.html\n- https://github.com/sindresorhus/trim-newlines/commit/b10d5f4afef832b16bc56d49fc52c68cbd403869\n- https://github.com/advisories/GHSA-7p7h-4mm5-852v",
+      "created": "2021-06-07T22:10:39.000Z",
+      "id": 1095100,
+      "npm_advisory_id": null,
+      "overview": "@rkesters/gnuplot is an easy to use node module to draw charts using gnuplot and ps2pdf. The trim-newlines package before 3.0.1 and 4.x before 4.0.1 for Node.js has an issue related to regular expression denial-of-service (ReDoS) for the `.end()` method.",
+      "reported_by": null,
+      "title": "Uncontrolled Resource Consumption in trim-newlines",
+      "metadata": null,
+      "cves": [
+        "CVE-2021-33623"
+      ],
+      "access": "public",
+      "severity": "high",
+      "module_name": "trim-newlines",
+      "vulnerable_versions": "<3.0.1",
+      "github_advisory_id": "GHSA-7p7h-4mm5-852v",
+      "recommendation": "Upgrade to version 3.0.1 or later",
+      "patched_versions": ">=3.0.1",
+      "updated": "2023-11-29T22:33:19.000Z",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "cwe": [
+        "CWE-400"
+      ],
+      "url": "https://github.com/advisories/GHSA-7p7h-4mm5-852v"
+    },
+    "1095126": {
+      "findings": [
+        {
+          "version": "0.7.8",
+          "paths": [
+            "shelljs"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2022-0144\n- https://github.com/shelljs/shelljs/commit/d919d22dd6de385edaa9d90313075a77f74b338c\n- https://huntr.dev/bounties/50996581-c08e-4eed-a90e-c0bac082679c\n- https://github.com/advisories/GHSA-4rq4-32rv-6wp6",
+      "created": "2022-01-21T23:37:28.000Z",
+      "id": 1095126,
+      "npm_advisory_id": null,
+      "overview": "shelljs is vulnerable to Improper Privilege Management",
+      "reported_by": null,
+      "title": "Improper Privilege Management in shelljs",
+      "metadata": null,
+      "cves": [
+        "CVE-2022-0144"
+      ],
+      "access": "public",
+      "severity": "high",
+      "module_name": "shelljs",
+      "vulnerable_versions": "<0.8.5",
+      "github_advisory_id": "GHSA-4rq4-32rv-6wp6",
+      "recommendation": "Upgrade to version 0.8.5 or later",
+      "patched_versions": ">=0.8.5",
+      "updated": "2023-11-29T22:21:11.000Z",
+      "cvss": {
+        "score": 7.1,
+        "vectorString": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H"
+      },
+      "cwe": [
+        "CWE-269"
+      ],
+      "url": "https://github.com/advisories/GHSA-4rq4-32rv-6wp6"
+    },
+    "1095131": {
+      "findings": [
+        {
+          "version": "1.9.1",
+          "paths": [
+            "copy-webpack-plugin>serialize-javascript"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2020-7660\n- https://github.com/yahoo/serialize-javascript/commit/f21a6fb3ace2353413761e79717b2d210ba6ccbd\n- https://github.com/advisories/GHSA-hxcc-f52p-wc94",
+      "created": "2020-08-11T17:21:13.000Z",
+      "id": 1095131,
+      "npm_advisory_id": null,
+      "overview": "serialize-javascript prior to 3.1.0 allows remote attackers to inject arbitrary code via the function \"deleteFunctions\" within \"index.js\". \n\nAn object such as `{\"foo\": /1\"/, \"bar\": \"a\\\"@__R-<UID>-0__@\"}` was serialized as `{\"foo\": /1\"/, \"bar\": \"a\\/1\"/}`, which allows an attacker to escape the `bar` key. This requires the attacker to control the values of both `foo` and `bar` and guess the value of `<UID>`. The UID has a keyspace of approximately 4 billion making it a realistic network attack.",
+      "reported_by": null,
+      "title": "Insecure serialization leading to RCE in serialize-javascript",
+      "metadata": null,
+      "cves": [
+        "CVE-2020-7660"
+      ],
+      "access": "public",
+      "severity": "high",
+      "module_name": "serialize-javascript",
+      "vulnerable_versions": "<3.1.0",
+      "github_advisory_id": "GHSA-hxcc-f52p-wc94",
+      "recommendation": "Upgrade to version 3.1.0 or later",
+      "patched_versions": ">=3.1.0",
+      "updated": "2023-11-29T22:19:43.000Z",
+      "cvss": {
+        "score": 8.1,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+      },
+      "cwe": [
+        "CWE-502"
+      ],
+      "url": "https://github.com/advisories/GHSA-hxcc-f52p-wc94"
+    },
+    "1095141": {
+      "findings": [
+        {
+          "version": "1.0.2",
+          "paths": [
+            "optimize-css-assets-webpack-plugin>cssnano>cssnano-preset-default>postcss-svgo>svgo>css-select>nth-check"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2021-3803\n- https://github.com/fb55/nth-check/commit/9894c1d2010870c351f66c6f6efcf656e26bb726\n- https://huntr.dev/bounties/8cf8cc06-d2cf-4b4e-b42c-99fafb0b04d0\n- https://lists.debian.org/debian-lts-announce/2023/05/msg00023.html\n- https://github.com/advisories/GHSA-rp65-9cf3-cjxr",
+      "created": "2021-09-20T20:47:31.000Z",
+      "id": 1095141,
+      "npm_advisory_id": null,
+      "overview": "There is a Regular Expression Denial of Service (ReDoS) vulnerability in nth-check that causes a denial of service when parsing crafted invalid CSS nth-checks.\n\nThe ReDoS vulnerabilities of the regex are mainly due to the sub-pattern `\\s*(?:([+-]?)\\s*(\\d+))?` with quantified overlapping adjacency and can be exploited with the following code.\n\n**Proof of Concept**\n```js\n// PoC.js\nvar nthCheck = require(\"nth-check\")\nfor(var i = 1; i <= 50000; i++) {\n    var time = Date.now();\n    var attack_str = '2n' + ' '.repeat(i*10000)+\"!\";\n    try {\n        nthCheck.parse(attack_str) \n    }\n    catch(err) {\n        var time_cost = Date.now() - time;\n        console.log(\"attack_str.length: \" + attack_str.length + \": \" + time_cost+\" ms\")\n    }\n}\n```\n\n**The Output**\n```\nattack_str.length: 10003: 174 ms\nattack_str.length: 20003: 1427 ms\nattack_str.length: 30003: 2602 ms\nattack_str.length: 40003: 4378 ms\nattack_str.length: 50003: 7473 ms\n```",
+      "reported_by": null,
+      "title": "Inefficient Regular Expression Complexity in nth-check",
+      "metadata": null,
+      "cves": [
+        "CVE-2021-3803"
+      ],
+      "access": "public",
+      "severity": "high",
+      "module_name": "nth-check",
+      "vulnerable_versions": "<2.0.1",
+      "github_advisory_id": "GHSA-rp65-9cf3-cjxr",
+      "recommendation": "Upgrade to version 2.0.1 or later",
+      "patched_versions": ">=2.0.1",
+      "updated": "2023-11-29T22:11:25.000Z",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "cwe": [
+        "CWE-1333"
+      ],
+      "url": "https://github.com/advisories/GHSA-rp65-9cf3-cjxr"
+    },
+    "1096353": {
+      "findings": [
+        {
+          "version": "1.4.1",
+          "paths": [
+            "axios>follow-redirects",
+            "webpack-dev-server>http-proxy-middleware>http-proxy>follow-redirects"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2023-26159\n- https://github.com/follow-redirects/follow-redirects/issues/235\n- https://github.com/follow-redirects/follow-redirects/pull/236\n- https://security.snyk.io/vuln/SNYK-JS-FOLLOWREDIRECTS-6141137\n- https://github.com/follow-redirects/follow-redirects/commit/7a6567e16dfa9ad18a70bfe91784c28653fbf19d\n- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZZ425BFKNBQ6AK7I5SAM56TWON5OF2XM/\n- https://github.com/advisories/GHSA-jchw-25xp-jwwc",
+      "created": "2024-01-02T06:30:30.000Z",
+      "id": 1096353,
+      "npm_advisory_id": null,
+      "overview": "Versions of the package follow-redirects before 1.15.4 are vulnerable to Improper Input Validation due to the improper handling of URLs by the url.parse() function. When new URL() throws an error, it can be manipulated to misinterpret the hostname. An attacker could exploit this weakness to redirect traffic to a malicious site, potentially leading to information disclosure, phishing attacks, or other security breaches.",
+      "reported_by": null,
+      "title": "Follow Redirects improperly handles URLs in the url.parse() function",
+      "metadata": null,
+      "cves": [
+        "CVE-2023-26159"
+      ],
+      "access": "public",
+      "severity": "moderate",
+      "module_name": "follow-redirects",
+      "vulnerable_versions": "<1.15.4",
+      "github_advisory_id": "GHSA-jchw-25xp-jwwc",
+      "recommendation": "Upgrade to version 1.15.4 or later",
+      "patched_versions": ">=1.15.4",
+      "updated": "2024-01-31T05:07:10.000Z",
+      "cvss": {
+        "score": 6.1,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+      },
+      "cwe": [
+        "CWE-20",
+        "CWE-601"
+      ],
+      "url": "https://github.com/advisories/GHSA-jchw-25xp-jwwc"
+    },
+    "1096543": {
+      "findings": [
+        {
+          "version": "0.5.1",
+          "paths": [
+            "babel-core>json5",
+            "html-webpack-plugin>loader-utils>json5"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://github.com/json5/json5/security/advisories/GHSA-9c47-m6qq-7p4h\n- https://nvd.nist.gov/vuln/detail/CVE-2022-46175\n- https://github.com/json5/json5/issues/199\n- https://github.com/json5/json5/issues/295\n- https://github.com/json5/json5/pull/298\n- https://github.com/json5/json5/commit/62a65408408d40aeea14c7869ed327acead12972\n- https://github.com/json5/json5/commit/7774c1097993bc3ce9f0ac4b722a32bf7d6871c8\n- https://lists.debian.org/debian-lts-announce/2023/11/msg00021.html\n- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3S26TLPLVFAJTUN3VIXFDEBEXDYO22CE\n- https://github.com/advisories/GHSA-9c47-m6qq-7p4h",
+      "created": "2022-12-29T01:51:03.000Z",
+      "id": 1096543,
+      "npm_advisory_id": null,
+      "overview": "The `parse` method of the JSON5 library before and including version `2.2.1` does not restrict parsing of keys named `__proto__`, allowing specially crafted strings to pollute the prototype of the resulting object.\n\nThis vulnerability pollutes the prototype of the object returned by `JSON5.parse` and not the global Object prototype, which is the commonly understood definition of Prototype Pollution. However, polluting the prototype of a single object can have significant security impact for an application if the object is later used in trusted operations.\n\n## Impact\nThis vulnerability could allow an attacker to set arbitrary and unexpected keys on the object returned from `JSON5.parse`. The actual impact will depend on how applications utilize the returned object and how they filter unwanted keys, but could include denial of service, cross-site scripting, elevation of privilege, and in extreme cases, remote code execution.\n\n## Mitigation\nThis vulnerability is patched in json5 v2.2.2 and later. A patch has also been backported for json5 v1 in versions v1.0.2 and later.\n\n## Details\n \nSuppose a developer wants to allow users and admins to perform some risky operation, but they want to restrict what non-admins can do. To accomplish this, they accept a JSON blob from the user, parse it using `JSON5.parse`, confirm that the provided data does not set some sensitive keys, and then performs the risky operation using the validated data:\n \n```js\nconst JSON5 = require('json5');\n\nconst doSomethingDangerous = (props) => {\n  if (props.isAdmin) {\n    console.log('Doing dangerous thing as admin.');\n  } else {\n    console.log('Doing dangerous thing as user.');\n  }\n};\n\nconst secCheckKeysSet = (obj, searchKeys) => {\n  let searchKeyFound = false;\n  Object.keys(obj).forEach((key) => {\n    if (searchKeys.indexOf(key) > -1) {\n      searchKeyFound = true;\n    }\n  });\n  return searchKeyFound;\n};\n\nconst props = JSON5.parse('{\"foo\": \"bar\"}');\nif (!secCheckKeysSet(props, ['isAdmin', 'isMod'])) {\n  doSomethingDangerous(props); // \"Doing dangerous thing as user.\"\n} else {\n  throw new Error('Forbidden...');\n}\n```\n \nIf the user attempts to set the `isAdmin` key, their request will be rejected:\n \n```js\nconst props = JSON5.parse('{\"foo\": \"bar\", \"isAdmin\": true}');\nif (!secCheckKeysSet(props, ['isAdmin', 'isMod'])) {\n  doSomethingDangerous(props);\n} else {\n  throw new Error('Forbidden...'); // Error: Forbidden...\n}\n```\n \nHowever, users can instead set the `__proto__` key to `{\"isAdmin\": true}`. `JSON5` will parse this key and will set the `isAdmin` key on the prototype of the returned object, allowing the user to bypass the security check and run their request as an admin:\n \n```js\nconst props = JSON5.parse('{\"foo\": \"bar\", \"__proto__\": {\"isAdmin\": true}}');\nif (!secCheckKeysSet(props, ['isAdmin', 'isMod'])) {\n  doSomethingDangerous(props); // \"Doing dangerous thing as admin.\"\n} else {\n  throw new Error('Forbidden...');\n}\n ```",
+      "reported_by": null,
+      "title": "Prototype Pollution in JSON5 via Parse Method",
+      "metadata": null,
+      "cves": [
+        "CVE-2022-46175"
+      ],
+      "access": "public",
+      "severity": "high",
+      "module_name": "json5",
+      "vulnerable_versions": "<1.0.2",
+      "github_advisory_id": "GHSA-9c47-m6qq-7p4h",
+      "recommendation": "Upgrade to version 1.0.2 or later",
+      "patched_versions": ">=1.0.2",
+      "updated": "2024-02-22T05:08:21.000Z",
+      "cvss": {
+        "score": 7.1,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:L/A:H"
+      },
+      "cwe": [
+        "CWE-1321"
+      ],
+      "url": "https://github.com/advisories/GHSA-9c47-m6qq-7p4h"
+    },
+    "1096727": {
+      "findings": [
+        {
+          "version": "2.88.2",
+          "paths": [
+            "retire>request"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2023-28155\n- https://github.com/request/request/issues/3442\n- https://github.com/request/request/pull/3444\n- https://doyensec.com/resources/Doyensec_Advisory_RequestSSRF_Q12023.pdf\n- https://github.com/github/advisory-database/pull/2500\n- https://github.com/cypress-io/request/blob/master/lib/redirect.js#L116\n- https://github.com/request/request/blob/master/lib/redirect.js#L111\n- https://github.com/cypress-io/request/pull/28\n- https://github.com/cypress-io/request/commit/c5bcf21d40fb61feaff21a0e5a2b3934a440024f\n- https://github.com/cypress-io/request/releases/tag/v3.0.0\n- https://security.netapp.com/advisory/ntap-20230413-0007\n- https://github.com/advisories/GHSA-p8p7-x288-28g6",
+      "created": "2023-03-16T15:30:19.000Z",
+      "id": 1096727,
+      "npm_advisory_id": null,
+      "overview": "The `request` package through 2.88.2 for Node.js and the `@cypress/request` package prior to 3.0.0 allow a bypass of SSRF mitigations via an attacker-controller server that does a cross-protocol redirect (HTTP to HTTPS, or HTTPS to HTTP).\n\nNOTE: The `request` package is no longer supported by the maintainer.",
+      "reported_by": null,
+      "title": "Server-Side Request Forgery in Request",
+      "metadata": null,
+      "cves": [
+        "CVE-2023-28155"
+      ],
+      "access": "public",
+      "severity": "moderate",
+      "module_name": "request",
+      "vulnerable_versions": "<=2.88.2",
+      "github_advisory_id": "GHSA-p8p7-x288-28g6",
+      "recommendation": "None",
+      "patched_versions": "<0.0.0",
+      "updated": "2024-03-21T17:47:21.000Z",
+      "cvss": {
+        "score": 6.1,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+      },
+      "cwe": [
+        "CWE-918"
+      ],
+      "url": "https://github.com/advisories/GHSA-p8p7-x288-28g6"
+    },
+    "1096729": {
+      "findings": [
+        {
+          "version": "1.12.2",
+          "paths": [
+            "webpack-dev-server>webpack-dev-middleware"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://github.com/webpack/webpack-dev-middleware/security/advisories/GHSA-wr3j-pwj9-hqq6\n- https://nvd.nist.gov/vuln/detail/CVE-2024-29180\n- https://github.com/webpack/webpack-dev-middleware/commit/189c4ac7d2344ec132a4689e74dc837ec5be0132\n- https://github.com/webpack/webpack-dev-middleware/commit/9670b3495da518fe667ff3428c5e4cb9f2f3d353\n- https://github.com/webpack/webpack-dev-middleware/commit/e10008c762e4d5821ed6990348dabf0d4d93a10e\n- https://github.com/webpack/webpack-dev-middleware/blob/7ed24e0b9f53ad1562343f9f517f0f0ad2a70377/src/utils/getFilenameFromUrl.js#L82\n- https://github.com/webpack/webpack-dev-middleware/blob/7ed24e0b9f53ad1562343f9f517f0f0ad2a70377/src/utils/setupOutputFileSystem.js#L21\n- https://github.com/webpack/webpack-dev-middleware/releases/tag/v5.3.4\n- https://github.com/webpack/webpack-dev-middleware/releases/tag/v6.1.2\n- https://github.com/webpack/webpack-dev-middleware/releases/tag/v7.1.0\n- https://github.com/advisories/GHSA-wr3j-pwj9-hqq6",
+      "created": "2024-03-21T18:59:28.000Z",
+      "id": 1096729,
+      "npm_advisory_id": null,
+      "overview": "### Summary\n_The **webpack-dev-middleware** middleware does not validate the supplied URL address sufficiently before returning the local file. It is possible to access any file on the developer's machine._\n\n### Details\nThe middleware can either work with the physical filesystem when reading the files or it can use a virtualized in-memory _memfs_ filesystem.\nIf _writeToDisk_ configuration option is set to **true**, the physical filesystem is used:\n[https://github.com/webpack/webpack-dev-middleware/blob/7ed24e0b9f53ad1562343f9f517f0f0ad2a70377/src/utils/setupOutputFileSystem.js#L21](https://github.com/webpack/webpack-dev-middleware/blob/7ed24e0b9f53ad1562343f9f517f0f0ad2a70377/src/utils/setupOutputFileSystem.js#L21)\n\nThe _**getFilenameFromUrl**_ method is used to parse URL and build the local file path.\nThe public path prefix is stripped from the URL, and the **unsecaped** path suffix is appended to the _outputPath_:\n[https://github.com/webpack/webpack-dev-middleware/blob/7ed24e0b9f53ad1562343f9f517f0f0ad2a70377/src/utils/getFilenameFromUrl.js#L82](https://github.com/webpack/webpack-dev-middleware/blob/7ed24e0b9f53ad1562343f9f517f0f0ad2a70377/src/utils/getFilenameFromUrl.js#L82)\nAs the URL is not unescaped and normalized automatically before calling the midlleware, it is possible to use _%2e_ and _%2f_ sequences to perform path traversal attack.\n\n### PoC\n_A blank project can be created containing the following configuration file **webpack.config.js**:_\n`module.exports = {\n  devServer: {\n    devMiddleware: {\n      writeToDisk: true\n    }\n  }\n};\n`\n\nWhen started, it is possible to access any local file, e.g. _/etc/passwd_:\n`$ curl localhost:8080/public/..%2f..%2f..%2f..%2f../etc/passwd`\n```\nroot:x:0:0:root:/root:/bin/bash\ndaemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin\nbin:x:2:2:bin:/bin:/usr/sbin/nologin\nsys:x:3:3:sys:/dev:/usr/sbin/nologin\nsync:x:4:65534:sync:/bin:/bin/sync\ngames:x:5:60:games:/usr/games:/usr/sbin/nologin\n```\n\n### Impact\nThe developers using _webpack-dev-server_ or _webpack-dev-middleware_ are affected by the issue. When the project is started, an attacker might access any file on the developer's machine and exfiltrate the content (e.g. password, configuration files, private source code, ...).\n\nIf the development server is listening on a public IP address (or **0.0.0.0**), an attacker on the local network can access the local files without any interaction from the victim (direct connection to the port).\n\nIf the server allows access from third-party domains (CORS, **_Allow-Access-Origin: *_** ), an attacker can send a malicious link to the victim. When visited, the client side script can connect to the local server and exfiltrate the local files.\n\n### Recommendation\nThe URL should be unescaped and normalized before any further processing.",
+      "reported_by": null,
+      "title": "Path traversal in webpack-dev-middleware",
+      "metadata": null,
+      "cves": [
+        "CVE-2024-29180"
+      ],
+      "access": "public",
+      "severity": "high",
+      "module_name": "webpack-dev-middleware",
+      "vulnerable_versions": "<=5.3.3",
+      "github_advisory_id": "GHSA-wr3j-pwj9-hqq6",
+      "recommendation": "Upgrade to version 5.3.4 or later",
+      "patched_versions": ">=5.3.4",
+      "updated": "2024-03-21T18:59:29.000Z",
+      "cvss": {
+        "score": 7.4,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N"
+      },
+      "cwe": [
+        "CWE-22"
+      ],
+      "url": "https://github.com/advisories/GHSA-wr3j-pwj9-hqq6"
+    },
+    "1096856": {
+      "findings": [
+        {
+          "version": "1.4.1",
+          "paths": [
+            "axios>follow-redirects",
+            "webpack-dev-server>http-proxy-middleware>http-proxy>follow-redirects"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://github.com/follow-redirects/follow-redirects/security/advisories/GHSA-cxjh-pqwp-8mfp\n- https://github.com/follow-redirects/follow-redirects/commit/c4f847f85176991f95ab9c88af63b1294de8649b\n- https://fetch.spec.whatwg.org/#authentication-entries\n- https://nvd.nist.gov/vuln/detail/CVE-2024-28849\n- https://github.com/psf/requests/issues/1885\n- https://hackerone.com/reports/2390009\n- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VOIF4EPQUCKDBEVTGRQDZ3CGTYQHPO7Z\n- https://github.com/advisories/GHSA-cxjh-pqwp-8mfp",
+      "created": "2024-03-14T17:19:42.000Z",
+      "id": 1096856,
+      "npm_advisory_id": null,
+      "overview": "When using [axios](https://github.com/axios/axios), its dependency follow-redirects only clears authorization header during cross-domain redirect, but allows the proxy-authentication header which contains credentials too.\n\n## Steps To Reproduce & PoC\n\nTest code:\n\n```js\nconst axios = require('axios');\n\naxios.get('http://127.0.0.1:10081/', {\n headers: {\n 'AuThorization': 'Rear Test',\n 'ProXy-AuthoriZation': 'Rear Test',\n 'coOkie': 't=1'\n }\n})\n .then((response) => {\n console.log(response);\n })\n```\n\nWhen I meet the cross-domain redirect, the sensitive headers like authorization and cookie are cleared, but proxy-authentication header is kept.\n\n## Impact\n\nThis vulnerability may lead to credentials leak.\n\n## Recommendations\n\nRemove proxy-authentication header during cross-domain redirect\n\n### Recommended Patch\n\n[follow-redirects/index.js:464](https://github.com/follow-redirects/follow-redirects/commit/c4f847f85176991f95ab9c88af63b1294de8649b)\n\n```diff\n- removeMatchingHeaders(/^(?:authorization|cookie)$/i, this._options.headers);\n+ removeMatchingHeaders(/^(?:authorization|proxy-authorization|cookie)$/i, this._options.headers);\n```",
+      "reported_by": null,
+      "title": "follow-redirects' Proxy-Authorization header kept across hosts",
+      "metadata": null,
+      "cves": [
+        "CVE-2024-28849"
+      ],
+      "access": "public",
+      "severity": "moderate",
+      "module_name": "follow-redirects",
+      "vulnerable_versions": "<=1.15.5",
+      "github_advisory_id": "GHSA-cxjh-pqwp-8mfp",
+      "recommendation": "Upgrade to version 1.15.6 or later",
+      "patched_versions": ">=1.15.6",
+      "updated": "2024-04-02T17:54:22.000Z",
+      "cvss": {
+        "score": 6.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+      },
+      "cwe": [
+        "CWE-200"
+      ],
+      "url": "https://github.com/advisories/GHSA-cxjh-pqwp-8mfp"
+    },
+    "1096879": {
+      "findings": [
+        {
+          "version": "6.26.0",
+          "paths": [
+            "babel-core>babel-traverse",
+            "babel-core>babel-template>babel-traverse",
+            "babel-core>babel-helpers>babel-template>babel-traverse",
+            "babel-preset-env>babel-plugin-transform-es2015-classes>babel-helper-function-name>babel-template>babel-traverse",
+            "babel-preset-env>babel-plugin-transform-async-to-generator>babel-helper-remap-async-to-generator>babel-helper-function-name>babel-template>babel-traverse",
+            "babel-preset-stage-2>babel-preset-stage-3>babel-plugin-transform-async-to-generator>babel-helper-remap-async-to-generator>babel-helper-function-name>babel-template>babel-traverse"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://github.com/babel/babel/security/advisories/GHSA-67hx-6x53-jw92\n- https://nvd.nist.gov/vuln/detail/CVE-2023-45133\n- https://github.com/babel/babel/pull/16033\n- https://github.com/babel/babel/commit/b13376b346946e3f62fc0848c1d2a23223314c82\n- https://github.com/babel/babel/releases/tag/v7.23.2\n- https://github.com/babel/babel/releases/tag/v8.0.0-alpha.4\n- https://www.debian.org/security/2023/dsa-5528\n- https://lists.debian.org/debian-lts-announce/2023/10/msg00026.html\n- https://babeljs.io/blog/2023/10/16/cve-2023-45133\n- https://github.com/advisories/GHSA-67hx-6x53-jw92",
+      "created": "2023-10-16T13:55:36.000Z",
+      "id": 1096879,
+      "npm_advisory_id": null,
+      "overview": "### Impact\n\nUsing Babel to compile code that was specifically crafted by an attacker can lead to arbitrary code execution during compilation, when using plugins that rely on the `path.evaluate()`or `path.evaluateTruthy()` internal Babel methods.\n\nKnown affected plugins are:\n- `@babel/plugin-transform-runtime`\n- `@babel/preset-env` when using its [`useBuiltIns`](https://babeljs.io/docs/babel-preset-env#usebuiltins) option\n- Any \"polyfill provider\" plugin that depends on `@babel/helper-define-polyfill-provider`, such as `babel-plugin-polyfill-corejs3`, `babel-plugin-polyfill-corejs2`, `babel-plugin-polyfill-es-shims`, `babel-plugin-polyfill-regenerator`\n\nNo other plugins under the `@babel/` namespace are impacted, but third-party plugins might be.\n\n**Users that only compile trusted code are not impacted.**\n\n### Patches\n\nThe vulnerability has been fixed in `@babel/traverse@7.23.2`.\n\nBabel 6 does not receive security fixes anymore (see [Babel's security policy](https://github.com/babel/babel/security/policy)), hence there is no patch planned for `babel-traverse@6`.\n\n### Workarounds\n\n- Upgrade `@babel/traverse` to v7.23.2 or higher. You can do this by deleting it from your package manager's lockfile and re-installing the dependencies. `@babel/core` >=7.23.2 will automatically pull in a non-vulnerable version.\n- If you cannot upgrade `@babel/traverse` and are using one of the affected packages mentioned above, upgrade them to their latest version to avoid triggering the vulnerable code path in affected `@babel/traverse` versions:\n  - `@babel/plugin-transform-runtime` v7.23.2\n  - `@babel/preset-env` v7.23.2\n  - `@babel/helper-define-polyfill-provider` v0.4.3\n  - `babel-plugin-polyfill-corejs2` v0.4.6\n  - `babel-plugin-polyfill-corejs3` v0.8.5\n  - `babel-plugin-polyfill-es-shims` v0.10.0\n  - `babel-plugin-polyfill-regenerator` v0.5.3",
+      "reported_by": null,
+      "title": "Babel vulnerable to arbitrary code execution when compiling specifically crafted malicious code",
+      "metadata": null,
+      "cves": [
+        "CVE-2023-45133"
+      ],
+      "access": "public",
+      "severity": "critical",
+      "module_name": "babel-traverse",
+      "vulnerable_versions": "<7.23.2",
+      "github_advisory_id": "GHSA-67hx-6x53-jw92",
+      "recommendation": "None",
+      "patched_versions": "<0.0.0",
+      "updated": "2024-04-04T14:26:11.000Z",
+      "cvss": {
+        "score": 9.4,
+        "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+      },
+      "cwe": [
+        "CWE-184",
+        "CWE-697"
+      ],
+      "url": "https://github.com/advisories/GHSA-67hx-6x53-jw92"
+    },
+    "1097679": {
+      "findings": [
+        {
+          "version": "0.18.0",
+          "paths": [
+            "axios"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2023-45857\n- https://github.com/axios/axios/issues/6006\n- https://github.com/axios/axios/issues/6022\n- https://github.com/axios/axios/pull/6028\n- https://github.com/axios/axios/commit/96ee232bd3ee4de2e657333d4d2191cd389e14d0\n- https://github.com/axios/axios/releases/tag/v1.6.0\n- https://security.snyk.io/vuln/SNYK-JS-AXIOS-6032459\n- https://github.com/axios/axios/pull/6091\n- https://github.com/axios/axios/commit/2755df562b9c194fba6d8b609a383443f6a6e967\n- https://github.com/axios/axios/releases/tag/v0.28.0\n- https://security.netapp.com/advisory/ntap-20240621-0006\n- https://github.com/advisories/GHSA-wf5p-g6vw-rhxx",
+      "created": "2023-11-08T21:30:37.000Z",
+      "id": 1097679,
+      "npm_advisory_id": null,
+      "overview": "An issue discovered in Axios 0.8.1 through 1.5.1 inadvertently reveals the confidential XSRF-TOKEN stored in cookies by including it in the HTTP header X-XSRF-TOKEN for every request made to any host allowing attackers to view sensitive information.",
+      "reported_by": null,
+      "title": "Axios Cross-Site Request Forgery Vulnerability",
+      "metadata": null,
+      "cves": [
+        "CVE-2023-45857"
+      ],
+      "access": "public",
+      "severity": "moderate",
+      "module_name": "axios",
+      "vulnerable_versions": ">=0.8.1 <0.28.0",
+      "github_advisory_id": "GHSA-wf5p-g6vw-rhxx",
+      "recommendation": "Upgrade to version 0.28.0 or later",
+      "patched_versions": ">=0.28.0",
+      "updated": "2024-06-21T21:33:58.000Z",
+      "cvss": {
+        "score": 6.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N"
+      },
+      "cwe": [
+        "CWE-352"
+      ],
+      "url": "https://github.com/advisories/GHSA-wf5p-g6vw-rhxx"
+    },
+    "1097682": {
+      "findings": [
+        {
+          "version": "2.5.0",
+          "paths": [
+            "retire>request>tough-cookie"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2023-26136\n- https://github.com/salesforce/tough-cookie/issues/282\n- https://github.com/salesforce/tough-cookie/commit/12d474791bb856004e858fdb1c47b7608d09cf6e\n- https://github.com/salesforce/tough-cookie/releases/tag/v4.1.3\n- https://security.snyk.io/vuln/SNYK-JS-TOUGHCOOKIE-5672873\n- https://lists.debian.org/debian-lts-announce/2023/07/msg00010.html\n- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3HUE6ZR5SL73KHL7XUPAOEL6SB7HUDT2\n- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6PVVPNSAGSDS63HQ74PJ7MZ3MU5IYNVZ\n- https://security.netapp.com/advisory/ntap-20240621-0006\n- https://github.com/advisories/GHSA-72xf-g2v4-qvf3",
+      "created": "2023-07-01T06:30:16.000Z",
+      "id": 1097682,
+      "npm_advisory_id": null,
+      "overview": "Versions of the package tough-cookie before 4.1.3 are vulnerable to Prototype Pollution due to improper handling of Cookies when using CookieJar in `rejectPublicSuffixes=false` mode. This issue arises from the manner in which the objects are initialized.",
+      "reported_by": null,
+      "title": "tough-cookie Prototype Pollution vulnerability",
+      "metadata": null,
+      "cves": [
+        "CVE-2023-26136"
+      ],
+      "access": "public",
+      "severity": "moderate",
+      "module_name": "tough-cookie",
+      "vulnerable_versions": "<4.1.3",
+      "github_advisory_id": "GHSA-72xf-g2v4-qvf3",
+      "recommendation": "Upgrade to version 4.1.3 or later",
+      "patched_versions": ">=4.1.3",
+      "updated": "2024-06-21T21:33:53.000Z",
+      "cvss": {
+        "score": 6.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+      },
+      "cwe": [
+        "CWE-1321"
+      ],
+      "url": "https://github.com/advisories/GHSA-72xf-g2v4-qvf3"
+    },
+    "1097685": {
+      "findings": [
+        {
+          "version": "5.5.2",
+          "paths": [
+            "extract-text-webpack-plugin>schema-utils>ajv"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2020-15366\n- https://github.com/ajv-validator/ajv/commit/65b2f7d76b190ac63a0d4e9154c712d7aa37049f\n- https://github.com/ajv-validator/ajv/releases/tag/v6.12.3\n- https://hackerone.com/bugs?subject=user&report_id=894259\n- https://github.com/ajv-validator/ajv/tags\n- https://security.netapp.com/advisory/ntap-20240621-0007\n- https://github.com/advisories/GHSA-v88g-cgmw-v5xw",
+      "created": "2022-02-10T23:30:59.000Z",
+      "id": 1097685,
+      "npm_advisory_id": null,
+      "overview": "An issue was discovered in ajv.validate() in Ajv (aka Another JSON Schema Validator) 6.12.2. A carefully crafted JSON schema could be provided that allows execution of other code by prototype pollution. (While untrusted schemas are recommended against, the worst case of an untrusted schema should be a denial of service, not execution of code.)",
+      "reported_by": null,
+      "title": "Prototype Pollution in Ajv",
+      "metadata": null,
+      "cves": [
+        "CVE-2020-15366"
+      ],
+      "access": "public",
+      "severity": "moderate",
+      "module_name": "ajv",
+      "vulnerable_versions": "<6.12.3",
+      "github_advisory_id": "GHSA-v88g-cgmw-v5xw",
+      "recommendation": "Upgrade to version 6.12.3 or later",
+      "patched_versions": ">=6.12.3",
+      "updated": "2024-06-21T21:33:49.000Z",
+      "cvss": {
+        "score": 5.6,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L"
+      },
+      "cwe": [
+        "CWE-915",
+        "CWE-1321"
+      ],
+      "url": "https://github.com/advisories/GHSA-v88g-cgmw-v5xw"
+    },
+    "1098094": {
+      "findings": [
+        {
+          "version": "2.3.2",
+          "paths": [
+            "webpack-dev-server>chokidar>braces",
+            "svg-sprite-loader>svg-baker>micromatch>braces",
+            "svg-sprite-loader>svg-baker-runtime>svg-baker>micromatch>braces",
+            "webpack>watchpack>watchpack-chokidar2>chokidar>anymatch>micromatch>braces"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2024-4068\n- https://github.com/micromatch/braces/issues/35\n- https://devhub.checkmarx.com/cve-details/CVE-2024-4068\n- https://github.com/micromatch/braces/blob/98414f9f1fabe021736e26836d8306d5de747e0d/lib/parse.js#L308\n- https://github.com/micromatch/braces/pull/37\n- https://github.com/micromatch/braces/pull/40\n- https://github.com/micromatch/braces/commit/415d660c3002d1ab7e63dbf490c9851da80596ff\n- https://github.com/advisories/GHSA-grv7-fg5c-xmjg",
+      "created": "2024-05-14T18:30:54.000Z",
+      "id": 1098094,
+      "npm_advisory_id": null,
+      "overview": "The NPM package `braces` fails to limit the number of characters it can handle, which could lead to Memory Exhaustion. In `lib/parse.js,` if a malicious user sends \"imbalanced braces\" as input, the parsing will enter a loop, which will cause the program to start allocating heap memory without freeing it at any moment of the loop. Eventually, the JavaScript heap limit is reached, and the program will crash.\n",
+      "reported_by": null,
+      "title": "Uncontrolled resource consumption in braces",
+      "metadata": null,
+      "cves": [
+        "CVE-2024-4068"
+      ],
+      "access": "public",
+      "severity": "high",
+      "module_name": "braces",
+      "vulnerable_versions": "<3.0.3",
+      "github_advisory_id": "GHSA-grv7-fg5c-xmjg",
+      "recommendation": "Upgrade to version 3.0.3 or later",
+      "patched_versions": ">=3.0.3",
+      "updated": "2024-07-05T21:25:08.000Z",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "cwe": [
+        "CWE-400",
+        "CWE-1050"
+      ],
+      "url": "https://github.com/advisories/GHSA-grv7-fg5c-xmjg"
+    },
+    "1098366": {
+      "findings": [
+        {
+          "version": "2.7.4",
+          "paths": [
+            "webpack-bundle-analyzer>ejs"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2024-33883\n- https://github.com/mde/ejs/commit/e469741dca7df2eb400199e1cdb74621e3f89aa5\n- https://github.com/mde/ejs/compare/v3.1.9...v3.1.10\n- https://security.netapp.com/advisory/ntap-20240605-0003\n- https://github.com/advisories/GHSA-ghr5-ch3p-vcr6",
+      "created": "2024-04-28T18:30:31.000Z",
+      "id": 1098366,
+      "npm_advisory_id": null,
+      "overview": "The ejs (aka Embedded JavaScript templates) package before 3.1.10 for Node.js lacks certain pollution protection.",
+      "reported_by": null,
+      "title": "ejs lacks certain pollution protection",
+      "metadata": null,
+      "cves": [
+        "CVE-2024-33883"
+      ],
+      "access": "public",
+      "severity": "moderate",
+      "module_name": "ejs",
+      "vulnerable_versions": "<3.1.10",
+      "github_advisory_id": "GHSA-ghr5-ch3p-vcr6",
+      "recommendation": "Upgrade to version 3.1.10 or later",
+      "patched_versions": ">=3.1.10",
+      "updated": "2024-08-02T15:45:54.000Z",
+      "cvss": {
+        "score": 4,
+        "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+      },
+      "cwe": [
+        "CWE-693",
+        "CWE-1321"
+      ],
+      "url": "https://github.com/advisories/GHSA-ghr5-ch3p-vcr6"
+    },
+    "1098395": {
+      "findings": [
+        {
+          "version": "4.1.0",
+          "paths": [
+            "webpack-bundle-analyzer>ws"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://github.com/websockets/ws/security/advisories/GHSA-3h5v-q93c-6h6q\n- https://github.com/websockets/ws/issues/2230\n- https://github.com/websockets/ws/pull/2231\n- https://github.com/websockets/ws/commit/22c28763234aa75a7e1b76f5c01c181260d7917f\n- https://github.com/websockets/ws/commit/4abd8f6de4b0b65ef80b3ff081989479ed93377e\n- https://github.com/websockets/ws/commit/e55e5106f10fcbaac37cfa89759e4cc0d073a52c\n- https://github.com/websockets/ws/commit/eeb76d313e2a00dd5247ca3597bba7877d064a63\n- https://github.com/advisories/GHSA-3h5v-q93c-6h6q",
+      "created": "2024-06-17T19:09:10.000Z",
+      "id": 1098395,
+      "npm_advisory_id": null,
+      "overview": "### Impact\n\nA request with a number of headers exceeding the[`server.maxHeadersCount`][] threshold could be used to crash a ws server.\n\n### Proof of concept\n\n```js\nconst http = require('http');\nconst WebSocket = require('ws');\n\nconst wss = new WebSocket.Server({ port: 0 }, function () {\n  const chars = \"!#$%&'*+-.0123456789abcdefghijklmnopqrstuvwxyz^_`|~\".split('');\n  const headers = {};\n  let count = 0;\n\n  for (let i = 0; i < chars.length; i++) {\n    if (count === 2000) break;\n\n    for (let j = 0; j < chars.length; j++) {\n      const key = chars[i] + chars[j];\n      headers[key] = 'x';\n\n      if (++count === 2000) break;\n    }\n  }\n\n  headers.Connection = 'Upgrade';\n  headers.Upgrade = 'websocket';\n  headers['Sec-WebSocket-Key'] = 'dGhlIHNhbXBsZSBub25jZQ==';\n  headers['Sec-WebSocket-Version'] = '13';\n\n  const request = http.request({\n    headers: headers,\n    host: '127.0.0.1',\n    port: wss.address().port\n  });\n\n  request.end();\n});\n```\n\n### Patches\n\nThe vulnerability was fixed in ws@8.17.1 (https://github.com/websockets/ws/commit/e55e5106f10fcbaac37cfa89759e4cc0d073a52c) and backported to ws@7.5.10 (https://github.com/websockets/ws/commit/22c28763234aa75a7e1b76f5c01c181260d7917f), ws@6.2.3 (https://github.com/websockets/ws/commit/eeb76d313e2a00dd5247ca3597bba7877d064a63), and ws@5.2.4 (https://github.com/websockets/ws/commit/4abd8f6de4b0b65ef80b3ff081989479ed93377e)\n\n### Workarounds\n\nIn vulnerable versions of ws, the issue can be mitigated in the following ways:\n\n1. Reduce the maximum allowed length of the request headers using the [`--max-http-header-size=size`][] and/or the [`maxHeaderSize`][] options so that no more headers than the `server.maxHeadersCount` limit can be sent.\n2. Set `server.maxHeadersCount` to `0` so that no limit is applied.\n\n### Credits\n\nThe vulnerability was reported by [Ryan LaPointe](https://github.com/rrlapointe) in https://github.com/websockets/ws/issues/2230.\n\n### References\n\n- https://github.com/websockets/ws/issues/2230\n- https://github.com/websockets/ws/pull/2231\n\n[`--max-http-header-size=size`]: https://nodejs.org/api/cli.html#--max-http-header-sizesize\n[`maxHeaderSize`]: https://nodejs.org/api/http.html#httpcreateserveroptions-requestlistener\n[`server.maxHeadersCount`]: https://nodejs.org/api/http.html#servermaxheaderscount\n",
+      "reported_by": null,
+      "title": "ws affected by a DoS when handling a request with many HTTP headers",
+      "metadata": null,
+      "cves": [
+        "CVE-2024-37890"
+      ],
+      "access": "public",
+      "severity": "high",
+      "module_name": "ws",
+      "vulnerable_versions": ">=2.1.0 <5.2.4",
+      "github_advisory_id": "GHSA-3h5v-q93c-6h6q",
+      "recommendation": "Upgrade to version 5.2.4 or later",
+      "patched_versions": ">=5.2.4",
+      "updated": "2024-08-05T05:02:34.000Z",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "cwe": [
+        "CWE-476"
+      ],
+      "url": "https://github.com/advisories/GHSA-3h5v-q93c-6h6q"
+    },
+    "1098681": {
+      "findings": [
+        {
+          "version": "3.1.0",
+          "paths": [
+            "svg-sprite-loader>svg-baker>micromatch",
+            "svg-sprite-loader>svg-baker-runtime>svg-baker>micromatch"
+          ]
+        },
+        {
+          "version": "3.1.10",
+          "paths": [
+            "webpack>watchpack>watchpack-chokidar2>chokidar>anymatch>micromatch"
+          ]
+        },
+        {
+          "version": "3.1.10",
+          "paths": [
+            "webpack-dev-server>chokidar>anymatch>micromatch"
+          ]
+        },
+        {
+          "version": "3.1.10",
+          "paths": [
+            "webpack-dev-server>http-proxy-middleware>micromatch"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2024-4067\n- https://github.com/micromatch/micromatch/issues/243\n- https://github.com/micromatch/micromatch/pull/247\n- https://devhub.checkmarx.com/cve-details/CVE-2024-4067\n- https://github.com/micromatch/micromatch/blob/2c56a8604b68c1099e7bc0f807ce0865a339747a/index.js#L448\n- https://github.com/micromatch/micromatch/commit/500d5d6f42f0e8dfa1cb5464c6cb420b1b6aaaa0\n- https://github.com/micromatch/micromatch/pull/266\n- https://github.com/micromatch/micromatch/commit/03aa8052171e878897eee5d7bb2ae0ae83ec2ade\n- https://advisory.checkmarx.net/advisory/CVE-2024-4067\n- https://github.com/micromatch/micromatch/releases/tag/4.0.8\n- https://github.com/advisories/GHSA-952p-6rrq-rcjv",
+      "created": "2024-05-14T18:30:54.000Z",
+      "id": 1098681,
+      "npm_advisory_id": null,
+      "overview": "The NPM package `micromatch` prior to version 4.0.8 is vulnerable to Regular Expression Denial of Service (ReDoS). The vulnerability occurs in `micromatch.braces()` in `index.js` because the pattern `.*` will greedily match anything. By passing a malicious payload, the pattern matching will keep backtracking to the input while it doesn't find the closing bracket. As the input size increases, the consumption time will also increase until it causes the application to hang or slow down. There was a merged fix but further testing shows the issue persisted prior to https://github.com/micromatch/micromatch/pull/266. This issue should be mitigated by using a safe pattern that won't start backtracking the regular expression due to greedy matching.\n",
+      "reported_by": null,
+      "title": "Regular Expression Denial of Service (ReDoS) in micromatch",
+      "metadata": null,
+      "cves": [
+        "CVE-2024-4067"
+      ],
+      "access": "public",
+      "severity": "moderate",
+      "module_name": "micromatch",
+      "vulnerable_versions": "<4.0.8",
+      "github_advisory_id": "GHSA-952p-6rrq-rcjv",
+      "recommendation": "Upgrade to version 4.0.8 or later",
+      "patched_versions": ">=4.0.8",
+      "updated": "2024-08-28T13:12:27.000Z",
+      "cvss": {
+        "score": 5.3,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+      },
+      "cwe": [
+        "CWE-1333"
+      ],
+      "url": "https://github.com/advisories/GHSA-952p-6rrq-rcjv"
+    },
+    "1098721": {
+      "findings": [
+        {
+          "version": "2.7.16",
+          "paths": [
+            "vue-template-compiler"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2024-6783\n- https://www.herodevs.com/vulnerability-directory/cve-2024-6783\n- https://github.com/advisories/GHSA-g3ch-rx76-35fx",
+      "created": "2024-07-23T15:31:09.000Z",
+      "id": 1098721,
+      "npm_advisory_id": null,
+      "overview": "A vulnerability has been discovered in vue-template-compiler, that allows an attacker to perform XSS via prototype pollution. The attacker could change the prototype chain of some properties such as `Object.prototype.staticClass` or `Object.prototype.staticStyle` to execute arbitrary JavaScript code. Vue 2 has reached End-of-Life. This vulnerability has been patched in Vue 3.",
+      "reported_by": null,
+      "title": "vue-template-compiler vulnerable to client-side Cross-Site Scripting (XSS)",
+      "metadata": null,
+      "cves": [
+        "CVE-2024-6783"
+      ],
+      "access": "public",
+      "severity": "moderate",
+      "module_name": "vue-template-compiler",
+      "vulnerable_versions": ">=2.0.0 <3.0.0",
+      "github_advisory_id": "GHSA-g3ch-rx76-35fx",
+      "recommendation": "Upgrade to version 3.0.0 or later",
+      "patched_versions": ">=3.0.0",
+      "updated": "2024-08-30T15:45:16.000Z",
+      "cvss": {
+        "score": 4.2,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N"
+      },
+      "cwe": [
+        "CWE-79"
+      ],
+      "url": "https://github.com/advisories/GHSA-g3ch-rx76-35fx"
+    },
+    "1100223": {
+      "findings": [
+        {
+          "version": "0.19.2",
+          "paths": [
+            "webpack-dev-server>http-proxy-middleware"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2024-21536\n- https://github.com/chimurai/http-proxy-middleware/commit/0b4274e8cc9e9a2c5a06f35fbf456ccfcebc55a5\n- https://github.com/chimurai/http-proxy-middleware/commit/788b21e4aff38332d6319557d4a5b1b13b1f9a22\n- https://gist.github.com/mhassan1/28be67266d82a53708ed59ce5dc3c94a\n- https://security.snyk.io/vuln/SNYK-JS-HTTPPROXYMIDDLEWARE-8229906\n- https://github.com/advisories/GHSA-c7qv-q95q-8v27",
+      "created": "2024-10-19T06:30:30.000Z",
+      "id": 1100223,
+      "npm_advisory_id": null,
+      "overview": "Versions of the package http-proxy-middleware before 2.0.7, from 3.0.0 and before 3.0.3 are vulnerable to Denial of Service (DoS) due to an UnhandledPromiseRejection error thrown by micromatch. An attacker could kill the Node.js process and crash the server by making requests to certain paths.",
+      "reported_by": null,
+      "title": "Denial of service in http-proxy-middleware",
+      "metadata": null,
+      "cves": [
+        "CVE-2024-21536"
+      ],
+      "access": "public",
+      "severity": "high",
+      "module_name": "http-proxy-middleware",
+      "vulnerable_versions": "<2.0.7",
+      "github_advisory_id": "GHSA-c7qv-q95q-8v27",
+      "recommendation": "Upgrade to version 2.0.7 or later",
+      "patched_versions": ">=2.0.7",
+      "updated": "2024-10-22T19:47:42.000Z",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "cwe": [
+        "CWE-400"
+      ],
+      "url": "https://github.com/advisories/GHSA-c7qv-q95q-8v27"
+    },
+    "1100238": {
+      "findings": [
+        {
+          "version": "2.7.16",
+          "paths": [
+            "vue",
+            "v-distpicker>vue"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2024-9506\n- https://www.herodevs.com/vulnerability-directory/cve-2024-9506\n- https://github.com/advisories/GHSA-5j4c-8p2g-v4jx",
+      "created": "2024-10-15T18:30:50.000Z",
+      "id": 1100238,
+      "npm_advisory_id": null,
+      "overview": "The ReDoS can be exploited through the `parseHTML` function in the `html-parser.ts` file. This flaw allows attackers to slow down the application by providing specially crafted input that causes inefficient processing of regular expressions, leading to excessive resource consumption.\n\nTo demonstrate this vulnerability, here's an example. In a Vue client-side application, create a new Vue instance with a template string that includes a `<script>` tag but closes it incorrectly with something like `</textarea>`.\n\n```javascript\nnew Vue({\n  el: '#app',\n  template: '\n    <div>\n      Hello, world!\n      <script>${'<'.repeat(1000000)}</textarea>\n    </div>'\n});\n```\nNext, set up a basic HTML page (e.g., index.html) to load this JavaScript and mount the Vue instance:\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <title>My first Vue app</title>\n</head>\n<body>\n  <div id=\\\"app\\\">Loading...</div>\n</body>\n</html>\n```\n\nWhen you visit the app in your browser at http://localhost:3000, you'll notice that the time taken to parse and mount the Vue application increases significantly due to the ReDoS vulnerability, demonstrating how the flaw can affect performance.",
+      "reported_by": null,
+      "title": "ReDoS vulnerability in vue package that is exploitable through inefficient regex evaluation in the parseHTML function",
+      "metadata": null,
+      "cves": [
+        "CVE-2024-9506"
+      ],
+      "access": "public",
+      "severity": "low",
+      "module_name": "vue",
+      "vulnerable_versions": ">=2.0.0-alpha.1 <3.0.0-alpha.0",
+      "github_advisory_id": "GHSA-5j4c-8p2g-v4jx",
+      "recommendation": "Upgrade to version 3.0.0-alpha.0 or later",
+      "patched_versions": ">=3.0.0-alpha.0",
+      "updated": "2024-10-24T20:05:37.000Z",
+      "cvss": {
+        "score": 3.7,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+      },
+      "cwe": [
+        "CWE-1333"
+      ],
+      "url": "https://github.com/advisories/GHSA-5j4c-8p2g-v4jx"
+    },
+    "1100303": {
+      "findings": [
+        {
+          "version": "3.5.21",
+          "paths": [
+            "html-webpack-plugin>html-minifier"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2022-37620\n- https://github.com/kangax/html-minifier/issues/1135\n- https://github.com/kangax/html-minifier/blob/51ce10f4daedb1de483ffbcccecc41be1c873da2/src/htmlminifier.js#L1338\n- https://github.com/kangax/html-minifier/blob/51ce10f4daedb1de483ffbcccecc41be1c873da2/src/htmlminifier.js#L294\n- https://github.com/advisories/GHSA-pfq8-rq6v-vf5m",
+      "created": "2022-10-31T19:00:36.000Z",
+      "id": 1100303,
+      "npm_advisory_id": null,
+      "overview": "A Regular Expression Denial of Service (ReDoS) flaw was found in kangax html-minifier 4.0.0 via the candidate variable in htmlminifier.js.",
+      "reported_by": null,
+      "title": "kangax html-minifier REDoS vulnerability",
+      "metadata": null,
+      "cves": [
+        "CVE-2022-37620"
+      ],
+      "access": "public",
+      "severity": "high",
+      "module_name": "html-minifier",
+      "vulnerable_versions": "<=4.0.0",
+      "github_advisory_id": "GHSA-pfq8-rq6v-vf5m",
+      "recommendation": "None",
+      "patched_versions": "<0.0.0",
+      "updated": "2024-11-04T21:23:17.000Z",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "cwe": [
+        "CWE-400",
+        "CWE-1333"
+      ],
+      "url": "https://github.com/advisories/GHSA-pfq8-rq6v-vf5m"
+    },
+    "1100562": {
+      "findings": [
+        {
+          "version": "5.1.0",
+          "paths": [
+            "webpack>yargs>os-locale>execa>cross-spawn"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2024-21538\n- https://github.com/moxystudio/node-cross-spawn/pull/160\n- https://github.com/moxystudio/node-cross-spawn/commit/5ff3a07d9add449021d806e45c4168203aa833ff\n- https://github.com/moxystudio/node-cross-spawn/commit/640d391fde65388548601d95abedccc12943374f\n- https://security.snyk.io/vuln/SNYK-JS-CROSSSPAWN-8303230\n- https://github.com/moxystudio/node-cross-spawn/issues/165\n- https://github.com/moxystudio/node-cross-spawn/commit/d35c865b877d2f9ded7c1ed87521c2fdb689c8dd\n- https://security.snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-8366349\n- https://github.com/advisories/GHSA-3xgq-45jj-v275",
+      "created": "2024-11-08T06:30:47.000Z",
+      "id": 1100562,
+      "npm_advisory_id": null,
+      "overview": "Versions of the package cross-spawn before 7.0.5 are vulnerable to Regular Expression Denial of Service (ReDoS) due to improper input sanitization. An attacker can increase the CPU usage and crash the program by crafting a very large and well crafted string.",
+      "reported_by": null,
+      "title": "Regular Expression Denial of Service (ReDoS) in cross-spawn",
+      "metadata": null,
+      "cves": [
+        "CVE-2024-21538"
+      ],
+      "access": "public",
+      "severity": "high",
+      "module_name": "cross-spawn",
+      "vulnerable_versions": "<6.0.6",
+      "github_advisory_id": "GHSA-3xgq-45jj-v275",
+      "recommendation": "Upgrade to version 6.0.6 or later",
+      "patched_versions": ">=6.0.6",
+      "updated": "2024-11-19T16:19:50.000Z",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "cwe": [
+        "CWE-1333"
+      ],
+      "url": "https://github.com/advisories/GHSA-3xgq-45jj-v275"
+    },
+    "1101086": {
+      "findings": [
+        {
+          "version": "4.3.2",
+          "paths": [
+            "echarts>zrender"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://github.com/ecomfe/zrender/security/advisories/GHSA-fhv8-fx5f-7fxf\n- https://nvd.nist.gov/vuln/detail/CVE-2021-39227\n- https://github.com/ecomfe/zrender/pull/826\n- https://github.com/ecomfe/zrender/releases/tag/5.2.1\n- https://github.com/advisories/GHSA-fhv8-fx5f-7fxf",
+      "created": "2021-09-20T19:53:15.000Z",
+      "id": 1101086,
+      "npm_advisory_id": null,
+      "overview": "### Impact\nUsing `merge` and `clone` helper methods in the `src/core/util.ts` module will have prototype pollution. It will affect the popular data visualization library Apache ECharts, which is using and exported these two methods directly.\n\n### Patches\n \nIt has been patched in https://github.com/ecomfe/zrender/pull/826. \nUsers should update zrender to `5.2.1`.  and update echarts to `5.2.1` if project is using echarts.\n\n### References\nNA\n\n### For more information\nNA\n",
+      "reported_by": null,
+      "title": "Prototype Pollution in the merge and clone helper methods",
+      "metadata": null,
+      "cves": [
+        "CVE-2021-39227"
+      ],
+      "access": "public",
+      "severity": "moderate",
+      "module_name": "zrender",
+      "vulnerable_versions": "<=4.3.2",
+      "github_advisory_id": "GHSA-fhv8-fx5f-7fxf",
+      "recommendation": "Upgrade to version 4.3.3 or later",
+      "patched_versions": ">=4.3.3",
+      "updated": "2024-12-06T18:20:50.000Z",
+      "cvss": {
+        "score": 6.2,
+        "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "cwe": [
+        "CWE-915",
+        "CWE-1321"
+      ],
+      "url": "https://github.com/advisories/GHSA-fhv8-fx5f-7fxf"
+    },
+    "1101851": {
+      "findings": [
+        {
+          "version": "1.1.9",
+          "paths": [
+            "webpack-dev-server>ip",
+            "webpack-dev-server>bonjour>multicast-dns>dns-packet>ip"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2024-29415\n- https://github.com/indutny/node-ip/issues/150\n- https://github.com/indutny/node-ip/pull/143\n- https://github.com/indutny/node-ip/pull/144\n- https://security.netapp.com/advisory/ntap-20250117-0010\n- https://github.com/advisories/GHSA-2p57-rm9w-gvfp",
+      "created": "2024-06-02T22:29:29.000Z",
+      "id": 1101851,
+      "npm_advisory_id": null,
+      "overview": "The ip package through 2.0.1 for Node.js might allow SSRF because some IP addresses (such as 127.1, 01200034567, 012.1.2.3, 000:0:0000::01, and ::fFFf:127.0.0.1) are improperly categorized as globally routable via isPublic. NOTE: this issue exists because of an incomplete fix for CVE-2023-42282.",
+      "reported_by": null,
+      "title": "ip SSRF improper categorization in isPublic",
+      "metadata": null,
+      "cves": [
+        "CVE-2024-29415"
+      ],
+      "access": "public",
+      "severity": "high",
+      "module_name": "ip",
+      "vulnerable_versions": "<=2.0.1",
+      "github_advisory_id": "GHSA-2p57-rm9w-gvfp",
+      "recommendation": "None",
+      "patched_versions": "<0.0.0",
+      "updated": "2025-01-17T21:31:39.000Z",
+      "cvss": {
+        "score": 8.1,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+      },
+      "cwe": [
+        "CWE-918"
+      ],
+      "url": "https://github.com/advisories/GHSA-2p57-rm9w-gvfp"
+    },
+    "1102319": {
+      "findings": [
+        {
+          "version": "0.0.7",
+          "paths": [
+            "webpack-dev-server>ansi-html"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2021-23424\n- https://github.com/Tjatse/ansi-html/issues/19\n- https://snyk.io/vuln/SNYK-JS-ANSIHTML-1296849\n- https://github.com/ioet/time-tracker-ui/security/advisories/GHSA-4fjc-8q3h-8r69\n- https://github.com/Tjatse/ansi-html/commit/8142b25bca3133ea060bcc1889277dc482327a63\n- https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1567198\n- https://github.com/advisories/GHSA-whgm-jr23-g3j9",
+      "created": "2021-09-02T17:15:24.000Z",
+      "id": 1102319,
+      "npm_advisory_id": null,
+      "overview": "This affects all versions of package ansi-html. If an attacker provides a malicious string, it will get stuck processing the input for an extremely long time.",
+      "reported_by": null,
+      "title": "Uncontrolled Resource Consumption in ansi-html",
+      "metadata": null,
+      "cves": [
+        "CVE-2021-23424"
+      ],
+      "access": "public",
+      "severity": "high",
+      "module_name": "ansi-html",
+      "vulnerable_versions": "<0.0.8",
+      "github_advisory_id": "GHSA-whgm-jr23-g3j9",
+      "recommendation": "Upgrade to version 0.0.8 or later",
+      "patched_versions": ">=0.0.8",
+      "updated": "2025-02-12T05:11:11.000Z",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "cwe": [
+        "CWE-400"
+      ],
+      "url": "https://github.com/advisories/GHSA-whgm-jr23-g3j9"
+    },
+    "1102321": {
+      "findings": [
+        {
+          "version": "0.10.0",
+          "paths": [
+            "webpack-dev-server>selfsigned>node-forge"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://github.com/digitalbazaar/forge/security/advisories/GHSA-x4jg-mjrx-434g\n- https://nvd.nist.gov/vuln/detail/CVE-2022-24772\n- https://github.com/digitalbazaar/forge/commit/3f0b49a0573ef1bb7af7f5673c0cfebf00424df1\n- https://github.com/digitalbazaar/forge/commit/bb822c02df0b61211836472e29b9790cc541cdb2\n- https://github.com/advisories/GHSA-x4jg-mjrx-434g",
+      "created": "2022-03-18T23:10:28.000Z",
+      "id": 1102321,
+      "npm_advisory_id": null,
+      "overview": "### Impact\n\nRSA PKCS#1 v1.5 signature verification code does not check for tailing garbage bytes after decoding a `DigestInfo` ASN.1 structure. This can allow padding bytes to be removed and garbage data added to forge a signature when a low public exponent is being used.\n\n### Patches\n\nThe issue has been addressed in `node-forge` `1.3.0`.\n\n### References\n\nFor more information, please see\n[\"Bleichenbacher's RSA signature forgery based on implementation error\"](https://mailarchive.ietf.org/arch/msg/openpgp/5rnE9ZRN1AokBVj3VqblGlP63QE/)\nby Hal Finney.\n\n### For more information\n\nIf you have any questions or comments about this advisory:\n* Open an issue in [forge](https://github.com/digitalbazaar/forge)\n* Email us at [example email address](mailto:security@digitalbazaar.com)",
+      "reported_by": null,
+      "title": "Improper Verification of Cryptographic Signature in node-forge",
+      "metadata": null,
+      "cves": [
+        "CVE-2022-24772"
+      ],
+      "access": "public",
+      "severity": "high",
+      "module_name": "node-forge",
+      "vulnerable_versions": "<1.3.0",
+      "github_advisory_id": "GHSA-x4jg-mjrx-434g",
+      "recommendation": "Upgrade to version 1.3.0 or later",
+      "patched_versions": ">=1.3.0",
+      "updated": "2025-02-12T05:11:07.000Z",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+      },
+      "cwe": [
+        "CWE-347"
+      ],
+      "url": "https://github.com/advisories/GHSA-x4jg-mjrx-434g"
+    },
+    "1102322": {
+      "findings": [
+        {
+          "version": "0.10.0",
+          "paths": [
+            "webpack-dev-server>selfsigned>node-forge"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://github.com/digitalbazaar/forge/security/advisories/GHSA-cfm4-qjh2-4765\n- https://nvd.nist.gov/vuln/detail/CVE-2022-24771\n- https://github.com/digitalbazaar/forge/commit/3f0b49a0573ef1bb7af7f5673c0cfebf00424df1\n- https://github.com/digitalbazaar/forge/commit/bb822c02df0b61211836472e29b9790cc541cdb2\n- https://github.com/advisories/GHSA-cfm4-qjh2-4765",
+      "created": "2022-03-18T23:09:54.000Z",
+      "id": 1102322,
+      "npm_advisory_id": null,
+      "overview": "### Impact\n\nRSA PKCS#1 v1.5 signature verification code is lenient in checking the digest algorithm structure. This can allow a crafted structure that steals padding bytes and uses unchecked portion of the PKCS#1 encoded message to forge a signature when a low public exponent is being used.\n\n### Patches\n\nThe issue has been addressed in `node-forge` `1.3.0`.\n\n### References\n\nFor more information, please see\n[\"Bleichenbacher's RSA signature forgery based on implementation error\"](https://mailarchive.ietf.org/arch/msg/openpgp/5rnE9ZRN1AokBVj3VqblGlP63QE/)\nby Hal Finney.\n\n### For more information\n\nIf you have any questions or comments about this advisory:\n* Open an issue in [forge](https://github.com/digitalbazaar/forge)\n* Email us at [example email address](mailto:security@digitalbazaar.com)",
+      "reported_by": null,
+      "title": "Improper Verification of Cryptographic Signature in node-forge",
+      "metadata": null,
+      "cves": [
+        "CVE-2022-24771"
+      ],
+      "access": "public",
+      "severity": "high",
+      "module_name": "node-forge",
+      "vulnerable_versions": "<1.3.0",
+      "github_advisory_id": "GHSA-cfm4-qjh2-4765",
+      "recommendation": "Upgrade to version 1.3.0 or later",
+      "patched_versions": ">=1.3.0",
+      "updated": "2025-02-12T05:11:06.000Z",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+      },
+      "cwe": [
+        "CWE-347"
+      ],
+      "url": "https://github.com/advisories/GHSA-cfm4-qjh2-4765"
+    },
+    "1102323": {
+      "findings": [
+        {
+          "version": "1.4.1",
+          "paths": [
+            "axios>follow-redirects",
+            "webpack-dev-server>http-proxy-middleware>http-proxy>follow-redirects"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2022-0155\n- https://github.com/follow-redirects/follow-redirects/commit/8b347cbcef7c7b72a6e9be20f5710c17d6163c22\n- https://huntr.dev/bounties/fc524e4b-ebb6-427d-ab67-a64181020406\n- https://cert-portal.siemens.com/productcert/pdf/ssa-637483.pdf\n- https://github.com/advisories/GHSA-74fj-2j2h-c42q",
+      "created": "2022-01-12T22:46:26.000Z",
+      "id": 1102323,
+      "npm_advisory_id": null,
+      "overview": "follow-redirects is vulnerable to Exposure of Private Personal Information to an Unauthorized Actor",
+      "reported_by": null,
+      "title": "Exposure of sensitive information in follow-redirects",
+      "metadata": null,
+      "cves": [
+        "CVE-2022-0155"
+      ],
+      "access": "public",
+      "severity": "high",
+      "module_name": "follow-redirects",
+      "vulnerable_versions": "<1.14.7",
+      "github_advisory_id": "GHSA-74fj-2j2h-c42q",
+      "recommendation": "Upgrade to version 1.14.7 or later",
+      "patched_versions": ">=1.14.7",
+      "updated": "2025-02-12T05:11:06.000Z",
+      "cvss": {
+        "score": 8,
+        "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+      },
+      "cwe": [
+        "CWE-359"
+      ],
+      "url": "https://github.com/advisories/GHSA-74fj-2j2h-c42q"
+    },
+    "1102326": {
+      "findings": [
+        {
+          "version": "0.18.0",
+          "paths": [
+            "axios"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2021-3749\n- https://github.com/axios/axios/commit/5b457116e31db0e88fede6c428e969e87f290929\n- https://huntr.dev/bounties/1e8f07fc-c384-4ff9-8498-0690de2e8c31\n- https://www.npmjs.com/package/axios\n- https://lists.apache.org/thread.html/r075d464dce95cd13c03ff9384658edcccd5ab2983b82bfc72b62bb10@%3Ccommits.druid.apache.org%3E\n- https://lists.apache.org/thread.html/r216f0fd0a3833856d6a6a1fada488cadba45f447d87010024328ccf2@%3Ccommits.druid.apache.org%3E\n- https://lists.apache.org/thread.html/r3ae6d2654f92c5851bdb73b35e96b0e4e3da39f28ac7a1b15ae3aab8@%3Ccommits.druid.apache.org%3E\n- https://lists.apache.org/thread.html/r4bf1b32983f50be00f9752214c1b53738b621be1c2b0dbd68c7f2391@%3Ccommits.druid.apache.org%3E\n- https://lists.apache.org/thread.html/r7324ecc35b8027a51cb6ed629490fcd3b2d7cf01c424746ed5744bf1@%3Ccommits.druid.apache.org%3E\n- https://lists.apache.org/thread.html/r74d0b359408fff31f87445261f0ee13bdfcac7d66f6b8e846face321@%3Ccommits.druid.apache.org%3E\n- https://lists.apache.org/thread.html/ra15d63c54dc6474b29f72ae4324bcb03038758545b3ab800845de7a1@%3Ccommits.druid.apache.org%3E\n- https://lists.apache.org/thread.html/rc263bfc5b53afcb7e849605478d73f5556eb0c00d1f912084e407289@%3Ccommits.druid.apache.org%3E\n- https://lists.apache.org/thread.html/rfa094029c959da0f7c8cd7dc9c4e59d21b03457bf0cedf6c93e1bb0a@%3Cdev.druid.apache.org%3E\n- https://lists.apache.org/thread.html/rfc5c478053ff808671aef170f3d9fc9d05cc1fab8fb64431edc66103@%3Ccommits.druid.apache.org%3E\n- https://www.oracle.com/security-alerts/cpujul2022.html\n- https://cert-portal.siemens.com/productcert/pdf/ssa-637483.pdf\n- https://github.com/advisories/GHSA-cph5-m8f7-6c5x",
+      "created": "2021-09-01T18:23:02.000Z",
+      "id": 1102326,
+      "npm_advisory_id": null,
+      "overview": "axios before v0.21.2 is vulnerable to Inefficient Regular Expression Complexity.",
+      "reported_by": null,
+      "title": "axios Inefficient Regular Expression Complexity vulnerability",
+      "metadata": null,
+      "cves": [
+        "CVE-2021-3749"
+      ],
+      "access": "public",
+      "severity": "high",
+      "module_name": "axios",
+      "vulnerable_versions": "<0.21.2",
+      "github_advisory_id": "GHSA-cph5-m8f7-6c5x",
+      "recommendation": "Upgrade to version 0.21.2 or later",
+      "patched_versions": ">=0.21.2",
+      "updated": "2025-02-12T05:10:46.000Z",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "cwe": [
+        "CWE-400",
+        "CWE-1333"
+      ],
+      "url": "https://github.com/advisories/GHSA-cph5-m8f7-6c5x"
+    },
+    "1102339": {
+      "findings": [
+        {
+          "version": "1.9.1",
+          "paths": [
+            "copy-webpack-plugin>serialize-javascript"
+          ]
+        }
+      ],
+      "found_by": null,
+      "deleted": null,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2024-11831\n- https://github.com/yahoo/serialize-javascript/pull/173\n- https://github.com/yahoo/serialize-javascript/commit/f27d65d3de42affe2aac14607066c293891cec4e\n- https://access.redhat.com/security/cve/CVE-2024-11831\n- https://bugzilla.redhat.com/show_bug.cgi?id=2312579\n- https://access.redhat.com/errata/RHSA-2025:1334\n- https://access.redhat.com/errata/RHSA-2025:1468\n- https://github.com/advisories/GHSA-76p7-773f-r4q5",
+      "created": "2025-02-10T18:30:47.000Z",
+      "id": 1102339,
+      "npm_advisory_id": null,
+      "overview": "A flaw was found in npm-serialize-javascript. The vulnerability occurs because the serialize-javascript module does not properly sanitize certain inputs, such as regex or other JavaScript object types, allowing an attacker to inject malicious code. This code could be executed when deserialized by a web browser, causing Cross-site scripting (XSS) attacks. This issue is critical in environments where serialized data is sent to web clients, potentially compromising the security of the website or web application using this package.",
+      "reported_by": null,
+      "title": "Cross-site Scripting (XSS) in serialize-javascript",
+      "metadata": null,
+      "cves": [
+        "CVE-2024-11831"
+      ],
+      "access": "public",
+      "severity": "moderate",
+      "module_name": "serialize-javascript",
+      "vulnerable_versions": "<6.0.2",
+      "github_advisory_id": "GHSA-76p7-773f-r4q5",
+      "recommendation": "Upgrade to version 6.0.2 or later",
+      "patched_versions": ">=6.0.2",
+      "updated": "2025-02-13T22:16:37.000Z",
+      "cvss": {
+        "score": 5.4,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N"
+      },
+      "cwe": [
+        "CWE-79"
+      ],
+      "url": "https://github.com/advisories/GHSA-76p7-773f-r4q5"
+    }
+  },
+  "muted": [],
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 4,
+      "moderate": 110,
+      "high": 31,
+      "critical": 9
+    },
+    "dependencies": 59,
+    "devDependencies": 1422,
+    "optionalDependencies": 49,
+    "totalDependencies": 1494
+  },
+  "runId": "b386ff63-0bcf-42d4-a001-b1acf8e26ea5"
+}
