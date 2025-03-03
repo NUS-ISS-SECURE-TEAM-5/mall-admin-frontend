@@ -1,21 +1,25 @@
-'use strict'
-const utils = require('./utils')
-const webpack = require('webpack')
-const config = require('../config')
-const { merge } = require('webpack-merge')
-const path = require('path')
-const baseWebpackConfig = require('./webpack.base.conf')
-const CopyWebpackPlugin = require('copy-webpack-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const portfinder = require('portfinder')
-const VueLoaderPlugin = require('vue-loader/lib/plugin')
+"use strict";
+const utils = require("./utils");
+const webpack = require("webpack");
+const config = require("../config");
+const { merge } = require("webpack-merge");
+const path = require("path");
+const baseWebpackConfig = require("./webpack.base.conf");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const portfinder = require("portfinder");
+const VueLoaderPlugin = require("vue-loader/lib/plugin");
 
-const HOST = process.env.HOST
-const PORT = process.env.PORT && Number(process.env.PORT)
+const HOST = process.env.HOST;
+const PORT = process.env.PORT && Number(process.env.PORT);
 
 const devWebpackConfig = merge(baseWebpackConfig, {
+  mode: "development",
   module: {
-    rules: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap, usePostCSS: true })
+    rules: utils.styleLoaders({
+      sourceMap: config.dev.cssSourceMap,
+      usePostCSS: true
+    })
   },
   // cheap-module-eval-source-map is faster for development
   devtool: config.dev.devtool,
@@ -24,8 +28,11 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   devServer: {
     historyApiFallback: {
       rewrites: [
-        { from: /.*/, to: path.posix.join(config.dev.assetsPublicPath, 'index.html') },
-      ],
+        {
+          from: /.*/,
+          to: path.posix.join(config.dev.assetsPublicPath, "index.html")
+        }
+      ]
     },
     hot: true,
     compress: true,
@@ -37,62 +44,64 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     },
     proxy: config.dev.proxyTable,
     client: {
-      overlay: config.dev.errorOverlay ? { warnings: false, errors: true } : false,
-      logging: 'warn',
+      overlay: config.dev.errorOverlay
+        ? { warnings: false, errors: true }
+        : false,
+      logging: "warn"
     },
     watchFiles: {
       // 这里假设监听 src 目录下所有文件的变化
-      paths: ['src/**/*'],
+      paths: ["src/**/*"],
       options: {
-        poll: config.dev.poll,
+        poll: config.dev.poll
       }
-    },
+    }
   },
   plugins: [
     new webpack.DefinePlugin({
-      'process.env': require('../config/dev.env')
+      "process.env": require("../config/dev.env")
     }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
     // https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: 'index.html',
+      filename: "index.html",
+      template: "index.html",
       inject: true
     }),
     // copy custom static assets
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: path.resolve(__dirname, '../static'),
+          from: path.resolve(__dirname, "../static"),
           to: config.dev.assetsSubDirectory,
           globOptions: {
-            ignore: ['**/.*']
+            ignore: ["**/.*"]
           }
         }
       ]
     }),
     new VueLoaderPlugin()
   ]
-})
+});
 
 module.exports = new Promise((resolve, reject) => {
-  portfinder.basePort = process.env.PORT || config.dev.port
+  portfinder.basePort = process.env.PORT || config.dev.port;
   portfinder.getPort((err, port) => {
     if (err) {
-      reject(err)
+      reject(err);
     } else {
       // publish the new Port, necessary for e2e tests
-      process.env.PORT = port
+      process.env.PORT = port;
       // add port to devServer config
-      devWebpackConfig.devServer.port = port
+      devWebpackConfig.devServer.port = port;
 
       devWebpackConfig.node = {
         __dirname: false,
         __filename: false,
         global: true
-      }
-      resolve(devWebpackConfig)
+      };
+      resolve(devWebpackConfig);
     }
-  })
-})
+  });
+});

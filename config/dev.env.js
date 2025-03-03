@@ -1,8 +1,5 @@
-'use strict'
-const { merge } = require('webpack-merge')
-const prodEnv = require('./prod.env')
+"use strict";
 
-module.exports = merge(prodEnv, {
-  NODE_ENV: '"development"',
+module.exports = {
   BASE_API: '"http://localhost:8201/mall-admin"'
-})
+};
