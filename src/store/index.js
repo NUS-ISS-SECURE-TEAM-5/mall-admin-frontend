@@ -1,19 +1,16 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
-import app from './modules/app'
-import user from './modules/user'
-import permission from './modules/permission'
-import getters from './getters'
+import { createStore } from "vuex";
+import app from "./modules/app";
+import user from "./modules/user";
+import permission from "./modules/permission";
+import getters from "./getters";
 
-Vue.use(Vuex)
-
-const store = new Vuex.Store({
+const store = createStore({
   modules: {
     app,
     user,
-    permission
+    permission,
   },
-  getters
-})
+  getters,
+});
 
-export default store
+export default store;

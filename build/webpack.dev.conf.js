@@ -8,98 +8,121 @@ const baseWebpackConfig = require("./webpack.base.conf");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const portfinder = require("portfinder");
-const VueLoaderPlugin = require("vue-loader/lib/plugin");
+const { VueLoaderPlugin } = require("vue-loader");
 
 const HOST = process.env.HOST;
-const PORT = process.env.PORT && Number(process.env.PORT);
+const PORT = process.env.PORT ? Number(process.env.PORT) : config.dev.port;
 
 const devWebpackConfig = merge(baseWebpackConfig, {
   mode: "development",
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "../src"),
+      vue: "vue",
+    },
+    extensions: [".js", ".jsx", ".ts", ".tsx", ".vue", ".json"],
+  },
   module: {
     rules: utils.styleLoaders({
       sourceMap: config.dev.cssSourceMap,
-      usePostCSS: true
-    })
+      usePostCSS: true,
+    }),
   },
-  // cheap-module-eval-source-map is faster for development
   devtool: config.dev.devtool,
-
-  // these devServer options should be customized in /config/index.js
   devServer: {
     historyApiFallback: {
       rewrites: [
         {
           from: /.*/,
-          to: path.posix.join(config.dev.assetsPublicPath, "index.html")
-        }
-      ]
+          to: path.posix.join(config.dev.assetsPublicPath, "index.html"),
+        },
+      ],
     },
-    hot: true,
+    hot: false,
     compress: true,
-    host: HOST || config.dev.host,
-    port: PORT || config.dev.port,
+    host: HOST,
+    port: PORT,
     open: config.dev.autoOpenBrowser,
     devMiddleware: {
-      publicPath: config.dev.assetsPublicPath
+      publicPath: config.dev.assetsPublicPath,
     },
-    proxy: config.dev.proxyTable,
+    proxy: Array.isArray(config.dev.proxyTable)
+      ? config.dev.proxyTable
+      : Object.entries(config.dev.proxyTable || {}).map(
+          ([context, options]) => ({
+            context: [context],
+            ...options,
+          })
+        ),
     client: {
       overlay: config.dev.errorOverlay
         ? { warnings: false, errors: true }
         : false,
-      logging: "warn"
+      logging: "warn",
     },
     watchFiles: {
-      // 这里假设监听 src 目录下所有文件的变化
       paths: ["src/**/*"],
       options: {
-        poll: config.dev.poll
-      }
-    }
+        poll: config.dev.poll,
+      },
+    },
   },
   plugins: [
     new webpack.DefinePlugin({
-      "process.env": require("../config/dev.env")
+      "process.env": require("../config/dev.env"),
     }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
-    // https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: "index.html",
-      inject: true
+      inject: true,
     }),
-    // copy custom static assets
     new CopyWebpackPlugin({
       patterns: [
         {
           from: path.resolve(__dirname, "../static"),
           to: config.dev.assetsSubDirectory,
           globOptions: {
-            ignore: ["**/.*"]
-          }
-        }
-      ]
+            ignore: ["**/.*"],
+          },
+        },
+      ],
     }),
-    new VueLoaderPlugin()
-  ]
+    new VueLoaderPlugin(),
+  ],
 });
+
+console.log(
+  "🔍 Webpack alias 配置:",
+  JSON.stringify(devWebpackConfig.resolve.alias, null, 2)
+);
+console.log(
+  "🔍 Webpack extensions:",
+  JSON.stringify(devWebpackConfig.resolve.extensions, null, 2)
+);
+console.log(
+  "🔍 Webpack module.rules:",
+  JSON.stringify(
+    devWebpackConfig.module.rules.map((r) => r.test),
+    null,
+    2
+  )
+);
 
 module.exports = new Promise((resolve, reject) => {
   portfinder.basePort = process.env.PORT || config.dev.port;
-  portfinder.getPort((err, port) => {
+  portfinder.getPort((err, newPort) => {
     if (err) {
       reject(err);
     } else {
-      // publish the new Port, necessary for e2e tests
-      process.env.PORT = port;
-      // add port to devServer config
-      devWebpackConfig.devServer.port = port;
+      process.env.PORT = newPort;
+      devWebpackConfig.devServer.port = newPort;
 
       devWebpackConfig.node = {
         __dirname: false,
         __filename: false,
-        global: true
+        global: true,
       };
       resolve(devWebpackConfig);
     }

@@ -1,10 +1,10 @@
-import Vue from 'vue'
+import {createApp} from "vue";
 
 import '@csstools/normalize.css'// A modern alternative to CSS resets
 
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
-import locale from 'element-ui/lib/locale/lang/zh-CN' // lang i18n
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+import zhCn from 'element-plus/es/locale/lang/zh-cn' // lang i18n
 import VueECharts from 'vue-echarts'
 
 import '@/styles/index.scss' // global css
@@ -12,6 +12,7 @@ import '@/styles/index.scss' // global css
 import App from './App'
 import router from './router'
 import store from './store'
+import registerIcons from "@/icons";
 
 import '@/icons' // icon
 import '@/permission' // permission control
@@ -38,15 +39,14 @@ use([
   TransformComponent
 ])
 
-Vue.use(ElementUI, {locale})
-Vue.component('v-chart', VueECharts)
+const app = createApp(App)
 
-Vue.config.productionTip = false
+app.use(ElementPlus, {locale: zhCn})
+app.component('v-chart', VueECharts)
 
-new Vue({
-  el: '#app',
-  router,
-  store,
-  template: '<App/>',
-  components: {App}
-})
+app.use(router)
+app.use(store)
+
+registerIcons(app)
+
+app.mount('#app')
