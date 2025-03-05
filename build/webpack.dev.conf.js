@@ -78,17 +78,6 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       template: "index.html",
       inject: true,
     }),
-    new CopyWebpackPlugin({
-      patterns: [
-        {
-          from: path.resolve(__dirname, "../static"),
-          to: config.dev.assetsSubDirectory,
-          globOptions: {
-            ignore: ["**/.*"],
-          },
-        },
-      ],
-    }),
     new VueLoaderPlugin(),
   ],
 });

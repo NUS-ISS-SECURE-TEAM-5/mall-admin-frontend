@@ -373,7 +373,7 @@ export const asyncRouterMap = [
       },
     ],
   },
-  { path: "*", redirect: "/404", hidden: true },
+  { path: "/:pathMatch(.*)*", redirect: "/404", hidden: true },
 ];
 
 const router = createRouter({
