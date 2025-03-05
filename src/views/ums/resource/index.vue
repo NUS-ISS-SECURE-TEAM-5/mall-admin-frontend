@@ -136,7 +136,8 @@
     </div>
     <el-dialog
       :title="isEdit ? '编辑资源' : '添加资源'"
-      :visible.sync="dialogVisible"
+      :model-value="dialogVisible"
+      @update:model-value="(val) => (dialogVisible = val)"
       width="40%"
     >
       <el-form
@@ -265,15 +266,22 @@ export default {
         confirmButtonText: "确定",
         cancelButtonText: "取消",
         type: "warning",
-      }).then(() => {
-        deleteResource(row.id).then((response) => {
-          this.$message({
-            type: "success",
-            message: "删除成功!",
+      })
+        .then(() => {
+          deleteResource(row.id).then((response) => {
+            this.$message({
+              type: "success",
+              message: "删除成功!",
+            });
+            this.getList();
           });
-          this.getList();
+        })
+        .catch(() => {
+          this.$message({
+            type: "info",
+            message: "已取消删除",
+          });
         });
-      });
     },
     handleUpdate(index, row) {
       this.dialogVisible = true;

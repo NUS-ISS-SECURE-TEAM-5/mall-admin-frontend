@@ -69,9 +69,15 @@ export default {
     };
   },
   created() {
-    this.list = this.$route.query.list;
-    //当list不为数组时转换为数组
-    if (this.list instanceof Array === false) {
+    try {
+      const listData = this.$route.query.list;
+      if (listData) {
+        this.list = JSON.parse(listData); // 反序列化为数组
+      } else {
+        this.list = [];
+      }
+    } catch (error) {
+      console.error("解析订单数据失败:", error);
       this.list = [];
     }
   },

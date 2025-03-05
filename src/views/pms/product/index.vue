@@ -120,111 +120,105 @@
           align="center"
         ></el-table-column>
         <el-table-column label="编号" width="100" align="center">
-          <template v-slot="scope">{{ scope.row.id }}</template>
+          <template #default="{ row }">{{ row.id }}</template>
         </el-table-column>
         <el-table-column label="商品图片" width="120" align="center">
-          <template v-slot="scope"
-            ><img style="height: 80px" :src="scope.row.pic"
+          <template #default="{ row }"
+            ><img style="height: 80px" :src="row.pic"
           /></template>
         </el-table-column>
         <el-table-column label="商品名称" align="center">
-          <template v-slot="scope">
-            <p>{{ scope.row.name }}</p>
-            <p>品牌：{{ scope.row.brandName }}</p>
+          <template #default="{ row }">
+            <p>{{ row.name }}</p>
+            <p>品牌：{{ row.brandName }}</p>
           </template>
         </el-table-column>
         <el-table-column label="价格/货号" width="120" align="center">
-          <template v-slot="scope">
-            <p>价格：￥{{ scope.row.price }}</p>
-            <p>货号：{{ scope.row.productSn }}</p>
+          <template #default="{ row }">
+            <p>价格：￥{{ row.price }}</p>
+            <p>货号：{{ row.productSn }}</p>
           </template>
         </el-table-column>
         <el-table-column label="标签" width="140" align="center">
-          <template v-slot="scope">
+          <template #default="{ row, $index }">
             <p>
               上架：
               <el-switch
-                @change="handlePublishStatusChange(scope.$index, scope.row)"
+                @change="handlePublishStatusChange($index, row)"
                 :active-value="1"
                 :inactive-value="0"
-                v-model="scope.row.publishStatus"
+                v-model="row.publishStatus"
               >
               </el-switch>
             </p>
             <p>
               新品：
               <el-switch
-                @change="handleNewStatusChange(scope.$index, scope.row)"
+                @change="handleNewStatusChange($index, row)"
                 :active-value="1"
                 :inactive-value="0"
-                v-model="scope.row.newStatus"
+                v-model="row.newStatus"
               >
               </el-switch>
             </p>
             <p>
               推荐：
               <el-switch
-                @change="handleRecommendStatusChange(scope.$index, scope.row)"
+                @change="handleRecommendStatusChange($index, row)"
                 :active-value="1"
                 :inactive-value="0"
-                v-model="scope.row.recommandStatus"
+                v-model="row.recommandStatus"
               >
               </el-switch>
             </p>
           </template>
         </el-table-column>
         <el-table-column label="排序" width="100" align="center">
-          <template v-slot="scope">{{ scope.row.sort }}</template>
+          <template #default="{ row }">{{ row.sort }}</template>
         </el-table-column>
         <el-table-column label="SKU库存" width="100" align="center">
-          <template v-slot="scope">
+          <template #default="{ row }">
             <el-button
               type="primary"
               icon="el-icon-edit"
-              @click="handleShowSkuEditDialog(scope.$index, scope.row)"
+              @click="handleShowSkuEditDialog(row)"
               circle
             ></el-button>
           </template>
         </el-table-column>
         <el-table-column label="销量" width="100" align="center">
-          <template v-slot="scope">{{ scope.row.sale }}</template>
+          <template #default="{ row }">{{ row.sale }}</template>
         </el-table-column>
         <el-table-column label="审核状态" width="100" align="center">
-          <template v-slot="scope">
-            <p>{{ scope.row.verifyStatus | verifyStatusFilter }}</p>
+          <template #default="{ row, $index }">
+            <p>{{ row.verifyStatus | verifyStatusFilter }}</p>
             <p>
               <el-button
                 type="text"
-                @click="handleShowVerifyDetail(scope.$index, scope.row)"
+                @click="handleShowVerifyDetail($index, row)"
                 >审核详情
               </el-button>
             </p>
           </template>
         </el-table-column>
         <el-table-column label="操作" width="160" align="center">
-          <template v-slot="scope">
+          <template #default="{ row, $index }">
             <p>
-              <el-button
-                size="mini"
-                @click="handleShowProduct(scope.$index, scope.row)"
+              <el-button size="mini" @click="handleShowProduct($index, row)"
                 >查看
               </el-button>
-              <el-button
-                size="mini"
-                @click="handleUpdateProduct(scope.$index, scope.row)"
+              <el-button size="mini" @click="handleUpdateProduct($index, row)"
                 >编辑
               </el-button>
             </p>
             <p>
-              <el-button
-                size="mini"
-                @click="handleShowLog(scope.$index, scope.row)"
+              <el-button size="mini" @click="handleShowLog($index, row)"
                 >日志
               </el-button>
               <el-button
                 size="mini"
                 type="danger"
-                @click="handleDelete(scope.$index, scope.row)"
+                @click="handleDelete($index, row)"
                 >删除
               </el-button>
             </p>
@@ -267,7 +261,8 @@
     </div>
     <el-dialog
       title="编辑货品信息"
-      :visible.sync="editSkuInfo.dialogVisible"
+      :model-value="editSkuInfo.dialogVisible"
+      @update:model-value="(val) => (editSkuInfo.dialogVisible = val)"
       width="40%"
     >
       <span>商品货号：</span>
@@ -290,8 +285,8 @@
         border
       >
         <el-table-column label="SKU编号" align="center">
-          <template v-slot="scope">
-            <el-input v-model="scope.row.skuCode"></el-input>
+          <template #default="{ row }">
+            <el-input v-model="row.skuCode"></el-input>
           </template>
         </el-table-column>
         <el-table-column
@@ -300,23 +295,23 @@
           :key="item.id"
           align="center"
         >
-          <template v-slot="scope">
-            {{ getProductSkuSp(scope.row, index) }}
+          <template #default="{ row }">
+            {{ getProductSkuSp(row, index) }}
           </template>
         </el-table-column>
         <el-table-column label="销售价格" width="80" align="center">
-          <template v-slot="scope">
-            <el-input v-model="scope.row.price"></el-input>
+          <template #default="{ row }">
+            <el-input v-model="row.price"></el-input>
           </template>
         </el-table-column>
         <el-table-column label="商品库存" width="80" align="center">
-          <template v-slot="scope">
-            <el-input v-model="scope.row.stock"></el-input>
+          <template #default="{ row }">
+            <el-input v-model="row.stock"></el-input>
           </template>
         </el-table-column>
         <el-table-column label="库存预警值" width="100" align="center">
-          <template v-slot="scope">
-            <el-input v-model="scope.row.lowStock"></el-input>
+          <template #default="{ row }">
+            <el-input v-model="row.lowStock"></el-input>
           </template>
         </el-table-column>
       </el-table>
@@ -507,7 +502,7 @@ export default {
         }
       });
     },
-    handleShowSkuEditDialog(index, row) {
+    handleShowSkuEditDialog(row) {
       this.editSkuInfo.dialogVisible = true;
       this.editSkuInfo.productId = row.id;
       this.editSkuInfo.productSn = row.productSn;
@@ -663,11 +658,19 @@ export default {
         confirmButtonText: "确定",
         cancelButtonText: "取消",
         type: "warning",
-      }).then(() => {
-        let ids = [];
-        ids.push(row.id);
-        this.updateDeleteStatus(1, ids);
-      });
+      })
+        .then(() => {
+          let ids = [];
+          ids.push(row.id);
+          this.updateDeleteStatus(1, ids);
+        })
+        .catch(() => {
+          this.$message({
+            type: "info",
+            message: "已取消删除",
+            duration: 1000,
+          });
+        });
     },
     handleUpdateProduct(index, row) {
       this.$router.push({ path: "/pms/updateProduct", query: { id: row.id } });

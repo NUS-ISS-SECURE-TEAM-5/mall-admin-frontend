@@ -26,7 +26,7 @@ export const constantRouterMap = [
     path: "",
     component: Layout,
     redirect: "/home",
-    meta: { title: "首页", icon: "home" },
+    meta: { title: "首页", icon: "home", alwaysShow: true },
     children: [
       {
         path: "home",
@@ -54,7 +54,7 @@ export const asyncRouterMap = [
     component: Layout,
     redirect: "/pms/product",
     name: "pms",
-    meta: { title: "商品", icon: "product" },
+    meta: { title: "商品", icon: "product", alwaysShow: true },
     children: [
       {
         path: "product",
@@ -149,7 +149,7 @@ export const asyncRouterMap = [
     component: Layout,
     redirect: "/oms/order",
     name: "oms",
-    meta: { title: "订单", icon: "order" },
+    meta: { title: "订单", icon: "order", alwaysShow: true },
     children: [
       {
         path: "order",
@@ -203,7 +203,7 @@ export const asyncRouterMap = [
     component: Layout,
     redirect: "/sms/coupon",
     name: "sms",
-    meta: { title: "营销", icon: "sms" },
+    meta: { title: "营销", icon: "sms", alwaysShow: true },
     children: [
       {
         path: "flash",
@@ -310,7 +310,7 @@ export const asyncRouterMap = [
     component: Layout,
     redirect: "/ums/admin",
     name: "ums",
-    meta: { title: "权限", icon: "ums" },
+    meta: { title: "权限", icon: "ums", alwaysShow: true },
     children: [
       {
         path: "admin",

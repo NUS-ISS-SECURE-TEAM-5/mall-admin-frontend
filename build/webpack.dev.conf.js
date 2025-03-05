@@ -82,23 +82,6 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   ],
 });
 
-console.log(
-  "🔍 Webpack alias 配置:",
-  JSON.stringify(devWebpackConfig.resolve.alias, null, 2)
-);
-console.log(
-  "🔍 Webpack extensions:",
-  JSON.stringify(devWebpackConfig.resolve.extensions, null, 2)
-);
-console.log(
-  "🔍 Webpack module.rules:",
-  JSON.stringify(
-    devWebpackConfig.module.rules.map((r) => r.test),
-    null,
-    2
-  )
-);
-
 module.exports = new Promise((resolve, reject) => {
   portfinder.basePort = process.env.PORT || config.dev.port;
   portfinder.getPort((err, newPort) => {

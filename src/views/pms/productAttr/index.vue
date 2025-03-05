@@ -1,5 +1,4 @@
 <template>
-   
   <div class="app-container">
     <el-card class="operate-container" shadow="never">
       <i class="el-icon-tickets" style="margin-top: 5px"></i>
@@ -44,9 +43,7 @@
         </el-table-column>
         <el-table-column label="操作" width="200" align="center">
           <template v-slot="{ row, $index }">
-            <el-button size="mini" @click="handleUpdate($index, row)"
-              >编辑
-            </el-button>
+            <el-button size="mini" @click="handleUpdate(row)">编辑 </el-button>
             <el-button
               size="mini"
               type="danger"
@@ -72,7 +69,8 @@
     </div>
     <el-dialog
       :title="dialogTitle"
-      v-model:visible="dialogVisible"
+      :model-value="dialogVisible"
+      @update:model-value="(val) => (dialogVisible = val)"
       :before-close="handleClose"
       width="30%"
     >
@@ -158,18 +156,26 @@ export default {
         confirmButtonText: "确定",
         cancelButtonText: "取消",
         type: "warning",
-      }).then(() => {
-        deleteProductAttrCate(row.id).then((response) => {
+      })
+        .then(() => {
+          deleteProductAttrCate(row.id).then((response) => {
+            this.$message({
+              message: "删除成功",
+              type: "success",
+              duration: 1000,
+            });
+            this.getList();
+          });
+        })
+        .catch(() => {
           this.$message({
-            message: "删除成功",
-            type: "success",
+            type: "info",
+            message: "已取消删除",
             duration: 1000,
           });
-          this.getList();
         });
-      });
     },
-    handleUpdate(index, row) {
+    handleUpdate(row) {
       this.dialogVisible = true;
       this.dialogTitle = "编辑类型";
       this.productAttrCate.name = row.name;

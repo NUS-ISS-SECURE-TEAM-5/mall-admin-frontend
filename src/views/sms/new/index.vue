@@ -151,7 +151,12 @@
       >
       </el-pagination>
     </div>
-    <el-dialog title="选择商品" :visible.sync="selectDialogVisible" width="50%">
+    <el-dialog
+      title="选择商品"
+      :model-value="selectDialogVisible"
+      @update:model-value="(val) => (selectDialogVisible = val)"
+      width="50%"
+    >
       <el-input
         v-model="dialogData.listQuery.keyword"
         style="width: 250px; margin-bottom: 20px"
@@ -210,7 +215,12 @@
         >
       </div>
     </el-dialog>
-    <el-dialog title="设置排序" :visible.sync="sortDialogVisible" width="40%">
+    <el-dialog
+      title="设置排序"
+      :model-value="sortDialogVisible"
+      @update:model-value="(val) => (sortDialogVisible = val)"
+      width="40%"
+    >
       <el-form :model="sortDialogData" label-width="150px">
         <el-form-item label="排序：">
           <el-input
@@ -475,17 +485,25 @@ export default {
         confirmButtonText: "确定",
         cancelButtonText: "取消",
         type: "warning",
-      }).then(() => {
-        let params = new URLSearchParams();
-        params.append("ids", ids);
-        deleteNewProduct(params).then((response) => {
-          this.getList();
-          this.$message({
-            type: "success",
-            message: "删除成功!",
+      })
+        .then(() => {
+          let params = new URLSearchParams();
+          params.append("ids", ids);
+          deleteNewProduct(params).then((response) => {
+            this.getList();
+            this.$message({
+              type: "success",
+              message: "删除成功!",
+            });
           });
+        })
+        .catch(() => {
+          this.$message({
+            type: "info",
+            message: "已取消操作!",
+          });
+          this.getList();
         });
-      });
     },
     getDialogList() {
       fetchProductList(this.dialogData.listQuery).then((response) => {

@@ -53,10 +53,7 @@
         </el-table-column>
         <el-table-column label="操作" width="100" align="center">
           <template v-slot="{ row, $index }">
-            <el-button
-              size="mini"
-              type="text"
-              @click="handleUpdate($index, row)"
+            <el-button size="mini" type="text" @click="handleUpdate(row)"
               >编辑
             </el-button>
             <el-button
@@ -82,7 +79,12 @@
       >
       </el-pagination>
     </div>
-    <el-dialog title="选择商品" :visible.sync="selectDialogVisible" width="50%">
+    <el-dialog
+      title="选择商品"
+      :model-value="selectDialogVisible"
+      @update:model-value="(val) => (selectDialogVisible = val)"
+      width="50%"
+    >
       <el-input
         v-model="dialogData.listQuery.keyword"
         style="width: 250px; margin-bottom: 20px"
@@ -143,7 +145,8 @@
     </el-dialog>
     <el-dialog
       title="编辑秒杀商品信息"
-      :visible.sync="editDialogVisible"
+      :model-value="editDialogVisible"
+      @update:model-value="(val) => (editDialogVisible = val)"
       width="40%"
     >
       <el-form
@@ -265,7 +268,7 @@ export default {
       this.selectDialogVisible = true;
       this.getDialogList();
     },
-    handleUpdate(index, row) {
+    handleUpdate(row) {
       this.editDialogVisible = true;
       this.flashProductRelation = Object.assign({}, row);
     },
@@ -274,15 +277,17 @@ export default {
         confirmButtonText: "确定",
         cancelButtonText: "取消",
         type: "warning",
-      }).then(() => {
-        deleteFlashProductRelation(row.id).then((response) => {
-          this.$message({
-            type: "success",
-            message: "删除成功!",
+      })
+        .then(() => {
+          deleteFlashProductRelation(row.id).then((response) => {
+            this.$message({
+              type: "success",
+              message: "删除成功!",
+            });
+            this.getList();
           });
-          this.getList();
-        });
-      });
+        })
+        .catch(() => {});
     },
     handleSelectSearch() {
       this.getDialogList();

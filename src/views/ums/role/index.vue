@@ -136,7 +136,8 @@
     </div>
     <el-dialog
       :title="isEdit ? '编辑角色' : '添加角色'"
-      :visible.sync="dialogVisible"
+      :model-value="dialogVisible"
+      @update:model-value="(val) => (dialogVisible = val)"
       width="40%"
     >
       <el-form :model="role" ref="roleForm" label-width="150px" size="small">
@@ -263,19 +264,27 @@ export default {
         confirmButtonText: "确定",
         cancelButtonText: "取消",
         type: "warning",
-      }).then(() => {
-        let ids = [];
-        ids.push(row.id);
-        let params = new URLSearchParams();
-        params.append("ids", ids);
-        deleteRole(params).then((response) => {
+      })
+        .then(() => {
+          let ids = [];
+          ids.push(row.id);
+          let params = new URLSearchParams();
+          params.append("ids", ids);
+          deleteRole(params).then((response) => {
+            this.$message({
+              type: "success",
+              message: "删除成功!",
+            });
+            this.getList();
+          });
+        })
+        .catch(() => {
           this.$message({
-            type: "success",
-            message: "删除成功!",
+            type: "info",
+            message: "取消删除",
           });
           this.getList();
         });
-      });
     },
     handleUpdate(index, row) {
       this.dialogVisible = true;

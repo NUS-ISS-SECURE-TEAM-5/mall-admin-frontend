@@ -167,16 +167,23 @@ export default {
         confirmButtonText: "确定",
         cancelButtonText: "取消",
         type: "warning",
-      }).then(() => {
-        deleteMenu(row.id).then((response) => {
-          this.$message({
-            message: "删除成功",
-            type: "success",
-            duration: 1000,
+      })
+        .then(() => {
+          deleteMenu(row.id).then((response) => {
+            this.$message({
+              message: "删除成功",
+              type: "success",
+              duration: 1000,
+            });
+            this.getList();
           });
-          this.getList();
+        })
+        .catch(() => {
+          this.$message({
+            type: "info",
+            message: "已取消删除",
+          });
         });
-      });
     },
   },
   filters: {

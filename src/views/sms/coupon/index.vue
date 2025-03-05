@@ -267,15 +267,22 @@ export default {
         confirmButtonText: "确定",
         cancelButtonText: "取消",
         type: "warning",
-      }).then(() => {
-        deleteCoupon(row.id).then((response) => {
-          this.$message({
-            type: "success",
-            message: "删除成功!",
+      })
+        .then(() => {
+          deleteCoupon(row.id).then((response) => {
+            this.$message({
+              type: "success",
+              message: "删除成功!",
+            });
+            this.getList();
           });
-          this.getList();
+        })
+        .catch(() => {
+          this.$message({
+            type: "info",
+            message: "已取消删除",
+          });
         });
-      });
     },
     getList() {
       this.listLoading = true;

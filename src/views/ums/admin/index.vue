@@ -93,17 +93,10 @@
         </el-table-column>
         <el-table-column label="操作" width="180" align="center">
           <template v-slot="{ row, $index }">
-            <el-button
-              size="mini"
-              type="text"
-              @click="handleSelectRole($index, row)"
+            <el-button size="mini" type="text" @click="handleSelectRole(row)"
               >分配角色
             </el-button>
-            <el-button
-              size="mini"
-              type="text"
-              @click="handleUpdate($index, row)"
-            >
+            <el-button size="mini" type="text" @click="handleUpdate(row)">
               编辑
             </el-button>
             <el-button
@@ -131,7 +124,8 @@
     </div>
     <el-dialog
       :title="isEdit ? '编辑用户' : '添加用户'"
-      :visible.sync="dialogVisible"
+      :model-value="dialogVisible"
+      @update:model-value="(val) => (dialogVisible = val)"
       width="40%"
     >
       <el-form :model="admin" ref="adminForm" label-width="150px" size="small">
@@ -173,7 +167,12 @@
         >
       </span>
     </el-dialog>
-    <el-dialog title="分配角色" :visible.sync="allocDialogVisible" width="30%">
+    <el-dialog
+      title="分配角色"
+      :model-value="allocDialogVisible"
+      @update:model-value="(val) => (allocDialogVisible = val)"
+      width="30%"
+    >
       <el-select
         v-model="allocRoleIds"
         multiple
@@ -309,17 +308,24 @@ export default {
         confirmButtonText: "确定",
         cancelButtonText: "取消",
         type: "warning",
-      }).then(() => {
-        deleteAdmin(row.id).then((response) => {
-          this.$message({
-            type: "success",
-            message: "删除成功!",
+      })
+        .then(() => {
+          deleteAdmin(row.id).then((response) => {
+            this.$message({
+              type: "success",
+              message: "删除成功!",
+            });
+            this.getList();
           });
-          this.getList();
+        })
+        .catch(() => {
+          this.$message({
+            type: "info",
+            message: "已取消删除",
+          });
         });
-      });
     },
-    handleUpdate(index, row) {
+    handleUpdate(row) {
       this.dialogVisible = true;
       this.isEdit = true;
       this.admin = Object.assign({}, row);
@@ -369,7 +375,7 @@ export default {
         });
       });
     },
-    handleSelectRole(index, row) {
+    handleSelectRole(row) {
       this.allocAdminId = row.id;
       this.allocDialogVisible = true;
       this.getRoleListByAdmin(row.id);

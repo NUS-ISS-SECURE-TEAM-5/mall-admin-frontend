@@ -164,13 +164,13 @@
             >
             <el-button
               size="mini"
-              @click="handleDeliveryOrder($index, row)"
+              @click="handleDeliveryOrder(row)"
               v-show="row.status === 1"
               >订单发货</el-button
             >
             <el-button
               size="mini"
-              @click="handleViewLogistics($index, row)"
+              @click="handleViewLogistics(row)"
               v-show="row.status === 2 || row.status === 3"
               >订单跟踪</el-button
             >
@@ -389,14 +389,14 @@ export default {
       this.closeOrder.dialogVisible = true;
       this.closeOrder.orderIds = [row.id];
     },
-    handleDeliveryOrder(index, row) {
+    handleDeliveryOrder(row) {
       let listItem = this.covertOrder(row);
       this.$router.push({
         path: "/oms/deliverOrderList",
-        query: { list: [listItem] },
+        query: { list: JSON.stringify([listItem]) },
       });
     },
-    handleViewLogistics(index, row) {
+    handleViewLogistics(row) {
       this.logisticsDialogVisible = true;
     },
     handleDeleteOrder(index, row) {
@@ -494,36 +494,38 @@ export default {
         confirmButtonText: "确定",
         cancelButtonText: "取消",
         type: "warning",
-      }).then(() => {
-        let params = new URLSearchParams();
-        params.append("ids", ids);
-        deleteOrder(params).then((response) => {
+      })
+        .then(() => {
+          let params = new URLSearchParams();
+          params.append("ids", ids);
+          deleteOrder(params).then((response) => {
+            this.$message({
+              message: "删除成功！",
+              type: "success",
+              duration: 1000,
+            });
+            this.getList();
+          });
+        })
+        .catch(() => {
           this.$message({
-            message: "删除成功！",
-            type: "success",
+            type: "info",
+            message: "已取消删除",
             duration: 1000,
           });
-          this.getList();
         });
-      });
     },
     covertOrder(order) {
-      let address =
-        order.receiverProvince +
-        order.receiverCity +
-        order.receiverRegion +
-        order.receiverDetailAddress;
-      let listItem = {
+      return {
         orderId: order.id,
         orderSn: order.orderSn,
         receiverName: order.receiverName,
         receiverPhone: order.receiverPhone,
         receiverPostCode: order.receiverPostCode,
-        address: address,
-        deliveryCompany: null,
-        deliverySn: null,
+        address: `${order.receiverProvince} ${order.receiverCity} ${order.receiverRegion} ${order.receiverDetailAddress}`,
+        deliveryCompany: null, // 初始化为null
+        deliverySn: null, // 初始化为null
       };
-      return listItem;
     },
   },
 };

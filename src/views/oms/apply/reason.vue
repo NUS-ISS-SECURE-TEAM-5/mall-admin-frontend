@@ -92,7 +92,12 @@
       >
       </el-pagination>
     </div>
-    <el-dialog title="添加退货原因" :visible.sync="dialogVisible" width="30%">
+    <el-dialog
+      title="添加退货原因"
+      :model-value="dialogVisible"
+      @update:model-value="(val) => (dialogVisible = val)"
+      width="30%"
+    >
       <el-form :model="returnReason" ref="reasonForm" label-width="150px">
         <el-form-item label="原因类型：">
           <el-input v-model="returnReason.name" class="input-width"></el-input>
