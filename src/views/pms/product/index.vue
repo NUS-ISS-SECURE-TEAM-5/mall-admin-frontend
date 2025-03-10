@@ -4,21 +4,21 @@
     <el-card class="filter-container" shadow="never">
       <div>
         <i class="el-icon-search"></i>
-        <span>筛选搜索</span>
+        <span>Filter Search</span>
         <el-button
           style="float: right"
           @click="handleSearchList()"
           type="primary"
           size="small"
         >
-          查询结果
+          Query results
         </el-button>
         <el-button
           style="float: right; margin-right: 15px"
           @click="handleResetSearch()"
           size="small"
         >
-          重置
+          Reset
         </el-button>
       </div>
       <div style="margin-top: 15px">
@@ -28,33 +28,33 @@
           size="small"
           label-width="140px"
         >
-          <el-form-item label="输入搜索：">
+          <el-form-item label="Input search:">
             <el-input
               style="width: 203px"
               v-model="listQuery.keyword"
-              placeholder="商品名称"
+              placeholder="Product Name"
             ></el-input>
           </el-form-item>
-          <el-form-item label="商品货号：">
+          <el-form-item label="Product item number:">
             <el-input
               style="width: 203px"
               v-model="listQuery.productSn"
-              placeholder="商品货号"
+              placeholder="Product No."
             ></el-input>
           </el-form-item>
-          <el-form-item label="商品分类：">
+          <el-form-item label="Product Category:">
             <el-cascader
-              clearable
+              Clearable
               v-model="selectProductCateValue"
               :options="productCateOptions"
             >
             </el-cascader>
           </el-form-item>
-          <el-form-item label="商品品牌：">
+          <el-form-item label="Product Brand:">
             <el-select
               v-model="listQuery.brandId"
-              placeholder="请选择品牌"
-              clearable
+              placeholder="Please select a brand"
+              Clearable
             >
               <el-option
                 v-for="item in brandOptions"
@@ -65,10 +65,10 @@
               </el-option>
             </el-select>
           </el-form-item>
-          <el-form-item label="上架状态：">
+          <el-form-item label="Setting status:">
             <el-select
               v-model="listQuery.publishStatus"
-              placeholder="全部"
+              placeholder="All"
               clearable
             >
               <el-option
@@ -80,10 +80,10 @@
               </el-option>
             </el-select>
           </el-form-item>
-          <el-form-item label="审核状态：">
+          <el-form-item label="Review status:">
             <el-select
               v-model="listQuery.verifyStatus"
-              placeholder="全部"
+              placeholder="All"
               clearable
             >
               <el-option
@@ -100,9 +100,9 @@
     </el-card>
     <el-card class="operate-container" shadow="never">
       <i class="el-icon-tickets"></i>
-      <span>数据列表</span>
+      <span>Data list</span>
       <el-button class="btn-add" @click="handleAddProduct()" size="mini">
-        添加
+        Add
       </el-button>
     </el-card>
     <div class="table-container">
@@ -119,30 +119,30 @@
           width="60"
           align="center"
         ></el-table-column>
-        <el-table-column label="编号" width="100" align="center">
+        <el-table-column label="serial number" width="100" align="center">
           <template #default="{ row }">{{ row.id }}</template>
         </el-table-column>
-        <el-table-column label="商品图片" width="120" align="center">
+        <el-table-column label="Product pictures" width="120" align="center">
           <template #default="{ row }"
             ><img style="height: 80px" :src="row.pic"
           /></template>
         </el-table-column>
-        <el-table-column label="商品名称" align="center">
+        <el-table-column label="Product Name" align="center">
           <template #default="{ row }">
             <p>{{ row.name }}</p>
             <p>品牌：{{ row.brandName }}</p>
           </template>
         </el-table-column>
-        <el-table-column label="价格/货号" width="120" align="center">
+        <el-table-column label="Price/item number" width="120" align="center">
           <template #default="{ row }">
             <p>价格：￥{{ row.price }}</p>
             <p>货号：{{ row.productSn }}</p>
           </template>
         </el-table-column>
-        <el-table-column label="标签" width="140" align="center">
+        <el-table-column label="Label" width="140" align="center">
           <template #default="{ row, $index }">
             <p>
-              上架：
+              Publish:
               <el-switch
                 @change="handlePublishStatusChange($index, row)"
                 :active-value="1"
@@ -152,7 +152,7 @@
               </el-switch>
             </p>
             <p>
-              新品：
+              New:
               <el-switch
                 @change="handleNewStatusChange($index, row)"
                 :active-value="1"
@@ -162,7 +162,7 @@
               </el-switch>
             </p>
             <p>
-              推荐：
+              Recommends:
               <el-switch
                 @change="handleRecommendStatusChange($index, row)"
                 :active-value="1"
@@ -173,10 +173,10 @@
             </p>
           </template>
         </el-table-column>
-        <el-table-column label="排序" width="100" align="center">
+        <el-table-column label="Sort" width="100" align="center">
           <template #default="{ row }">{{ row.sort }}</template>
         </el-table-column>
-        <el-table-column label="SKU库存" width="100" align="center">
+        <el-table-column label="SKU Stock" width="100" align="center">
           <template #default="{ row }">
             <el-button
               type="primary"
@@ -186,40 +186,40 @@
             ></el-button>
           </template>
         </el-table-column>
-        <el-table-column label="销量" width="100" align="center">
+        <el-table-column label="Sales" width="100" align="center">
           <template #default="{ row }">{{ row.sale }}</template>
         </el-table-column>
-        <el-table-column label="审核状态" width="100" align="center">
+        <el-table-column label="Review status" width="100" align="center">
           <template #default="{ row, $index }">
             <p>{{ row.verifyStatus | verifyStatusFilter }}</p>
             <p>
               <el-button
                 type="text"
                 @click="handleShowVerifyDetail($index, row)"
-                >审核详情
+                >Review details
               </el-button>
             </p>
           </template>
         </el-table-column>
-        <el-table-column label="操作" width="160" align="center">
+        <el-table-column label="Operation" width="160" align="center">
           <template #default="{ row, $index }">
             <p>
               <el-button size="mini" @click="handleShowProduct($index, row)"
-                >查看
+                >Check
               </el-button>
               <el-button size="mini" @click="handleUpdateProduct($index, row)"
-                >编辑
+                >Edit
               </el-button>
             </p>
             <p>
               <el-button size="mini" @click="handleShowLog($index, row)"
-                >日志
+                >Log
               </el-button>
               <el-button
                 size="mini"
                 type="danger"
                 @click="handleDelete($index, row)"
-                >删除
+                >Delete
               </el-button>
             </p>
           </template>
@@ -227,7 +227,7 @@
       </el-table>
     </div>
     <div class="batch-operate-container">
-      <el-select size="small" v-model="operateType" placeholder="批量操作">
+      <el-select size="small" v-model="operateType" placeholder="批量Operation">
         <el-option
           v-for="item in operates"
           :key="item.value"
@@ -243,7 +243,7 @@
         type="primary"
         size="small"
       >
-        确定
+        Confirm
       </el-button>
     </div>
     <div class="pagination-container">
@@ -260,15 +260,15 @@
       </el-pagination>
     </div>
     <el-dialog
-      title="编辑货品信息"
+      title="Edit Product Information"
       :model-value="editSkuInfo.dialogVisible"
       @update:model-value="(val) => (editSkuInfo.dialogVisible = val)"
       width="40%"
     >
-      <span>商品货号：</span>
+      <span>Product number:</span>
       <span>{{ editSkuInfo.productSn }}</span>
       <el-input
-        placeholder="按sku编号搜索"
+        placeholder="Search by sku number"
         v-model="editSkuInfo.keyword"
         size="small"
         style="width: 50%; margin-left: 20px"
@@ -284,7 +284,7 @@
         :data="editSkuInfo.stockList"
         border
       >
-        <el-table-column label="SKU编号" align="center">
+        <el-table-column label="SKU number" align="center">
           <template #default="{ row }">
             <el-input v-model="row.skuCode"></el-input>
           </template>
@@ -299,26 +299,30 @@
             {{ getProductSkuSp(row, index) }}
           </template>
         </el-table-column>
-        <el-table-column label="销售价格" width="80" align="center">
+        <el-table-column label="Sales price" width="80" align="center">
           <template #default="{ row }">
             <el-input v-model="row.price"></el-input>
           </template>
         </el-table-column>
-        <el-table-column label="商品库存" width="80" align="center">
+        <el-table-column label="Product inventory" width="80" align="center">
           <template #default="{ row }">
             <el-input v-model="row.stock"></el-input>
           </template>
         </el-table-column>
-        <el-table-column label="库存预警值" width="100" align="center">
+        <el-table-column
+          label="Inventory warning value"
+          width="100"
+          align="center"
+        >
           <template #default="{ row }">
             <el-input v-model="row.lowStock"></el-input>
           </template>
         </el-table-column>
       </el-table>
       <span slot="footer" class="dialog-footer">
-        <el-button @click="editSkuInfo.dialogVisible = false">取 消</el-button>
+        <el-button @click="editSkuInfo.dialogVisible = false">Cancel</el-button>
         <el-button type="primary" @click="handleEditSkuConfirm"
-          >确 定</el-button
+          >Confirm</el-button
         >
       </span>
     </el-dialog>
@@ -365,35 +369,35 @@ export default {
       },
       operates: [
         {
-          label: "商品上架",
+          label: "Products are on the shelves",
           value: "publishOn",
         },
         {
-          label: "商品下架",
+          label: "Product removed",
           value: "publishOff",
         },
         {
-          label: "设为推荐",
+          label: "Set as recommended",
           value: "recommendOn",
         },
         {
-          label: "取消推荐",
+          label: "Cancel recommendation",
           value: "recommendOff",
         },
         {
-          label: "设为新品",
+          label: "Set as new product",
           value: "newOn",
         },
         {
-          label: "取消新品",
+          label: "Cancel new product",
           value: "newOff",
         },
         {
-          label: "转移到分类",
+          label: "Transfer to classification",
           value: "transferCategory",
         },
         {
-          label: "移入回收站",
+          label: "Move into the recycling bin",
           value: "recycle",
         },
       ],
@@ -409,21 +413,21 @@ export default {
       publishStatusOptions: [
         {
           value: 1,
-          label: "上架",
+          label: "Published",
         },
         {
           value: 0,
-          label: "下架",
+          label: "Unpublished",
         },
       ],
       verifyStatusOptions: [
         {
           value: 1,
-          label: "审核通过",
+          label: "Approved",
         },
         {
           value: 0,
-          label: "未审核",
+          label: "Unreviewed",
         },
       ],
     };
@@ -445,9 +449,9 @@ export default {
   filters: {
     verifyStatusFilter(value) {
       if (value === 1) {
-        return "审核通过";
+        return "Reviewed and approved";
       } else {
-        return "未审核";
+        return "Unreviewed";
       }
     },
   },
@@ -535,15 +539,15 @@ export default {
         this.editSkuInfo.stockList.length <= 0
       ) {
         this.$message({
-          message: "暂无sku信息",
+          message: "No sku information yet",
           type: "warning",
           duration: 1000,
         });
         return;
       }
-      this.$confirm("是否要进行修改", "提示", {
-        confirmButtonText: "确定",
-        cancelButtonText: "取消",
+      this.$confirm("Whether to modify", "Tip", {
+        confirmButtonText: "Confirm",
+        cancelButtonText: "Cancel",
         type: "warning",
       }).then(() => {
         updateSkuStockList(
@@ -569,7 +573,7 @@ export default {
     handleBatchOperate() {
       if (this.operateType == null) {
         this.$message({
-          message: "请选择操作类型",
+          message: "Please select Operation type",
           type: "warning",
           duration: 1000,
         });
@@ -577,15 +581,15 @@ export default {
       }
       if (this.multipleSelection == null || this.multipleSelection.length < 1) {
         this.$message({
-          message: "请选择要操作的商品",
+          message: "Please select the product you want to operate",
           type: "warning",
           duration: 1000,
         });
         return;
       }
-      this.$confirm("是否要进行该批量操作?", "提示", {
-        confirmButtonText: "确定",
-        cancelButtonText: "取消",
+      this.$confirm("Do you want to perform this batch operation?", "Tip", {
+        confirmButtonText: "Confirm",
+        cancelButtonText: "Cancel",
         type: "warning",
       }).then(() => {
         let ids = [];
@@ -654,9 +658,9 @@ export default {
       this.listQuery = Object.assign({}, defaultListQuery);
     },
     handleDelete(index, row) {
-      this.$confirm("是否要进行删除操作?", "提示", {
-        confirmButtonText: "确定",
-        cancelButtonText: "取消",
+      this.$confirm("Do you want to perform DeleteOperation?", "Tip", {
+        confirmButtonText: "Confirm",
+        cancelButtonText: "Cancel",
         type: "warning",
       })
         .then(() => {
@@ -667,7 +671,7 @@ export default {
         .catch(() => {
           this.$message({
             type: "info",
-            message: "已取消删除",
+            message: "Canceled Delete",
             duration: 1000,
           });
         });
@@ -690,7 +694,7 @@ export default {
       params.append("publishStatus", publishStatus);
       updatePublishStatus(params).then((response) => {
         this.$message({
-          message: "修改成功",
+          message: "Modification was successful",
           type: "success",
           duration: 1000,
         });
@@ -702,7 +706,7 @@ export default {
       params.append("newStatus", newStatus);
       updateNewStatus(params).then((response) => {
         this.$message({
-          message: "修改成功",
+          message: "Modification was successful",
           type: "success",
           duration: 1000,
         });
@@ -714,7 +718,7 @@ export default {
       params.append("recommendStatus", recommendStatus);
       updateRecommendStatus(params).then((response) => {
         this.$message({
-          message: "修改成功",
+          message: "Modification was successful",
           type: "success",
           duration: 1000,
         });
@@ -726,7 +730,7 @@ export default {
       params.append("deleteStatus", deleteStatus);
       updateDeleteStatus(params).then((response) => {
         this.$message({
-          message: "删除成功",
+          message: "Delete was successful",
           type: "success",
           duration: 1000,
         });

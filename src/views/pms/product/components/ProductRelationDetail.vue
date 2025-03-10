@@ -6,25 +6,24 @@
       label-width="120px"
       class="form-inner-container"
       size="small"
-    >
-      <el-form-item label="关联专题：">
+      ><el-form-item label="Affiliated topics:">
         <el-transfer
           style="display: inline-block"
           filterable
           :filter-method="filterMethod"
-          filter-placeholder="请输入专题名称"
+          filter-placeholder="Please enter the topic name"
           v-model="selectSubject"
           :titles="subjectTitles"
           :data="subjectList"
         >
         </el-transfer>
       </el-form-item>
-      <el-form-item label="关联优选：">
+      <el-form-item label="Affiliated preferred:">
         <el-transfer
           style="display: inline-block"
           filterable
           :filter-method="filterMethod"
-          filter-placeholder="请输入优选名称"
+          filter-placeholder="Please enter a preferred name"
           v-model="selectPrefrenceArea"
           :titles="prefrenceAreaTitles"
           :data="prefrenceAreaList"
@@ -33,10 +32,10 @@
       </el-form-item>
       <el-form-item style="text-align: center">
         <el-button size="medium" @click="handlePrev"
-          >上一步，填写商品属性</el-button
+          >Previous step, fill in product attributes</el-button
         >
         <el-button type="primary" size="medium" @click="handleFinishCommit"
-          >完成，提交商品</el-button
+          >Complete, submit the product</el-button
         >
       </el-form-item>
     </el-form>
@@ -65,11 +64,11 @@ export default {
       //所有专题列表
       subjectList: [],
       //专题左右标题
-      subjectTitles: ["待选择", "已选择"],
-      //所有专题列表
+      subjectTitles: ["To be selected", "Selected"],
+      //All topic list
       prefrenceAreaList: [],
-      //专题左右标题
-      prefrenceAreaTitles: ["待选择", "已选择"],
+      //The title of the topic
+      prefrenceAreaTitles: ["To be selected", "Selected"],
     };
   },
   created() {

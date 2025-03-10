@@ -8,24 +8,24 @@
       class="form-inner-container"
       size="small"
     >
-      <el-form-item label="商品分类：" prop="productCategoryId">
+      <el-form-item label="Product Category:" prop="productCategoryId">
         <el-cascader
           v-model="selectProductCateValue"
           :options="productCateOptions"
         >
         </el-cascader>
       </el-form-item>
-      <el-form-item label="商品名称：" prop="name">
+      <el-form-item label="Product name:" prop="name">
         <el-input v-model="localData.name"></el-input>
       </el-form-item>
-      <el-form-item label="副标题：" prop="subTitle">
+      <el-form-item label="Subtitle:" prop="subTitle">
         <el-input v-model="localData.subTitle"></el-input>
       </el-form-item>
-      <el-form-item label="商品品牌：" prop="brandId">
+      <el-form-item label="Product Brand:" prop="brandId">
         <el-select
           v-model="localData.brandId"
           @change="handleBrandChange"
-          placeholder="请选择品牌"
+          placeholder="Please select a brand"
         >
           <el-option
             v-for="item in brandOptions"
@@ -36,34 +36,34 @@
           </el-option>
         </el-select>
       </el-form-item>
-      <el-form-item label="商品介绍：">
+      <el-form-item label="Product introduction:">
         <el-input
           :autoSize="true"
           v-model="localData.description"
           type="textarea"
-          placeholder="请输入内容"
+          placeholder="Please enter content"
         ></el-input>
       </el-form-item>
-      <el-form-item label="商品货号：">
+      <el-form-item label="Product item number:">
         <el-input v-model="localData.productSn"></el-input>
       </el-form-item>
-      <el-form-item label="商品售价：">
+      <el-form-item label="Product price:">
         <el-input v-model="localData.price"></el-input>
       </el-form-item>
-      <el-form-item label="市场价：">
+      <el-form-item label="Market Price:">
         <el-input v-model="localData.originalPrice"></el-input>
       </el-form-item>
-      <el-form-item label="商品库存：">
+      <el-form-item label="Commodity Inventory:">
         <el-input v-model="localData.stock"></el-input>
       </el-form-item>
-      <el-form-item label="计量单位：">
+      <el-form-item label="Unit of measurement:">
         <el-input v-model="localData.unit"></el-input>
       </el-form-item>
-      <el-form-item label="商品重量：">
+      <el-form-item label="Product weight:">
         <el-input v-model="localData.weight" style="width: 300px"></el-input>
-        <span style="margin-left: 20px">克</span>
+        <span style="margin-left: 20px">g</span>
       </el-form-item>
-      <el-form-item label="排序">
+      <el-form-item label="Sort">
         <el-input v-model="localData.sort"></el-input>
       </el-form-item>
       <el-form-item style="text-align: center">
@@ -71,7 +71,7 @@
           type="primary"
           size="medium"
           @click="handleNext('productInfoForm')"
-          >下一步，填写商品促销</el-button
+          >Next, fill in the product promotion</el-button
         >
       </el-form-item>
     </el-form>
@@ -105,28 +105,48 @@ export default {
       brandOptions: [],
       rules: {
         name: [
-          { required: true, message: "请输入商品名称", trigger: "blur" },
+          {
+            required: true,
+            message: "Please enter the product name",
+            trigger: "blur",
+          },
           {
             min: 2,
             max: 140,
-            message: "长度在 2 到 140 个字符",
+            message: "Length between 2 and 140 characters",
             trigger: "blur",
           },
         ],
         subTitle: [
-          { required: true, message: "请输入商品副标题", trigger: "blur" },
+          {
+            required: true,
+            message: "Please enter the product subtitle",
+            trigger: "blur",
+          },
         ],
         productCategoryId: [
-          { required: true, message: "请选择商品分类", trigger: "blur" },
+          {
+            required: true,
+            message: "Please select product category",
+            trigger: "blur",
+          },
         ],
         brandId: [
-          { required: true, message: "请选择商品品牌", trigger: "blur" },
+          {
+            required: true,
+            message: "Please select the product brand",
+            trigger: "blur",
+          },
         ],
-        description: [
-          { required: true, message: "请输入商品介绍", trigger: "blur" },
+        Description: [
+          {
+            required: true,
+            message: "Please enter product introduction",
+            trigger: "blur",
+          },
         ],
         requiredProp: [
-          { required: true, message: "该项为必填项", trigger: "blur" },
+          { required: true, message: "This item is required", trigger: "blur" },
         ],
       },
     };
@@ -228,7 +248,7 @@ export default {
           this.$emit("nextStep");
         } else {
           this.$message({
-            message: "验证失败",
+            message: "Verification failed",
             type: "error",
             duration: 1000,
           });

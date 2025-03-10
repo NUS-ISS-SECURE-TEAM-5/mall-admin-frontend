@@ -2,9 +2,9 @@
   <div class="app-container">
     <el-card class="operate-container" shadow="never">
       <i class="el-icon-tickets" style="margin-top: 5px"></i>
-      <span style="margin-top: 5px">数据列表</span>
+      <span style="margin-top: 5px">Data list</span>
       <el-button class="btn-add" @click="addProductAttrCate()" size="mini">
-        添加
+        Add
       </el-button>
     </el-card>
     <div class="table-container">
@@ -15,40 +15,48 @@
         v-loading="listLoading"
         border
       >
-        <el-table-column label="编号" width="100" align="center">
+        <el-table-column label="ID" width="100" align="center">
           <template v-slot="{ row }">{{ row.id }}</template>
         </el-table-column>
-        <el-table-column label="类型名称" align="center">
+        <el-table-column label="Type Name" align="center">
           <template v-slot="{ row }">{{ row.name }}</template>
         </el-table-column>
-        <el-table-column label="属性数量" width="200" align="center">
+        <el-table-column
+          label="Number of attributes"
+          width="200"
+          align="center"
+        >
           <template v-slot="{ row }">{{
             row.attributeCount == null ? 0 : row.attributeCount
           }}</template>
         </el-table-column>
-        <el-table-column label="参数数量" width="200" align="center">
+        <el-table-column
+          label="Number of parameters"
+          width="200"
+          align="center"
+        >
           <template v-slot="{ row }">{{
             row.paramCount == null ? 0 : row.paramCount
           }}</template>
         </el-table-column>
-        <el-table-column label="设置" width="200" align="center">
+        <el-table-column label="Settings" width="200" align="center">
           <template v-slot="{ row, $index }">
             <el-button size="mini" @click="getAttrList($index, row)"
-              >属性列表
+              >Property List
             </el-button>
-            <el-button size="mini" @click="getParamList($index, row)"
-              >参数列表
+            <el-button size="mini" @click="getParamList($index, row)">
+              Parameter list
             </el-button>
           </template>
         </el-table-column>
-        <el-table-column label="操作" width="200" align="center">
+        <el-table-column label="Operation" width="200" align="center">
           <template v-slot="{ row, $index }">
-            <el-button size="mini" @click="handleUpdate(row)">编辑 </el-button>
+            <el-button size="mini" @click="handleUpdate(row)">Edit </el-button>
             <el-button
               size="mini"
               type="danger"
               @click="handleDelete($index, row)"
-              >删除
+              >Delete
             </el-button>
           </template>
         </el-table-column>
@@ -80,7 +88,7 @@
         :rules="rules"
         label-width="120px"
       >
-        <el-form-item label="类型名称" prop="name">
+        <el-form-item label="Type Name" prop="name">
           <el-input
             v-model="productAttrCate.name"
             auto-complete="off"
@@ -90,7 +98,7 @@
       <template #footer>
         <el-button @click="dialogVisible = false">取消</el-button>
         <el-button type="primary" @click="handleConfirm('productAttrCatForm')"
-          >确定</el-button
+          >Confirm</el-button
         >
       </template>
     </el-dialog>
@@ -122,7 +130,13 @@ export default {
         id: null,
       },
       rules: {
-        name: [{ required: true, message: "请输入类型名称", trigger: "blur" }],
+        name: [
+          {
+            required: true,
+            message: "Please enter a type name",
+            trigger: "blur",
+          },
+        ],
       },
     };
   },
@@ -140,7 +154,7 @@ export default {
     },
     addProductAttrCate() {
       this.dialogVisible = true;
-      this.dialogTitle = "添加类型";
+      this.dialogTitle = "Add Type";
     },
     handleSizeChange(val) {
       this.listQuery.pageNum = 1;
@@ -152,15 +166,15 @@ export default {
       this.getList();
     },
     handleDelete(index, row) {
-      this.$confirm("是否要删除该品牌", "提示", {
-        confirmButtonText: "确定",
-        cancelButtonText: "取消",
+      this.$confirm("Do you want to delete the brand?", "Tip", {
+        confirmButtonText: "OK",
+        cancelButtonText: "Cancel",
         type: "warning",
       })
         .then(() => {
           deleteProductAttrCate(row.id).then((response) => {
             this.$message({
-              message: "删除成功",
+              message: "Delete successfully",
               type: "success",
               duration: 1000,
             });
@@ -170,14 +184,14 @@ export default {
         .catch(() => {
           this.$message({
             type: "info",
-            message: "已取消删除",
+            message: "Undeleted",
             duration: 1000,
           });
         });
     },
     handleUpdate(row) {
       this.dialogVisible = true;
-      this.dialogTitle = "编辑类型";
+      this.dialogTitle = "Edit Type";
       this.productAttrCate.name = row.name;
       this.productAttrCate.id = row.id;
     },
@@ -198,10 +212,10 @@ export default {
         if (valid) {
           let data = new URLSearchParams();
           data.append("name", this.productAttrCate.name);
-          if (this.dialogTitle === "添加类型") {
+          if (this.dialogTitle === "Add type") {
             createProductAttrCate(data).then((response) => {
               this.$message({
-                message: "添加成功",
+                message: "Added successfully",
                 type: "success",
                 duration: 1000,
               });
@@ -212,7 +226,7 @@ export default {
             updateProductAttrCate(this.productAttrCate.id, data).then(
               (response) => {
                 this.$message({
-                  message: "修改成功",
+                  message: "Modified successfully",
                   type: "success",
                   duration: 1000,
                 });

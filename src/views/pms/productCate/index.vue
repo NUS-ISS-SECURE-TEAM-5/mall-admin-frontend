@@ -2,7 +2,7 @@
   <div class="app-container">
     <el-card class="operate-container" shadow="never">
       <i class="el-icon-tickets" style="margin-top: 5px"></i>
-      <span style="margin-top: 5px">数据列表</span>
+      <span style="margin-top: 5px">Data list</span>
       <el-button class="btn-add" @click="handleAddProductCate()" size="mini">
         添加
       </el-button>
@@ -15,22 +15,26 @@
         v-loading="listLoading"
         border
       >
-        <el-table-column label="编号" width="100" align="center">
+        <el-table-column label="ID" width="100" align="center">
           <template v-slot="{ row }">{{ row.id }}</template>
         </el-table-column>
-        <el-table-column label="分类名称" align="center">
+        <el-table-column label="Category Name" align="center">
           <template v-slot="{ row }">{{ row.name }}</template>
         </el-table-column>
-        <el-table-column label="级别" width="100" align="center">
+        <el-table-column label="Level" width="100" align="center">
           <template v-slot="{ row }">{{ row.level | levelFilter }}</template>
         </el-table-column>
-        <el-table-column label="商品数量" width="100" align="center">
+        <el-table-column
+          label="Quantity of products"
+          width="100"
+          align="center"
+        >
           <template v-slot="{ row }">{{ row.productCount }}</template>
         </el-table-column>
-        <el-table-column label="数量单位" width="100" align="center">
+        <el-table-column label="Units of quantity" width="100" align="center">
           <template v-slot="{ row }">{{ row.productUnit }}</template>
         </el-table-column>
-        <el-table-column label="导航栏" width="100" align="center">
+        <el-table-column label="Navigation bar" width="100" align="center">
           <template v-slot="{ row, $index }">
             <el-switch
               @change="handleNavStatusChange($index, row)"
@@ -41,7 +45,7 @@
             </el-switch>
           </template>
         </el-table-column>
-        <el-table-column label="是否显示" width="100" align="center">
+        <el-table-column label="Whether to display" width="100" align="center">
           <template v-slot="{ row, $index }">
             <el-switch
               @change="handleShowStatusChange($index, row)"
@@ -52,32 +56,32 @@
             </el-switch>
           </template>
         </el-table-column>
-        <el-table-column label="排序" width="100" align="center">
+        <el-table-column label="Sort" width="100" align="center">
           <template v-slot="{ row }">{{ row.sort }}</template>
         </el-table-column>
-        <el-table-column label="设置" width="200" align="center">
+        <el-table-column label="Settings" width="200" align="center">
           <template v-slot="{ row, $index }">
             <el-button
               size="mini"
               :disabled="row.level | disableNextLevel"
               @click="handleShowNextLevel($index, row)"
-              >查看下级
+              >Check out the following level
             </el-button>
             <el-button size="mini" @click="handleTransferProduct($index, row)"
-              >转移商品
+              >Transfer products
             </el-button>
           </template>
         </el-table-column>
-        <el-table-column label="操作" width="200" align="center">
+        <el-table-column label="Operation" width="200" align="center">
           <template v-slot="{ row }">
             <el-button size="mini" @click="handleUpdate($index, row)"
-              >编辑
+              >Edit
             </el-button>
             <el-button
               size="mini"
               type="danger"
               @click="handleDelete($index, row)"
-              >删除
+              >Delete
             </el-button>
           </template>
         </el-table-column>
@@ -168,7 +172,7 @@ export default {
       data.append("navStatus", row.navStatus);
       updateNavStatus(data).then((response) => {
         this.$message({
-          message: "修改成功",
+          message: "Modification was successful",
           type: "success",
           duration: 1000,
         });
@@ -182,7 +186,7 @@ export default {
       data.append("showStatus", row.showStatus);
       updateShowStatus(data).then((response) => {
         this.$message({
-          message: "修改成功",
+          message: "Modification was successful",
           type: "success",
           duration: 1000,
         });
@@ -204,15 +208,15 @@ export default {
       });
     },
     handleDelete(index, row) {
-      this.$confirm("是否要删除该品牌", "提示", {
-        confirmButtonText: "确定",
-        cancelButtonText: "取消",
+      this.$confirm("Whether to delete the brand", "Tip", {
+        confirmButtonText: "OK",
+        cancelButtonText: "Cancel",
         type: "warning",
       })
         .then(() => {
           deleteProductCate(row.id).then((response) => {
             this.$message({
-              message: "删除成功",
+              message: "Delete successfully",
               type: "success",
               duration: 1000,
             });
@@ -222,7 +226,7 @@ export default {
         .catch(() => {
           this.$message({
             type: "info",
-            message: "已取消删除",
+            message: "Undeleted",
             duration: 1000,
           });
         });
@@ -231,9 +235,9 @@ export default {
   filters: {
     levelFilter(value) {
       if (value === 0) {
-        return "一级";
+        return "Level 1";
       } else if (value === 1) {
-        return "二级";
+        return "level 2";
       }
     },
     disableNextLevel(value) {

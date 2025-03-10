@@ -7,10 +7,10 @@
       class="form-inner-container"
       size="small"
     >
-      <el-form-item label="属性类型：">
+      <el-form-item label="Attribute type:">
         <el-select
           v-model="localData.productAttributeCategoryId"
-          placeholder="请选择属性类型"
+          placeholder="Please select attribute type"
           @change="handleProductAttrChange"
         >
           <el-option
@@ -22,7 +22,7 @@
           </el-option>
         </el-select>
       </el-form-item>
-      <el-form-item label="商品规格：">
+      <el-form-item label="Product specifications:">
         <el-card shadow="never" class="cardBg">
           <div v-for="(productAttr, idx) in selectProductAttr">
             {{ productAttr.name }}：
@@ -49,7 +49,7 @@
                     type="text"
                     class="littleMarginLeft"
                     @click="handleRemoveProductAttrValue(idx, index)"
-                    >删除
+                    >Delete
                   </el-button>
                 </div>
               </el-checkbox-group>
@@ -61,7 +61,7 @@
               <el-button
                 class="littleMarginLeft"
                 @click="handleAddProductAttrValue(idx)"
-                >增加</el-button
+                >Add</el-button
               >
             </div>
           </div>
@@ -81,37 +81,41 @@
               {{ getProductSkuSp(row, index) }}
             </template>
           </el-table-column>
-          <el-table-column label="销售价格" width="100" align="center">
+          <el-table-column label="Sales price" width="100" align="center">
             <template v-slot="{ row }">
               <el-input v-model="row.price"></el-input>
             </template>
           </el-table-column>
-          <el-table-column label="促销价格" width="100" align="center">
+          <el-table-column label="Promotional Price" width="100" align="center">
             <template v-slot="{ row }">
               <el-input v-model="row.promotionPrice"></el-input>
             </template>
           </el-table-column>
-          <el-table-column label="商品库存" width="80" align="center">
+          <el-table-column label="Product inventory" width="80" align="center">
             <template v-slot="{ row }">
               <el-input v-model="row.stock"></el-input>
             </template>
           </el-table-column>
-          <el-table-column label="库存预警值" width="80" align="center">
+          <el-table-column
+            label="Inventory warning value"
+            width="80"
+            align="center"
+          >
             <template v-slot="{ row }">
               <el-input v-model="row.lowStock"></el-input>
             </template>
           </el-table-column>
-          <el-table-column label="SKU编号" width="160" align="center">
+          <el-table-column label="SKU number" width="160" align="center">
             <template v-slot="{ row }">
               <el-input v-model="row.skuCode"></el-input>
             </template>
           </el-table-column>
-          <el-table-column label="操作" width="80" align="center">
+          <el-table-column label="Operation" width="80" align="center">
             <template v-slot="{ row, $index }">
               <el-button
                 type="text"
                 @click="handleRemoveProductSku($index, row)"
-                >删除
+                >Delete
               </el-button>
             </template>
           </el-table-column>
@@ -120,22 +124,22 @@
           type="primary"
           style="margin-top: 20px"
           @click="handleRefreshProductSkuList"
-          >刷新列表
+          >Refresh List
         </el-button>
         <el-button
           type="primary"
           style="margin-top: 20px"
           @click="handleSyncProductSkuPrice"
-          >同步价格
+          >Sync Product Price
         </el-button>
         <el-button
           type="primary"
           style="margin-top: 20px"
           @click="handleSyncProductSkuStock"
-          >同步库存
+          >Sync Product Stock
         </el-button>
       </el-form-item>
-      <el-form-item label="属性图片：" v-if="hasAttrPic">
+      <el-form-item label="Product Attrbute Pics" v-if="hasAttrPic">
         <el-card shadow="never" class="cardBg">
           <div v-for="(item, index) in selectProductAttrPics">
             <span>{{ item.name }}:</span>
@@ -146,7 +150,7 @@
           </div>
         </el-card>
       </el-form-item>
-      <el-form-item label="商品参数：">
+      <el-form-item label="Product Attributes ">
         <el-card shadow="never" class="cardBg">
           <div
             v-for="(item, index) in selectProductParam"
@@ -174,19 +178,19 @@
           </div>
         </el-card>
       </el-form-item>
-      <el-form-item label="商品相册：">
+      <el-form-item label="Product Album: ">
         <multi-upload v-model="selectProductPics"></multi-upload>
       </el-form-item>
-      <el-form-item label="商品详情：">
+      <el-form-item label="Product details:">
         <el-tabs v-model="activeHtmlName" type="card">
-          <el-tab-pane label="电脑端详情" name="pc">
+          <el-tab-pane label="Computer Details" name="pc">
             <tinymce
               :width="595"
               :height="300"
               v-model="localData.detailHtml"
             ></tinymce>
           </el-tab-pane>
-          <el-tab-pane label="移动端详情" name="mobile">
+          <el-tab-pane label="Mobile Details" name="mobile">
             <tinymce
               :width="595"
               :height="300"
@@ -197,10 +201,10 @@
       </el-form-item>
       <el-form-item style="text-align: center">
         <el-button size="medium" @click="handlePrev"
-          >上一步，填写商品促销</el-button
+          >Previous step, fill in the product promotion</el-button
         >
         <el-button type="primary" size="medium" @click="handleNext"
-          >下一步，选择商品关联</el-button
+          >Next, select product association</el-button
         >
       </el-form-item>
     </el-form>
@@ -465,7 +469,7 @@ export default {
       let options = this.selectProductAttr[idx].options;
       if (this.addProductAttrValue == null || this.addProductAttrValue == "") {
         this.$message({
-          message: "属性值不能为空",
+          message: "The attribute value cannot be empty",
           type: "warning",
           duration: 1000,
         });
@@ -473,7 +477,7 @@ export default {
       }
       if (options.indexOf(this.addProductAttrValue) !== -1) {
         this.$message({
-          message: "属性值不能重复",
+          message: "The attribute value cannot be repeated",
           type: "warning",
           duration: 1000,
         });
@@ -494,21 +498,29 @@ export default {
       }
     },
     handleRefreshProductSkuList() {
-      this.$confirm("刷新列表将导致sku信息重新生成，是否要刷新", "提示", {
-        confirmButtonText: "确定",
-        cancelButtonText: "取消",
-        type: "warning",
-      }).then(() => {
+      this.$confirm(
+        "Refreshing the list will cause the sku information to be regenerated, whether to refresh",
+        "Prompt",
+        {
+          confirmButtonText: "OK",
+          cancelButtonText: "Cancel",
+          type: "warning",
+        }
+      ).then(() => {
         this.refreshProductAttrPics();
         this.refreshProductSkuList();
       });
     },
     handleSyncProductSkuPrice() {
-      this.$confirm("将同步第一个sku的价格到所有sku,是否继续", "提示", {
-        confirmButtonText: "确定",
-        cancelButtonText: "取消",
-        type: "warning",
-      }).then(() => {
+      this.$confirm(
+        "Will synchronize the price of the first sku to all skus, whether to continue",
+        "tip",
+        {
+          confirmButtonText: "OK",
+          cancelButtonText: "Cancel",
+          type: "warning",
+        }
+      ).then(() => {
         if (
           this.localData.skuStockList !== null &&
           this.localData.skuStockList.length > 0
@@ -531,11 +543,15 @@ export default {
       });
     },
     handleSyncProductSkuStock() {
-      this.$confirm("将同步第一个sku的库存到所有sku,是否继续", "提示", {
-        confirmButtonText: "确定",
-        cancelButtonText: "取消",
-        type: "warning",
-      }).then(() => {
+      this.$confirm(
+        "Synchronize the inventory of the first sku to all skus, whether to continue",
+        "Tip",
+        {
+          confirmButtonText: "OK",
+          cancelButtonText: "Cancel",
+          type: "warning",
+        }
+      ).then(() => {
         if (
           this.localData.skuStockList !== null &&
           this.localData.skuStockList.length > 0

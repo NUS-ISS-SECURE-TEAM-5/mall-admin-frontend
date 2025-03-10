@@ -287,7 +287,7 @@ export default {
       pickerOptions: {
         shortcuts: [
           {
-            text: "最近一周",
+            text: "Last week",
             onClick(picker) {
               let start = new Date(2018, 10, 1);
               const end = new Date(start.getTime() + 1000 * 60 * 60 * 24 * 7);
@@ -295,7 +295,7 @@ export default {
             },
           },
           {
-            text: "最近一月",
+            text: "Last month",
             onClick(picker) {
               let start = new Date(2018, 10, 1);
               const end = new Date(start.getTime() + 1000 * 60 * 60 * 24 * 30);
@@ -390,18 +390,18 @@ export default {
             值：${params.value}`;
           },
         },
-        legend: { data: ["订单数量", "订单金额"] },
+        legend: { data: ["Order quantity", "Order amount"] },
         xAxis: {
           type: "category",
           data: dates,
         },
         yAxis: [
-          { type: "value", name: "订单数量" },
-          { type: "value", name: "订单金额" },
+          { type: "value", name: "Order quantity" },
+          { type: "value", name: "Order amount" },
         ],
         series: [
           {
-            name: "订单数量",
+            name: "Order quantity",
             type: "line",
             smooth: true,
             data: orderCountData,
@@ -419,7 +419,7 @@ export default {
             },
           },
           {
-            name: "订单金额",
+            name: "Order amount",
             type: "line",
             smooth: true,
             data: orderAmountData,

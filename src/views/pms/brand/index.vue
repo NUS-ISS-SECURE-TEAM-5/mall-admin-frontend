@@ -4,14 +4,14 @@
     <el-card class="filter-container" shadow="never">
       <div>
         <i class="el-icon-search"></i>
-        <span>筛选搜索</span>
+        <span>Filter search</span>
         <el-button
           style="float: right"
           @click="searchBrandList()"
           type="primary"
           size="small"
         >
-          查询结果
+          Query results
         </el-button>
       </div>
       <div style="margin-top: 15px">
@@ -20,12 +20,11 @@
           :model="listQuery"
           size="small"
           label-width="140px"
-        >
-          <el-form-item label="输入搜索：">
+          ><el-form-item label="Input search:">
             <el-input
               style="width: 203px"
               v-model="listQuery.keyword"
-              placeholder="品牌名称/关键字"
+              placeholder="Brand Name/Keyword"
             ></el-input>
           </el-form-item>
         </el-form>
@@ -33,9 +32,9 @@
     </el-card>
     <el-card class="operate-container" shadow="never">
       <i class="el-icon-tickets"></i>
-      <span>数据列表</span>
+      <span>Data list</span>
       <el-button class="btn-add" @click="addBrand()" size="mini">
-        添加
+        Add
       </el-button>
     </el-card>
     <div class="table-container">
@@ -52,19 +51,19 @@
           width="60"
           align="center"
         ></el-table-column>
-        <el-table-column label="编号" width="100" align="center">
+        <el-table-column label="Serial number" width="100" align="center">
           <template v-slot="{ row }">{{ row.id }}</template>
         </el-table-column>
-        <el-table-column label="品牌名称" align="center">
+        <el-table-column label="Brand Name" align="center">
           <template v-slot="{ row }">{{ row.name }}</template>
         </el-table-column>
-        <el-table-column label="品牌首字母" width="100" align="center">
+        <el-table-column label="Brand First Letter" width="100" align="center">
           <template v-slot="{ row }">{{ row.firstLetter }}</template>
         </el-table-column>
-        <el-table-column label="排序" width="100" align="center">
+        <el-table-column label="Sort" width="100" align="center">
           <template v-slot="{ row }">{{ row.sort }}</template>
         </el-table-column>
-        <el-table-column label="品牌制造商" width="100" align="center">
+        <el-table-column label="Brand Manufacturer" width="100" align="center">
           <template v-slot="{ row, $index }">
             <el-switch
               @change="handleFactoryStatusChange($index, row)"
@@ -75,7 +74,7 @@
             </el-switch>
           </template>
         </el-table-column>
-        <el-table-column label="是否显示" width="100" align="center">
+        <el-table-column label="Is Display" width="100" align="center">
           <template v-slot="{ row, $index }">
             <el-switch
               @change="handleShowStatusChange($index, row)"
@@ -86,16 +85,16 @@
             </el-switch>
           </template>
         </el-table-column>
-        <el-table-column label="相关" width="220" align="center">
+        <el-table-column label="About" width="220" align="center">
           <template v-slot="{ row, $index }">
-            <span>商品：</span>
+            <span>Products: </span>
             <el-button
               size="mini"
               type="text"
               @click="getProductList($index, row)"
               >100
             </el-button>
-            <span>评价：</span>
+            <span>Comments: </span>
             <el-button
               size="mini"
               type="text"
@@ -104,23 +103,27 @@
             </el-button>
           </template>
         </el-table-column>
-        <el-table-column label="操作" width="200" align="center">
+        <el-table-column label="Operation" width="200" align="center">
           <template v-slot="{ row, $index }">
             <el-button size="mini" @click="handleUpdate($index, row)"
-              >编辑
+              >Edit
             </el-button>
             <el-button
               size="mini"
               type="danger"
               @click="handleDelete($index, row)"
-              >删除
+              >Delete
             </el-button>
           </template>
         </el-table-column>
       </el-table>
     </div>
     <div class="batch-operate-container">
-      <el-select size="small" v-model="operateType" placeholder="批量操作">
+      <el-select
+        size="small"
+        v-model="operateType"
+        placeholder="Batch Operation"
+      >
         <el-option
           v-for="item in operates"
           :key="item.value"
@@ -136,7 +139,7 @@
         type="primary"
         size="small"
       >
-        确定
+        Confirm
       </el-button>
     </div>
     <div class="pagination-container">
@@ -168,11 +171,11 @@ export default {
     return {
       operates: [
         {
-          label: "显示品牌",
+          label: "Show Brand",
           value: "showBrand",
         },
         {
-          label: "隐藏品牌",
+          label: "Hide brand",
           value: "hideBrand",
         },
       ],
@@ -209,15 +212,15 @@ export default {
       this.$router.push({ path: "/pms/updateBrand", query: { id: row.id } });
     },
     handleDelete(index, row) {
-      this.$confirm("是否要删除该品牌", "提示", {
-        confirmButtonText: "确定",
-        cancelButtonText: "取消",
+      this.$confirm("Whether to delete the brand", "Tip", {
+        confirmButtonText: "OK",
+        cancelButtonText: "Cancel",
         type: "warning",
       })
         .then(() => {
           deleteBrand(row.id).then((response) => {
             this.$message({
-              message: "删除成功",
+              message: "Delete successfully",
               type: "success",
               duration: 1000,
             });
@@ -227,7 +230,7 @@ export default {
         .catch(() => {
           this.$message({
             type: "info",
-            message: "已取消删除",
+            message: "Cancelled",
             duration: 1000,
           });
         });
@@ -245,7 +248,7 @@ export default {
       updateFactoryStatus(data)
         .then((response) => {
           this.$message({
-            message: "修改成功",
+            message: "Modification was successful",
             type: "success",
             duration: 1000,
           });
@@ -265,7 +268,7 @@ export default {
       updateShowStatus(data)
         .then((response) => {
           this.$message({
-            message: "修改成功",
+            message: "Modification was successful",
             type: "success",
             duration: 1000,
           });
@@ -295,7 +298,7 @@ export default {
       console.log(this.multipleSelection);
       if (this.multipleSelection < 1) {
         this.$message({
-          message: "请选择一条记录",
+          message: "Please select a record",
           type: "warning",
           duration: 1000,
         });
@@ -308,7 +311,7 @@ export default {
         showStatus = 0;
       } else {
         this.$message({
-          message: "请选择批量操作类型",
+          message: "Please select the batch operation type",
           type: "warning",
           duration: 1000,
         });
@@ -324,7 +327,7 @@ export default {
       updateShowStatus(data).then((response) => {
         this.getList();
         this.$message({
-          message: "修改成功",
+          message: "Modification was successful",
           type: "success",
           duration: 1000,
         });
