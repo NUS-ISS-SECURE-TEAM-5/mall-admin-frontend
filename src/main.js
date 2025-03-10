@@ -27,6 +27,8 @@ import {
   DatasetComponent,
   TransformComponent
 } from 'echarts/components'
+import { createAuth0 } from "@auth0/auth0-vue";
+
 
 use([
   CanvasRenderer,
@@ -44,7 +46,17 @@ const app = createApp(App)
 app.use(ElementPlus, {locale: zhCn})
 app.component('v-chart', VueECharts)
 
-app.use(router)
+app
+.use(router)
+.use(
+  createAuth0({
+    domain: 'telecaster.us.auth0.com',
+    clientId: 'WWD1cTR7MHpqT7BFZAJQvNU12YFDtLs1',
+    authorizationParams: {
+      redirect_uri: 'http://localhost:8090/callback',
+    },
+  })
+)
 app.use(store)
 
 registerIcons(app)

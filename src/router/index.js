@@ -2,7 +2,9 @@ import { createRouter, createWebHistory } from "vue-router";
 
 /* Layout */
 import Layout from "../views/layout/Layout";
+import { authGuard } from "@auth0/auth0-vue";
 
+const CallbackPage = () => import("@/views/login/callback-page.vue");
 /**
  * hidden: true                   if `hidden:true` will not show in the sidebar(default is false)
  * alwaysShow: true               if set true, will always show the root menu, whatever its child routes length
@@ -20,6 +22,11 @@ export const constantRouterMap = [
     path: "/login",
     component: () => import("@/views/login/index"),
     hidden: true,
+  },
+  {
+    path: "/callback",
+    name: "callback",
+    component: CallbackPage,
   },
   { path: "/404", component: () => import("@/views/404"), hidden: true },
   {
@@ -57,6 +64,7 @@ export const asyncRouterMap = [
     name: "pms",
     alwaysShow: true,
     meta: { title: "商品", icon: "product" },
+    beforeEnter: authGuard,
     children: [
       {
         path: "product",
