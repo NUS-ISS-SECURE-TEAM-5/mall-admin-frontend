@@ -3,12 +3,12 @@
   <div class="app-container">
     <div class="table-layout">
       <el-row>
-        <el-col :span="4" class="table-cell-title">名称</el-col>
-        <el-col :span="4" class="table-cell-title">优惠券类型</el-col>
-        <el-col :span="4" class="table-cell-title">可使用商品</el-col>
-        <el-col :span="4" class="table-cell-title">使用门槛</el-col>
-        <el-col :span="4" class="table-cell-title">面值</el-col>
-        <el-col :span="4" class="table-cell-title">状态</el-col>
+        <el-col :span="4" class="table-cell-title">Name</el-col>
+        <el-col :span="4" class="table-cell-title">Coupon Type</el-col>
+        <el-col :span="4" class="table-cell-title">Products available</el-col>
+        <el-col :span="4" class="table-cell-title">User threshold</el-col>
+        <el-col :span="4" class="table-cell-title">Preference value</el-col>
+        <el-col :span="4" class="table-cell-title">Status</el-col>
       </el-row>
       <el-row>
         <el-col :span="4" class="table-cell">{{ coupon.name }}</el-col>
@@ -27,16 +27,16 @@
         }}</el-col>
       </el-row>
       <el-row>
-        <el-col :span="4" class="table-cell-title">有效期</el-col>
-        <el-col :span="4" class="table-cell-title">总发行量</el-col>
-        <el-col :span="4" class="table-cell-title">已领取</el-col>
-        <el-col :span="4" class="table-cell-title">待领取</el-col>
-        <el-col :span="4" class="table-cell-title">已使用</el-col>
-        <el-col :span="4" class="table-cell-title">未使用</el-col>
+        <el-col :span="4" class="table-cell-title">Validity period</el-col>
+        <el-col :span="4" class="table-cell-title">Total circulation</el-col>
+        <el-col :span="4" class="table-cell-title">Received</el-col>
+        <el-col :span="4" class="table-cell-title">To be collected</el-col>
+        <el-col :span="4" class="table-cell-title">used</el-col>
+        <el-col :span="4" class="table-cell-title">Not used</el-col>
       </el-row>
       <el-row>
         <el-col :span="4" class="table-cell" style="font-size: 13px">
-          {{ coupon.startTime | formatDate }}至{{ coupon.endTime | formatDate }}
+          {{ coupon.startTime | formatDate }}to{{ coupon.endTime | formatDate }}
         </el-col>
         <el-col :span="4" class="table-cell">{{ coupon.publishCount }}</el-col>
         <el-col :span="4" class="table-cell">{{ coupon.receiveCount }}</el-col>
@@ -52,21 +52,21 @@
     <el-card class="filter-container" shadow="never">
       <div>
         <i class="el-icon-search"></i>
-        <span>筛选搜索</span>
+        <span>Filter search</span>
         <el-button
           style="float: right"
           type="primary"
           @click="handleSearchList()"
           size="small"
         >
-          查询搜索
+          Query Search
         </el-button>
         <el-button
           style="float: right; margin-right: 15px"
           @click="handleResetSearch()"
           size="small"
         >
-          重置
+          Reset
         </el-button>
       </div>
       <div style="margin-top: 15px">
@@ -76,10 +76,10 @@
           size="small"
           label-width="140px"
         >
-          <el-form-item label="使用状态：">
+          <el-form-item label="Use status:">
             <el-select
               v-model="listQuery.useStatus"
-              placeholder="全部"
+              placeholder="all"
               clearable
               class="input-width"
             >
@@ -92,11 +92,11 @@
               </el-option>
             </el-select>
           </el-form-item>
-          <el-form-item label="订单编号：">
+          <el-form-item label="Order number:">
             <el-input
               v-model="listQuery.orderSn"
               class="input-width"
-              placeholder="订单编号"
+              placeholder="Order number"
             ></el-input>
           </el-form-item>
         </el-form>
@@ -110,31 +110,35 @@
         v-loading="listLoading"
         border
       >
-        <el-table-column label="优惠码" width="160" align="center">
+        <el-table-column label="Discount code" width="160" align="center">
           <template v-slot="{ row }">{{ row.couponCode }}</template>
         </el-table-column>
-        <el-table-column label="领取会员" width="140" align="center">
+        <el-table-column
+          label="Receive a membership"
+          width="140"
+          align="center"
+        >
           <template v-slot="{ row }">{{ row.memberNickname }}</template>
         </el-table-column>
-        <el-table-column label="领取方式" width="100" align="center">
+        <el-table-column label="How to collect" width="100" align="center">
           <template v-slot="{ row }">{{
             row.getType | formatGetType
           }}</template>
         </el-table-column>
-        <el-table-column label="领取时间" width="160" align="center">
+        <el-table-column label="Receive time" width="160" align="center">
           <template v-slot="{ row }">{{
             row.createTime | formatTime
           }}</template>
         </el-table-column>
-        <el-table-column label="当前状态" width="140" align="center">
+        <el-table-column label="Current status" width="140" align="center">
           <template v-slot="{ row }">{{
             row.useStatus | formatCouponHistoryUseType
           }}</template>
         </el-table-column>
-        <el-table-column label="使用时间" width="160" align="center">
+        <el-table-column label="Use time" width="160" align="center">
           <template v-slot="{ row }">{{ row.useTime | formatTime }}</template>
         </el-table-column>
-        <el-table-column label="订单编号" align="center">
+        <el-table-column label="Order number" align="center">
           <template v-slot="{ row }">{{
             row.orderSn === null ? "N/A" : row.orderSn
           }}</template>
@@ -163,19 +167,19 @@ import { fetchList as fetchCouponHistoryList } from "@/api/couponHistory";
 
 const defaultTypeOptions = [
   {
-    label: "全场赠券",
+    label: "Coupons are given for the whole audience",
     value: 0,
   },
   {
-    label: "会员赠券",
+    label: "Member coupon",
     value: 1,
   },
   {
-    label: "购物赠券",
+    label: "Shopping coupon",
     value: 2,
   },
   {
-    label: "注册赠券",
+    label: "Register coupon",
     value: 3,
   },
 ];
@@ -188,15 +192,15 @@ const defaultListQuery = {
 };
 const defaultUseTypeOptions = [
   {
-    label: "未使用",
+    label: "Not used",
     value: 0,
   },
   {
-    label: "已使用",
+    label: "used",
     value: 1,
   },
   {
-    label: "已过期",
+    label: "Expired",
     value: 2,
   },
 ];
@@ -230,20 +234,20 @@ export default {
     },
     formatUseType(useType) {
       if (useType === 0) {
-        return "全场通用";
+        return "Universal for the whole audience";
       } else if (useType === 1) {
-        return "指定分类";
+        return "Specify classification";
       } else {
-        return "指定商品";
+        return "Specified product";
       }
     },
     formatPlatform(platform) {
       if (platform === 1) {
-        return "移动平台";
+        return "mobile platform";
       } else if (platform === 2) {
-        return "PC平台";
+        return "PC platform";
       } else {
-        return "全平台";
+        return "full platform";
       }
     },
     formatDate(time) {
@@ -256,25 +260,25 @@ export default {
     formatStatus(endTime) {
       let now = new Date().getTime();
       if (endTime > now) {
-        return "未过期";
+        return "Not expired";
       } else {
-        return "已过期";
+        return "expired";
       }
     },
     formatGetType(type) {
       if (type === 1) {
-        return "主动获取";
+        return "active acquisition";
       } else {
-        return "后台赠送";
+        return "Background Gift";
       }
     },
     formatCouponHistoryUseType(useType) {
       if (useType === 0) {
-        return "未使用";
+        return "not used";
       } else if (useType === 1) {
-        return "已使用";
+        return "used";
       } else {
-        return "已过期";
+        return "Expired";
       }
     },
     formatTime(time) {

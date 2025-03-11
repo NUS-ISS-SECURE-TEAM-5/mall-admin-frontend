@@ -4,21 +4,21 @@
     <el-card class="filter-container" shadow="never">
       <div>
         <i class="el-icon-search"></i>
-        <span>筛选搜索</span>
+        <span>Filter search</span>
         <el-button
           style="float: right"
           type="primary"
           @click="handleSearchList()"
           size="small"
         >
-          查询搜索
+          Query Search
         </el-button>
         <el-button
           style="float: right; margin-right: 15px"
           @click="handleResetSearch()"
           size="small"
         >
-          重置
+          Reset
         </el-button>
       </div>
       <div style="margin-top: 15px">
@@ -28,11 +28,11 @@
           size="small"
           label-width="140px"
         >
-          <el-form-item label="活动名称：">
+          <el-form-item label="Activity name: ">
             <el-input
               v-model="listQuery.keyword"
               class="input-width"
-              placeholder="活动名称"
+              placeholder="Activity name"
               clearable
             ></el-input>
           </el-form-item>
@@ -41,16 +41,16 @@
     </el-card>
     <el-card class="operate-container" shadow="never">
       <i class="el-icon-tickets"></i>
-      <span>数据列表</span>
+      <span>Data list</span>
       <el-button
         size="mini"
         class="btn-add"
         @click="handleAdd()"
         style="margin-left: 20px"
-        >添加活动</el-button
+        >Add activity</el-button
       >
       <el-button size="mini" class="btn-add" @click="handleShowSessionList()"
-        >秒杀时间段列表</el-button
+        >Second kill time period list</el-button
       >
     </el-card>
     <div class="table-container">
@@ -66,22 +66,22 @@
           width="60"
           align="center"
         ></el-table-column>
-        <el-table-column label="编号" width="100" align="center">
+        <el-table-column label="serial number" width="100" align="center">
           <template v-slot="{ row }">{{ row.id }}</template>
         </el-table-column>
-        <el-table-column label="活动标题" align="center">
+        <el-table-column label="Activity title" align="center">
           <template v-slot="{ row }">{{ row.title }}</template>
         </el-table-column>
-        <el-table-column label="活动状态" width="140" align="center">
+        <el-table-column label="Activity" width="140" align="center">
           <template v-slot="{ row }">{{ row | formatActiveStatus }}</template>
         </el-table-column>
-        <el-table-column label="开始时间" width="140" align="center">
+        <el-table-column label="Start time" width="140" align="center">
           <template v-slot="{ row }">{{ row.startDate | formatDate }}</template>
         </el-table-column>
-        <el-table-column label="结束时间" width="140" align="center">
+        <el-table-column label="End time" width="140" align="center">
           <template v-slot="{ row }">{{ row.endDate | formatDate }}</template>
         </el-table-column>
-        <el-table-column label="上线/下线" width="200" align="center">
+        <el-table-column label="Online/Offline" width="200" align="center">
           <template v-slot="{ row }">
             <el-switch
               @change="handleStatusChange($index, row)"
@@ -92,26 +92,26 @@
             </el-switch>
           </template>
         </el-table-column>
-        <el-table-column label="操作" width="180" align="center">
+        <el-table-column label="operate" width="180" align="center">
           <template v-slot="{ row, $index }">
             <el-button
               size="mini"
               type="text"
               @click="handleSelectSession($index, row)"
-              >设置商品
+              >Set up products
             </el-button>
             <el-button
               size="mini"
               type="text"
               @click="handleUpdate($index, row)"
             >
-              编辑
+              edit
             </el-button>
             <el-button
               size="mini"
               type="text"
               @click="handleDelete($index, row)"
-              >删除
+              >Delete
             </el-button>
           </template>
         </el-table-column>
@@ -131,7 +131,7 @@
       </el-pagination>
     </div>
     <el-dialog
-      title="添加活动"
+      title="Add activity"
       :model-value="dialogVisible"
       @update:model-value="(val) => (dialogVisible = val)"
       width="40%"
@@ -142,39 +142,39 @@
         label-width="150px"
         size="small"
       >
-        <el-form-item label="活动标题：">
+        <el-form-item label="Activity title: ">
           <el-input
             v-model="flashPromotion.title"
             style="width: 250px"
           ></el-input>
         </el-form-item>
-        <el-form-item label="开始时间：">
+        <el-form-item label="Start time:">
           <el-date-picker
             v-model="flashPromotion.startDate"
             type="date"
-            placeholder="请选择时间"
+            placeholder="Please select time"
           >
           </el-date-picker>
         </el-form-item>
-        <el-form-item label="结束时间：">
+        <el-form-item label="End time: ">
           <el-date-picker
             v-model="flashPromotion.endDate"
             type="date"
-            placeholder="请选择时间"
+            placeholder="Please select time"
           >
           </el-date-picker>
         </el-form-item>
-        <el-form-item label="上线/下线">
+        <el-form-item label="Online/Offline">
           <el-radio-group v-model="flashPromotion.status">
-            <el-radio :label="1">上线</el-radio>
-            <el-radio :label="0">下线</el-radio>
+            <el-radio :label="1">Online</el-radio>
+            <el-radio :label="0">Offline</el-radio>
           </el-radio-group>
         </el-form-item>
       </el-form>
       <span slot="footer" class="dialog-footer">
         <el-button @click="dialogVisible = false" size="small">取 消</el-button>
         <el-button type="primary" @click="handleDialogConfirm()" size="small"
-          >确 定</el-button
+          >Sure</el-button
         >
       </span>
     </el-dialog>
@@ -227,11 +227,11 @@ export default {
         nowDate.getTime() >= startDate.getTime() &&
         nowDate.getTime() <= endDate.getTime()
       ) {
-        return "活动进行中";
+        return "The activity is underway";
       } else if (nowDate.getTime() > endDate.getTime()) {
-        return "活动已结束";
+        return "Event ended";
       } else {
-        return "活动未开始";
+        return "The activity has not started";
       }
     },
     formatDate(time) {
@@ -268,38 +268,38 @@ export default {
       this.$router.push({ path: "/sms/flashSession" });
     },
     handleStatusChange(index, row) {
-      this.$confirm("是否要修改该状态?", "提示", {
-        confirmButtonText: "确定",
-        cancelButtonText: "取消",
+      this.$confirm("Do you want to modify this status?", "Prompt", {
+        confirmButtonText: "OK",
+        cancelButtonText: "Cancel",
         type: "warning",
       })
         .then(() => {
           updateStatus(row.id, { status: row.status }).then((response) => {
             this.$message({
               type: "success",
-              message: "修改成功!",
+              message: "Modification was successful!",
             });
           });
         })
         .catch(() => {
           this.$message({
             type: "info",
-            message: "取消修改",
+            message: "Cancel modification",
           });
           this.getList();
         });
     },
     handleDelete(index, row) {
-      this.$confirm("是否要删除该活动?", "提示", {
-        confirmButtonText: "确定",
-        cancelButtonText: "取消",
+      this.$confirm("Do you want to delete the activity?", "Tip", {
+        confirmButtonText: "OK",
+        cancelButtonText: "Cancel",
         type: "warning",
       })
         .then(() => {
           deleteFlash(row.id).then((response) => {
             this.$message({
               type: "success",
-              message: "删除成功!",
+              message: "Delete successfully!",
             });
             this.getList();
           });
@@ -307,7 +307,7 @@ export default {
         .catch(() => {
           this.$message({
             type: "info",
-            message: "取消删除",
+            message: "Cancel delete",
           });
           this.getList();
         });
@@ -318,16 +318,16 @@ export default {
       this.flashPromotion = Object.assign({}, row);
     },
     handleDialogConfirm() {
-      this.$confirm("是否要确认?", "提示", {
-        confirmButtonText: "确定",
-        cancelButtonText: "取消",
+      this.$confirm("Do you want to confirm?", "Tip", {
+        confirmButtonText: "OK",
+        cancelButtonText: "Cancel",
         type: "warning",
       }).then(() => {
         if (this.isEdit) {
           updateFlash(this.flashPromotion.id, this.flashPromotion).then(
             (response) => {
               this.$message({
-                message: "修改成功！",
+                message: "The modification was successful!",
                 type: "success",
               });
               this.dialogVisible = false;
@@ -337,7 +337,7 @@ export default {
         } else {
           createFlash(this.flashPromotion).then((response) => {
             this.$message({
-              message: "添加成功！",
+              message: "Added successfully!",
               type: "success",
             });
             this.dialogVisible = false;

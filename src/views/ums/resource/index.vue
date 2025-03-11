@@ -4,21 +4,21 @@
     <el-card class="filter-container" shadow="never">
       <div>
         <i class="el-icon-search"></i>
-        <span>筛选搜索</span>
+        <span>Filter Search</span>
         <el-button
           style="float: right"
           type="primary"
           @click="handleSearchList()"
           size="small"
         >
-          查询搜索
+          Query Search
         </el-button>
         <el-button
           style="float: right; margin-right: 15px"
           @click="handleResetSearch()"
           size="small"
         >
-          重置
+          Reset
         </el-button>
       </div>
       <div style="margin-top: 15px">
@@ -28,26 +28,26 @@
           size="small"
           label-width="140px"
         >
-          <el-form-item label="资源名称：">
+          <el-form-item label="Resource Name:">
             <el-input
               v-model="listQuery.nameKeyword"
               class="input-width"
-              placeholder="资源名称"
-              clearable
+              placeholder="Resource Name"
+              Clearable
             ></el-input>
           </el-form-item>
-          <el-form-item label="资源路径：">
+          <el-form-item label="Resource path:">
             <el-input
               v-model="listQuery.urlKeyword"
               class="input-width"
-              placeholder="资源路径"
+              placeholder="Resource Path"
               clearable
             ></el-input>
           </el-form-item>
-          <el-form-item label="资源分类：">
+          <el-form-item label="Resource Classification:">
             <el-select
               v-model="listQuery.categoryId"
-              placeholder="全部"
+              placeholder="All"
               clearable
               class="input-width"
             >
@@ -65,16 +65,16 @@
     </el-card>
     <el-card class="operate-container" shadow="never">
       <i class="el-icon-tickets"></i>
-      <span>数据列表</span>
+      <span>Data list</span>
       <el-button
         size="mini"
         class="btn-add"
         @click="handleAdd()"
         style="margin-left: 20px"
-        >添加</el-button
+        >Add</el-button
       >
       <el-button size="mini" class="btn-add" @click="handleShowCategory()"
-        >资源分类</el-button
+        >Resource classification</el-button
       >
     </el-card>
     <div class="table-container">
@@ -85,37 +85,37 @@
         v-loading="listLoading"
         border
       >
-        <el-table-column label="编号" width="100" align="center">
+        <el-table-column label="ID" width="100" align="center">
           <template v-slot="{ row }">{{ row.id }}</template>
         </el-table-column>
-        <el-table-column label="资源名称" align="center">
+        <el-table-column label="Resource name" align="center">
           <template v-slot="{ row }">{{ row.name }}</template>
         </el-table-column>
-        <el-table-column label="资源路径" align="center">
+        <el-table-column label="Resource path " align="center">
           <template v-slot="{ row }">{{ row.url }}</template>
         </el-table-column>
-        <el-table-column label="描述" align="center">
+        <el-table-column label="Description" align="center">
           <template v-slot="{ row }">{{ row.description }}</template>
         </el-table-column>
-        <el-table-column label="添加时间" width="160" align="center">
+        <el-table-column label="Add time" width="160" align="center">
           <template v-slot="{ row }">{{
             row.createTime | formatDateTime
           }}</template>
         </el-table-column>
-        <el-table-column label="操作" width="140" align="center">
+        <el-table-column label="Operation" width="140" align="center">
           <template v-slot="{ row, $index }">
             <el-button
               size="mini"
               type="text"
               @click="handleUpdate($index, row)"
             >
-              编辑
+              Edit
             </el-button>
             <el-button
               size="mini"
               type="text"
               @click="handleDelete($index, row)"
-              >删除
+              >Delete
             </el-button>
           </template>
         </el-table-column>
@@ -135,7 +135,7 @@
       </el-pagination>
     </div>
     <el-dialog
-      :title="isEdit ? '编辑资源' : '添加资源'"
+      :title="isEdit ? 'Editing a resource' : 'Add a resource'"
       :model-value="dialogVisible"
       @update:model-value="(val) => (dialogVisible = val)"
       width="40%"
@@ -146,17 +146,17 @@
         label-width="150px"
         size="small"
       >
-        <el-form-item label="资源名称：">
+        <el-form-item label="Resource name:">
           <el-input v-model="resource.name" style="width: 250px"></el-input>
         </el-form-item>
-        <el-form-item label="资源路径：">
+        <el-form-item label="Resource path:">
           <el-input v-model="resource.url" style="width: 250px"></el-input>
         </el-form-item>
-        <el-form-item label="资源分类：">
+        <el-form-item label="Resource classification: ">
           <el-select
             v-model="resource.categoryId"
-            placeholder="全部"
-            clearable
+            placeholder="All"
+            Clearable
             style="width: 250px"
           >
             <el-option
@@ -168,7 +168,7 @@
             </el-option>
           </el-select>
         </el-form-item>
-        <el-form-item label="描述：">
+        <el-form-item label="Description:">
           <el-input
             v-model="resource.description"
             type="textarea"
@@ -178,9 +178,11 @@
         </el-form-item>
       </el-form>
       <span slot="footer" class="dialog-footer">
-        <el-button @click="dialogVisible = false" size="small">取 消</el-button>
+        <el-button @click="dialogVisible = false" size="small"
+          >Cancel</el-button
+        >
         <el-button type="primary" @click="handleDialogConfirm()" size="small"
-          >确 定</el-button
+          >Confirm</el-button
         >
       </span>
     </el-dialog>
@@ -262,16 +264,16 @@ export default {
       this.resource.categoryId = this.defaultCategoryId;
     },
     handleDelete(index, row) {
-      this.$confirm("是否要删除该资源?", "提示", {
-        confirmButtonText: "确定",
-        cancelButtonText: "取消",
+      this.$confirm("Do you want to delete the resource?", "Tip", {
+        confirmButtonText: "OK",
+        cancelButtonText: "Cancel",
         type: "warning",
       })
         .then(() => {
           deleteResource(row.id).then((response) => {
             this.$message({
               type: "success",
-              message: "删除成功!",
+              message: "Delete successfully!",
             });
             this.getList();
           });
@@ -279,7 +281,7 @@ export default {
         .catch(() => {
           this.$message({
             type: "info",
-            message: "已取消删除",
+            message: "Undelete",
           });
         });
     },
@@ -289,15 +291,15 @@ export default {
       this.resource = Object.assign({}, row);
     },
     handleDialogConfirm() {
-      this.$confirm("是否要确认?", "提示", {
-        confirmButtonText: "确定",
-        cancelButtonText: "取消",
+      this.$confirm("Do you want to confirm?", "Tip", {
+        confirmButtonText: "OK",
+        cancelButtonText: "Cancel",
         type: "warning",
       }).then(() => {
         if (this.isEdit) {
           updateResource(this.resource.id, this.resource).then((response) => {
             this.$message({
-              message: "修改成功！",
+              message: "The modification was successful!",
               type: "success",
             });
             this.dialogVisible = false;
@@ -306,7 +308,7 @@ export default {
         } else {
           createResource(this.resource).then((response) => {
             this.$message({
-              message: "添加成功！",
+              message: "Added successfully!",
               type: "success",
             });
             this.dialogVisible = false;

@@ -2,9 +2,9 @@
   <div class="app-container">
     <el-card shadow="never" class="operate-container">
       <i class="el-icon-tickets"></i>
-      <span>数据列表</span>
+      <span>Data List</span>
       <el-button size="mini" class="btn-add" @click="handleAdd()"
-        >添加</el-button
+        >Add</el-button
       >
     </el-card>
     <div class="table-container">
@@ -15,40 +15,40 @@
         v-loading="listLoading"
         border
       >
-        <el-table-column label="编号" width="100" align="center">
+        <el-table-column label="ID" width="100" align="center">
           <template v-slot="{ row }">{{ row.id }}</template>
         </el-table-column>
-        <el-table-column label="名称" align="center">
+        <el-table-column label="Name" align="center">
           <template v-slot="{ row }">{{ row.name }}</template>
         </el-table-column>
-        <el-table-column label="创建时间" align="center">
+        <el-table-column label="Creation time" align="center">
           <template v-slot="{ row }">{{
             row.createTime | formatDateTime
           }}</template>
         </el-table-column>
-        <el-table-column label="排序" align="center">
+        <el-table-column label="Sort" align="center">
           <template v-slot="{ row }">{{ row.sort }}</template>
         </el-table-column>
-        <el-table-column label="操作" width="180" align="center">
+        <el-table-column label="Operation" width="180" align="center">
           <template v-slot="{ row, $index }">
             <el-button
               size="mini"
               type="text"
               @click="handleUpdate($index, row)"
-              >编辑
+              >Edit
             </el-button>
             <el-button
               size="mini"
               type="text"
               @click="handleDelete($index, row)"
-              >删除
+              >Delete
             </el-button>
           </template>
         </el-table-column>
       </el-table>
     </div>
     <el-dialog
-      title="添加分类"
+      title="Add a category"
       :model-value="dialogVisible"
       @update:model-value="(val) => (dialogVisible = val)"
       width="40%"
@@ -59,13 +59,13 @@
         label-width="150px"
         size="small"
       >
-        <el-form-item label="名称：">
+        <el-form-item label="Name: ">
           <el-input
             v-model="resourceCategory.name"
             style="width: 250px"
           ></el-input>
         </el-form-item>
-        <el-form-item label="排序：">
+        <el-form-item label="Sort: ">
           <el-input
             v-model="resourceCategory.sort"
             style="width: 250px"
@@ -73,9 +73,11 @@
         </el-form-item>
       </el-form>
       <span slot="footer" class="dialog-footer">
-        <el-button @click="dialogVisible = false" size="small">取 消</el-button>
+        <el-button @click="dialogVisible = false" size="small"
+          >Cancel</el-button
+        >
         <el-button type="primary" @click="handleDialogConfirm()" size="small"
-          >确 定</el-button
+          >Confirm</el-button
         >
       </span>
     </el-dialog>
@@ -128,16 +130,16 @@ export default {
       this.resourceCategory = Object.assign({}, row);
     },
     handleDelete(index, row) {
-      this.$confirm("是否要删除该分类?", "提示", {
-        confirmButtonText: "确定",
-        cancelButtonText: "取消",
+      this.$confirm("Do you want to delete the category?", "Tip", {
+        confirmButtonText: "OK",
+        cancelButtonText: "Cancel",
         type: "warning",
       })
         .then(() => {
           deleteResourceCategory(row.id).then((response) => {
             this.$message({
               type: "success",
-              message: "删除成功!",
+              message: "Delete successfully!",
             });
             this.getList();
           });
@@ -145,14 +147,14 @@ export default {
         .catch(() => {
           this.$message({
             type: "info",
-            message: "已取消删除",
+            message: "Undeleted",
           });
         });
     },
     handleDialogConfirm() {
-      this.$confirm("是否要确认?", "提示", {
-        confirmButtonText: "确定",
-        cancelButtonText: "取消",
+      this.$confirm("Do you want to confirm?", "Tip", {
+        confirmButtonText: "OK",
+        cancelButtonText: "Cancel",
         type: "warning",
       }).then(() => {
         if (this.isEdit) {
@@ -161,7 +163,7 @@ export default {
             this.resourceCategory
           ).then((response) => {
             this.$message({
-              message: "修改成功！",
+              message: "Modified successfully!",
               type: "success",
             });
             this.dialogVisible = false;
@@ -170,7 +172,7 @@ export default {
         } else {
           createResourceCategory(this.resourceCategory).then((response) => {
             this.$message({
-              message: "添加成功！",
+              message: "Added successfully!",
               type: "success",
             });
             this.dialogVisible = false;

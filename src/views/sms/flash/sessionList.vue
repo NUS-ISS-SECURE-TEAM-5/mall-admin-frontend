@@ -3,9 +3,9 @@
   <div class="app-container">
     <el-card shadow="never" class="operate-container">
       <i class="el-icon-tickets"></i>
-      <span>数据列表</span>
+      <span>Data list</span>
       <el-button size="mini" class="btn-add" @click="handleAdd()"
-        >添加</el-button
+        >Add</el-button
       >
     </el-card>
     <div class="table-container">
@@ -16,19 +16,19 @@
         v-loading="listLoading"
         border
       >
-        <el-table-column label="编号" width="100" align="center">
+        <el-table-column label="serial number" width="100" align="center">
           <template v-slot="{ row }">{{ row.id }}</template>
         </el-table-column>
-        <el-table-column label="秒杀时间段名称" align="center">
+        <el-table-column label="Seckill time period name" align="center">
           <template v-slot="{ row }">{{ row.name }}</template>
         </el-table-column>
-        <el-table-column label="每日开始时间" align="center">
+        <el-table-column label="Daily start time" align="center">
           <template v-slot="{ row }">{{ row.startTime | formatTime }}</template>
         </el-table-column>
-        <el-table-column label="每日结束时间" align="center">
+        <el-table-column label="Daily end time" align="center">
           <template v-slot="{ row }">{{ row.endTime | formatTime }}</template>
         </el-table-column>
-        <el-table-column label="启用" align="center">
+        <el-table-column label="Enable" align="center">
           <template v-slot="{ row, $index }">
             <el-switch
               @change="handleStatusChange($index, row)"
@@ -39,59 +39,65 @@
             </el-switch>
           </template>
         </el-table-column>
-        <el-table-column label="操作" width="180" align="center">
+        <el-table-column label="operate" width="180" align="center">
           <template v-slot="{ row, $index }">
             <el-button
               size="mini"
               type="text"
               @click="handleUpdate($index, row)"
-              >编辑
+              >edit
             </el-button>
             <el-button
               size="mini"
               type="text"
               @click="handleDelete($index, row)"
-              >删除
+              >delete
             </el-button>
           </template>
         </el-table-column>
       </el-table>
     </div>
-    <el-dialog title="添加时间段" :visible.sync="dialogVisible" width="40%">
+    <el-dialog
+      title="Add time period"
+      :visible.sync="dialogVisible"
+      width="40%"
+    >
       <el-form
         :model="flashSession"
         ref="flashSessionForm"
         label-width="150px"
         size="small"
       >
-        <el-form-item label="秒杀时间段名称：">
+        <el-form-item label="Seckill time period name: ">
           <el-input v-model="flashSession.name" style="width: 250px"></el-input>
         </el-form-item>
-        <el-form-item label="每日开始时间：">
+        <el-form-item label="Daily start time:">
           <el-time-picker
             v-model="flashSession.startTime"
-            placeholder="请选择时间"
+            placeholder="Please select time"
           >
           </el-time-picker>
         </el-form-item>
-        <el-form-item label="每日结束时间：">
+        <el-form-item label="Daily end time: ">
           <el-time-picker
             v-model="flashSession.endTime"
-            placeholder="请选择时间"
+            placeholder="Please select time"
           >
           </el-time-picker>
         </el-form-item>
-        <el-form-item label="是否启用">
+        <el-form-item label="Enabled">
           <el-radio-group v-model="flashSession.status">
-            <el-radio :label="1">启用</el-radio>
-            <el-radio :label="0">不启用</el-radio>
+            <el-radio :label="1">Enable</el-radio>
+            <el-radio :label="0">not enabled</el-radio>
           </el-radio-group>
         </el-form-item>
       </el-form>
       <span slot="footer" class="dialog-footer">
-        <el-button @click="dialogVisible = false" size="small">取 消</el-button>
-        <el-button type="primary" @click="handleDialogConfirm()" size="small"
-          >确 定</el-button
+        <el-button @click="dialogVisible = false" size="small"
+          >Cancel</el-button
+        >
+        <el-button type="primary" @click="handleDialogConfirm()" size="small">
+          Sure</el-button
         >
       </span>
     </el-dialog>
@@ -142,23 +148,23 @@ export default {
       this.flashSession = Object.assign({}, defaultFlashSession);
     },
     handleStatusChange(index, row) {
-      this.$confirm("是否要修改该状态?", "提示", {
-        confirmButtonText: "确定",
-        cancelButtonText: "取消",
+      this.$confirm("Do you want to modify this status?", "Prompt", {
+        confirmButtonText: "OK",
+        cancelButtonText: "Cancel",
         type: "warning",
       })
         .then(() => {
           updateStatus(row.id, { status: row.status }).then((response) => {
             this.$message({
               type: "success",
-              message: "修改成功!",
+              message: "The modification was successful!",
             });
           });
         })
         .catch(() => {
           this.$message({
             type: "info",
-            message: "取消修改",
+            message: "Cancel the modification",
           });
           this.getList();
         });
@@ -171,31 +177,31 @@ export default {
       this.flashSession.endTime = new Date(row.endTime);
     },
     handleDelete(index, row) {
-      this.$confirm("是否要删除该时间段?", "提示", {
-        confirmButtonText: "确定",
-        cancelButtonText: "取消",
+      this.$confirm("Do you want to delete this time period?", "Tip", {
+        confirmButtonText: "OK",
+        cancelButtonText: "Cancel",
         type: "warning",
       }).then(() => {
         deleteSession(row.id).then((response) => {
           this.$message({
             type: "success",
-            message: "删除成功!",
+            message: "Delete successfully!",
           });
           this.getList();
         });
       });
     },
     handleDialogConfirm() {
-      this.$confirm("是否要确认?", "提示", {
-        confirmButtonText: "确定",
-        cancelButtonText: "取消",
+      this.$confirm("Do you want to confirm?", "Tip", {
+        confirmButtonText: "OK",
+        cancelButtonText: "Cancel",
         type: "warning",
       }).then(() => {
         if (this.isEdit) {
           updateSession(this.flashSession.id, this.flashSession).then(
             (response) => {
               this.$message({
-                message: "修改成功！",
+                message: "The modification was successful!",
                 type: "success",
               });
               this.dialogVisible = false;
@@ -205,7 +211,7 @@ export default {
         } else {
           createSession(this.flashSession).then((response) => {
             this.$message({
-              message: "添加成功！",
+              message: "Added successfully!",
               type: "success",
             });
             this.dialogVisible = false;

@@ -4,21 +4,21 @@
     <el-card class="filter-container" shadow="never">
       <div>
         <i class="el-icon-search"></i>
-        <span>筛选搜索</span>
+        <span>Filter search</span>
         <el-button
           style="float: right"
           type="primary"
           @click="handleSearchList()"
           size="small"
         >
-          查询搜索
+          Query Search
         </el-button>
         <el-button
           style="float: right; margin-right: 15px"
           @click="handleResetSearch()"
           size="small"
         >
-          重置
+          Reset
         </el-button>
       </div>
       <div style="margin-top: 15px">
@@ -28,17 +28,17 @@
           size="small"
           label-width="140px"
         >
-          <el-form-item label="广告名称：">
+          <el-form-item label="Advertising name: ">
             <el-input
               v-model="listQuery.name"
               class="input-width"
-              placeholder="广告名称"
+              placeholder="Advertising Name"
             ></el-input>
           </el-form-item>
-          <el-form-item label="广告位置：">
+          <el-form-item label="Advertising location:">
             <el-select
               v-model="listQuery.type"
-              placeholder="全部"
+              placeholder="All"
               clearable
               class="input-width"
             >
@@ -51,13 +51,13 @@
               </el-option>
             </el-select>
           </el-form-item>
-          <el-form-item label="到期时间：">
+          <el-form-item label="Expiration time:">
             <el-date-picker
               class="input-width"
               v-model="listQuery.endTime"
               value-format="yyyy-MM-dd"
               type="date"
-              placeholder="请选择时间"
+              placeholder="Please select time"
             >
             </el-date-picker>
           </el-form-item>
@@ -66,9 +66,9 @@
     </el-card>
     <el-card class="operate-container" shadow="never">
       <i class="el-icon-tickets"></i>
-      <span>数据列表</span>
+      <span>Data list</span>
       <el-button size="mini" class="btn-add" @click="handleAdd()"
-        >添加广告</el-button
+        >Add ads</el-button
       >
     </el-card>
     <div class="table-container">
@@ -85,27 +85,35 @@
           width="60"
           align="center"
         ></el-table-column>
-        <el-table-column label="编号" width="120" align="center">
+        <el-table-column label="ID" width="120" align="center">
           <template v-slot="{ row }">{{ row.id }}</template>
         </el-table-column>
-        <el-table-column label="广告名称" align="center">
+        <el-table-column label="Advertising name" align="center">
           <template v-slot="{ row }">{{ row.name }}</template>
         </el-table-column>
-        <el-table-column label="广告位置" width="120" align="center">
+        <el-table-column
+          label="Advertising location "
+          width="120"
+          align="center"
+        >
           <template v-slot="{ row }">{{ row.type | formatType }}</template>
         </el-table-column>
-        <el-table-column label="广告图片" width="120" align="center">
+        <el-table-column
+          label="Advertising pictures"
+          width="120"
+          align="center"
+        >
           <template v-slot="{ row }"
             ><img style="height: 80px" :src="row.pic"
           /></template>
         </el-table-column>
-        <el-table-column label="时间" width="220" align="center">
+        <el-table-column label="Time" width="220" align="center">
           <template v-slot="{ row }">
-            <p>开始时间：{{ row.startTime | formatTime }}</p>
-            <p>到期时间：{{ row.endTime | formatTime }}</p>
+            <p>Start time: {{ row.startTime | formatTime }}</p>
+            <p>Expiration time: {{ row.endTime | formatTime }}</p>
           </template>
         </el-table-column>
-        <el-table-column label="上线/下线" width="120" align="center">
+        <el-table-column label="Online/Offline" width="120" align="center">
           <template v-slot="{ row, $index }">
             <el-switch
               @change="handleUpdateStatus($index, row)"
@@ -116,32 +124,36 @@
             </el-switch>
           </template>
         </el-table-column>
-        <el-table-column label="点击次数" width="120" align="center">
+        <el-table-column label="Number of clicks" width="120" align="center">
           <template v-slot="{ row }">{{ row.clickCount }}</template>
         </el-table-column>
-        <el-table-column label="生成订单" width="120" align="center">
+        <el-table-column label="Generate an order" width="120" align="center">
           <template v-slot="{ row }">{{ row.orderCount }}</template>
         </el-table-column>
-        <el-table-column label="操作" width="120" align="center">
+        <el-table-column label="Operation" width="120" align="center">
           <template v-slot="{ row, $index }">
             <el-button
               size="mini"
               type="text"
               @click="handleUpdate($index, row)"
-              >编辑
+              >Edit
             </el-button>
             <el-button
               size="mini"
               type="text"
               @click="handleDelete($index, row)"
-              >删除
+              >Delete
             </el-button>
           </template>
         </el-table-column>
       </el-table>
     </div>
     <div class="batch-operate-container">
-      <el-select size="small" v-model="operateType" placeholder="批量操作">
+      <el-select
+        size="small"
+        v-model="operateType"
+        placeholder="Batch Operation"
+      >
         <el-option
           v-for="item in operates"
           :key="item.value"
@@ -157,7 +169,7 @@
         type="primary"
         size="small"
       >
-        确定
+        Confirm
       </el-button>
     </div>
     <div class="pagination-container">
@@ -191,11 +203,11 @@ const defaultListQuery = {
 };
 const defaultTypeOptions = [
   {
-    label: "PC首页轮播",
+    label: "PC homepage carousel",
     value: 0,
   },
   {
-    label: "APP首页轮播",
+    label: "APP homepage carousel",
     value: 1,
   },
 ];
@@ -211,7 +223,7 @@ export default {
       multipleSelection: [],
       operates: [
         {
-          label: "删除",
+          label: "Delete",
           value: 0,
         },
       ],
@@ -224,9 +236,9 @@ export default {
   filters: {
     formatType(type) {
       if (type === 1) {
-        return "APP首页轮播";
+        return "APP Home Carousel";
       } else {
-        return "PC首页轮播";
+        return "PC homepage carousel";
       }
     },
     formatTime(time) {
@@ -258,24 +270,28 @@ export default {
       this.getList();
     },
     handleUpdateStatus(index, row) {
-      this.$confirm("是否要修改上线/下线状态?", "提示", {
-        confirmButtonText: "确定",
-        cancelButtonText: "取消",
-        type: "warning",
-      })
+      this.$confirm(
+        "Do you want to modify the online/downline status?",
+        "Tip",
+        {
+          confirmButtonText: "OK",
+          cancelButtonText: "Cancel",
+          type: "warning",
+        }
+      )
         .then(() => {
           updateStatus(row.id, { status: row.status }).then((response) => {
             this.getList();
             this.$message({
               type: "success",
-              message: "修改成功!",
+              message: "Modification was successful!",
             });
           });
         })
         .catch(() => {
           this.$message({
             type: "success",
-            message: "已取消操作!",
+            message: "Operation cancelled!",
           });
           this.getList();
         });
@@ -286,7 +302,7 @@ export default {
     handleBatchOperate() {
       if (this.multipleSelection < 1) {
         this.$message({
-          message: "请选择一条记录",
+          message: "Please select a record",
           type: "warning",
           duration: 1000,
         });
@@ -301,7 +317,7 @@ export default {
         this.deleteHomeAdvertise(ids);
       } else {
         this.$message({
-          message: "请选择批量操作类型",
+          message: "Please select the batch operation type",
           type: "warning",
           duration: 1000,
         });
@@ -325,9 +341,9 @@ export default {
       });
     },
     deleteHomeAdvertise(ids) {
-      this.$confirm("是否要删除该广告?", "提示", {
-        confirmButtonText: "确定",
-        cancelButtonText: "取消",
+      this.$confirm("Do you want to delete the ad?", "Tip", {
+        confirmButtonText: "OK",
+        cancelButtonText: "Cancel",
         type: "warning",
       })
         .then(() => {
@@ -337,14 +353,14 @@ export default {
             this.getList();
             this.$message({
               type: "success",
-              message: "删除成功!",
+              message: "Deletion was successful!",
             });
           });
         })
         .catch(() => {
           this.$message({
             type: "info",
-            message: "已取消操作!",
+            message: "Operation cancelled!",
           });
           this.getList();
         });

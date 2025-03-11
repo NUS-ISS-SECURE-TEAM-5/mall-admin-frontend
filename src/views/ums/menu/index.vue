@@ -2,7 +2,7 @@
   <div class="app-container">
     <el-card class="operate-container" shadow="never">
       <i class="el-icon-tickets" style="margin-top: 5px"></i>
-      <span style="margin-top: 5px">数据列表</span>
+      <span style="margin-top: 5px">Data list</span>
       <el-button class="btn-add" @click="handleAddMenu()" size="mini">
         添加
       </el-button>
@@ -15,24 +15,24 @@
         v-loading="listLoading"
         border
       >
-        <el-table-column label="编号" width="100" align="center">
+        <el-table-column label="ID" width="100" align="center">
           <template v-slot="{ row }">{{ row.id }}</template>
         </el-table-column>
-        <el-table-column label="菜单名称" align="center">
+        <el-table-column label="Menu Title" align="center">
           <template v-slot="{ row }">{{ row.title }}</template>
         </el-table-column>
-        <el-table-column label="菜单级数" width="100" align="center">
+        <el-table-column label="Menu Level" width="100" align="center">
           <template v-slot="{ row }">{{ row.level | levelFilter }}</template>
         </el-table-column>
-        <el-table-column label="前端名称" align="center">
+        <el-table-column label="Front-end name " align="center">
           <template v-slot="{ row }">{{ row.name }}</template>
         </el-table-column>
-        <el-table-column label="前端图标" width="100" align="center">
+        <el-table-column label="Front-end icon" width="100" align="center">
           <template v-slot="{ row }"
             ><svg-icon :icon-class="row.icon"></svg-icon
           ></template>
         </el-table-column>
-        <el-table-column label="是否显示" width="100" align="center">
+        <el-table-column label="Whether to display" width="100" align="center">
           <template v-slot="{ row, $index }">
             <el-switch
               @change="handleHiddenChange($index, row)"
@@ -43,33 +43,33 @@
             </el-switch>
           </template>
         </el-table-column>
-        <el-table-column label="排序" width="100" align="center">
+        <el-table-column label="Sort" width="100" align="center">
           <template v-slot="{ row }">{{ row.sort }}</template>
         </el-table-column>
-        <el-table-column label="设置" width="120" align="center">
+        <el-table-column label="Settings" width="120" align="center">
           <template v-slot="{ row, $index }">
             <el-button
               size="mini"
               type="text"
               :disabled="row.level | disableNextLevel"
               @click="handleShowNextLevel($index, row)"
-              >查看下级
+              >Check out the lower level
             </el-button>
           </template>
         </el-table-column>
-        <el-table-column label="操作" width="200" align="center">
+        <el-table-column label="Operation" width="200" align="center">
           <template v-slot="{ row, $index }">
             <el-button
               size="mini"
               type="text"
               @click="handleUpdate($index, row)"
-              >编辑
+              >Edit
             </el-button>
             <el-button
               size="mini"
               type="text"
               @click="handleDelete($index, row)"
-              >删除
+              >Delete
             </el-button>
           </template>
         </el-table-column>
@@ -150,7 +150,7 @@ export default {
     handleHiddenChange(index, row) {
       updateHidden(row.id, { hidden: row.hidden }).then((response) => {
         this.$message({
-          message: "修改成功",
+          message: "Modification was successful",
           type: "success",
           duration: 1000,
         });
@@ -163,15 +163,15 @@ export default {
       this.$router.push({ path: "/ums/updateMenu", query: { id: row.id } });
     },
     handleDelete(index, row) {
-      this.$confirm("是否要删除该菜单", "提示", {
-        confirmButtonText: "确定",
-        cancelButtonText: "取消",
+      this.$confirm("Do you want to delete the menu", "Tip", {
+        confirmButtonText: "OK",
+        cancelButtonText: "Cancel",
         type: "warning",
       })
         .then(() => {
           deleteMenu(row.id).then((response) => {
             this.$message({
-              message: "删除成功",
+              message: "Delete successfully",
               type: "success",
               duration: 1000,
             });
@@ -181,7 +181,7 @@ export default {
         .catch(() => {
           this.$message({
             type: "info",
-            message: "已取消删除",
+            message: "Undeleted",
           });
         });
     },
@@ -189,9 +189,9 @@ export default {
   filters: {
     levelFilter(value) {
       if (value === 0) {
-        return "一级";
+        return "Level 1";
       } else if (value === 1) {
-        return "二级";
+        return "Level 2";
       }
     },
     disableNextLevel(value) {

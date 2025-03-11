@@ -4,21 +4,21 @@
     <el-card class="filter-container" shadow="never">
       <div>
         <i class="el-icon-search"></i>
-        <span>筛选搜索</span>
+        <span>Filter search</span>
         <el-button
           style="float: right"
           type="primary"
           @click="handleSearchList()"
           size="small"
         >
-          查询搜索
+          Query Search
         </el-button>
         <el-button
           style="float: right; margin-right: 15px"
           @click="handleResetSearch()"
           size="small"
         >
-          重置
+          Reset
         </el-button>
       </div>
       <div style="margin-top: 15px">
@@ -28,11 +28,11 @@
           size="small"
           label-width="140px"
         >
-          <el-form-item label="输入搜索：">
+          <el-form-item label="Input search:">
             <el-input
               v-model="listQuery.keyword"
               class="input-width"
-              placeholder="角色名称"
+              placeholder="role name"
               clearable
             ></el-input>
           </el-form-item>
@@ -41,13 +41,13 @@
     </el-card>
     <el-card class="operate-container" shadow="never">
       <i class="el-icon-tickets"></i>
-      <span>数据列表</span>
+      <span>Data list</span>
       <el-button
         size="mini"
         class="btn-add"
         @click="handleAdd()"
         style="margin-left: 20px"
-        >添加</el-button
+        >Add</el-button
       >
     </el-card>
     <div class="table-container">
@@ -58,24 +58,24 @@
         v-loading="listLoading"
         border
       >
-        <el-table-column label="编号" width="100" align="center">
+        <el-table-column label="ID" width="100" align="center">
           <template v-slot="{ row }">{{ row.id }}</template>
         </el-table-column>
-        <el-table-column label="角色名称" align="center">
+        <el-table-column label="Role name" align="center">
           <template v-slot="{ row }">{{ row.name }}</template>
         </el-table-column>
-        <el-table-column label="描述" align="center">
+        <el-table-column label="Description" align="center">
           <template v-slot="{ row }">{{ row.description }}</template>
         </el-table-column>
-        <el-table-column label="用户数" width="100" align="center">
+        <el-table-column label="Number of users" width="100" align="center">
           <template v-slot="{ row }">{{ row.adminCount }}</template>
         </el-table-column>
-        <el-table-column label="添加时间" width="160" align="center">
+        <el-table-column label="Add time" width="160" align="center">
           <template v-slot="{ row }">{{
             row.createTime | formatDateTime
           }}</template>
         </el-table-column>
-        <el-table-column label="是否启用" width="140" align="center">
+        <el-table-column label="Whether to enable" width="140" align="center">
           <template v-slot="{ row, $index }">
             <el-switch
               @change="handleStatusChange($index, row)"
@@ -86,20 +86,20 @@
             </el-switch>
           </template>
         </el-table-column>
-        <el-table-column label="操作" width="160" align="center">
+        <el-table-column label="Operation" width="160" align="center">
           <template v-slot="{ row, $index }">
             <el-row>
               <el-button
                 size="mini"
                 type="text"
                 @click="handleSelectMenu($index, row)"
-                >分配菜单
+                >Assign menu
               </el-button>
               <el-button
                 size="mini"
                 type="text"
                 @click="handleSelectResource($index, row)"
-                >分配资源
+                >Assign resources
               </el-button>
             </el-row>
             <el-row>
@@ -108,13 +108,13 @@
                 type="text"
                 @click="handleUpdate($index, row)"
               >
-                编辑
+                Edit
               </el-button>
               <el-button
                 size="mini"
                 type="text"
                 @click="handleDelete($index, row)"
-                >删除
+                >Delete
               </el-button>
             </el-row>
           </template>
@@ -135,16 +135,16 @@
       </el-pagination>
     </div>
     <el-dialog
-      :title="isEdit ? '编辑角色' : '添加角色'"
+      :title="isEdit ? 'Edit role' : 'Add role'"
       :model-value="dialogVisible"
       @update:model-value="(val) => (dialogVisible = val)"
       width="40%"
     >
       <el-form :model="role" ref="roleForm" label-width="150px" size="small">
-        <el-form-item label="角色名称：">
+        <el-form-item label="Role name:">
           <el-input v-model="role.name" style="width: 250px"></el-input>
         </el-form-item>
-        <el-form-item label="描述：">
+        <el-form-item label="Description:">
           <el-input
             v-model="role.description"
             type="textarea"
@@ -152,17 +152,19 @@
             style="width: 250px"
           ></el-input>
         </el-form-item>
-        <el-form-item label="是否启用：">
+        <el-form-item label="Whether to enable: ">
           <el-radio-group v-model="role.status">
-            <el-radio :label="1">是</el-radio>
-            <el-radio :label="0">否</el-radio>
+            <el-radio :label="1">Yes</el-radio>
+            <el-radio :label="0">No</el-radio>
           </el-radio-group>
         </el-form-item>
       </el-form>
       <span slot="footer" class="dialog-footer">
-        <el-button @click="dialogVisible = false" size="small">取 消</el-button>
+        <el-button @click="dialogVisible = false" size="small"
+          >Cancel</el-button
+        >
         <el-button type="primary" @click="handleDialogConfirm()" size="small"
-          >确 定</el-button
+          >Confirm</el-button
         >
       </span>
     </el-dialog>
@@ -238,31 +240,31 @@ export default {
       this.role = Object.assign({}, defaultRole);
     },
     handleStatusChange(index, row) {
-      this.$confirm("是否要修改该状态?", "提示", {
-        confirmButtonText: "确定",
-        cancelButtonText: "取消",
+      this.$confirm("Do you want to modify this status?", "Tip", {
+        confirmButtonText: "OK",
+        cancelButtonText: "Cancel",
         type: "warning",
       })
         .then(() => {
           updateStatus(row.id, { status: row.status }).then((response) => {
             this.$message({
               type: "success",
-              message: "修改成功!",
+              message: "Modification was successful!",
             });
           });
         })
         .catch(() => {
           this.$message({
             type: "info",
-            message: "取消修改",
+            message: "Cancel modification",
           });
           this.getList();
         });
     },
     handleDelete(index, row) {
-      this.$confirm("是否要删除该角色?", "提示", {
-        confirmButtonText: "确定",
-        cancelButtonText: "取消",
+      this.$confirm("Do you want to delete the role?", "Tip", {
+        confirmButtonText: "OK",
+        cancelButtonText: "Cancel",
         type: "warning",
       })
         .then(() => {
@@ -273,7 +275,7 @@ export default {
           deleteRole(params).then((response) => {
             this.$message({
               type: "success",
-              message: "删除成功!",
+              message: "Delete successfully!",
             });
             this.getList();
           });
@@ -281,7 +283,7 @@ export default {
         .catch(() => {
           this.$message({
             type: "info",
-            message: "取消删除",
+            message: "Undelete",
           });
           this.getList();
         });
@@ -292,15 +294,15 @@ export default {
       this.role = Object.assign({}, row);
     },
     handleDialogConfirm() {
-      this.$confirm("是否要确认?", "提示", {
-        confirmButtonText: "确定",
-        cancelButtonText: "取消",
+      this.$confirm("Do you want to confirm?", "Tip", {
+        confirmButtonText: "OK",
+        cancelButtonText: "Cancel",
         type: "warning",
       }).then(() => {
         if (this.isEdit) {
           updateRole(this.role.id, this.role).then((response) => {
             this.$message({
-              message: "修改成功！",
+              message: "Modification was successful!",
               type: "success",
             });
             this.dialogVisible = false;
@@ -309,7 +311,7 @@ export default {
         } else {
           createRole(this.role).then((response) => {
             this.$message({
-              message: "添加成功！",
+              message: "Added successfully!",
               type: "success",
             });
             this.dialogVisible = false;
