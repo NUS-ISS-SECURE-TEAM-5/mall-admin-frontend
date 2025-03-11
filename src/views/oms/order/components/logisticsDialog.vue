@@ -1,6 +1,6 @@
 <template>
   <el-dialog
-    title="订单跟踪"
+    title="Order trackingr tracking"
     :model-value="modelValue"
     @update:model-value="$emit('update:modelValue', $event)"
     :before-close="handleClose"
@@ -23,19 +23,28 @@
 </template>
 <script>
 const defaultLogisticsList = [
-  { name: "订单已提交，等待付款", time: "2017-04-01 12:00:00 " },
-  { name: "订单付款成功", time: "2017-04-01 12:00:00 " },
-  { name: "在北京市进行下级地点扫描，等待付款", time: "2017-04-01 12:00:00 " },
   {
-    name: "在分拨中心广东深圳公司进行卸车扫描，等待付款",
+    name: "Order has been submitted, waiting for payment",
     time: "2017-04-01 12:00:00 ",
   },
-  { name: "在广东深圳公司进行发出扫描", time: "2017-04-01 12:00:00 " },
+  { name: "The order payment is successful", time: "2017-04-01 12:00:00 " },
   {
-    name: "到达目的地网点广东深圳公司，快件将很快进行派送",
+    name: "Scan the lower-level location in Beijing, waiting for payment",
     time: "2017-04-01 12:00:00 ",
   },
-  { name: "订单已签收，期待再次为您服务", time: "2017-04-01 12:00:00 " },
+  {
+    name: "The company in Guangdong Shenzhen, a company in the distribution center, performs unloading scans, waiting for payment",
+    time: "2017-04-01 12:00:00 ",
+  },
+  { name: "Scan in Shenzhen, Guangdong", time: "2017-04-01 12:00:00 " },
+  {
+    name: "Arriving at the destination outlet Guangdong Shenzhen Company, express delivery will be delivered soon",
+    time: "2017-04-01 12:00:00 ",
+  },
+  {
+    name: "The order has been signed and we look forward to serving you again",
+    time: "2017-04-01 12:00:00 ",
+  },
 ];
 export default {
   name: "logisticsDialog",

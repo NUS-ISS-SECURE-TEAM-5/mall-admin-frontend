@@ -3,29 +3,29 @@
   <div class="app-container">
     <el-card class="operate-container" shadow="never">
       <i class="el-icon-tickets"></i>
-      <span>发货列表</span>
+      <span>Shipping list</span>
     </el-card>
     <div class="table-container">
       <el-table ref="deliverOrderTable" style="width: 100%" :data="list" border>
-        <el-table-column label="订单编号" width="180" align="center">
+        <el-table-column label="Order number" width="180" align="center">
           <template v-slot="{ row }">{{ row.orderSn }}</template>
         </el-table-column>
-        <el-table-column label="收货人" width="180" align="center">
+        <el-table-column label="consignee" width="180" align="center">
           <template v-slot="{ row }">{{ row.receiverName }}</template>
         </el-table-column>
-        <el-table-column label="手机号码" width="160" align="center">
+        <el-table-column label="phone number" width="160" align="center">
           <template v-slot="{ row }">{{ row.receiverPhone }}</template>
         </el-table-column>
-        <el-table-column label="邮政编码" width="160" align="center">
+        <el-table-column label="postal code" width="160" align="center">
           <template v-slot="{ row }">{{ row.receiverPostCode }}</template>
         </el-table-column>
-        <el-table-column label="收货地址" align="center">
+        <el-table-column label="Shipping address" align="center">
           <template v-slot="{ row }">{{ row.address }}</template>
         </el-table-column>
-        <el-table-column label="配送方式" width="160" align="center">
+        <el-table-column label="Delivery method" width="160" align="center">
           <template v-slot="{ row }">
             <el-select
-              placeholder="请选择物流公司"
+              placeholder="Please choose a logistics company"
               v-model="row.deliveryCompany"
               size="small"
             >
@@ -39,15 +39,19 @@
             </el-select>
           </template>
         </el-table-column>
-        <el-table-column label="物流单号" width="180" align="center">
+        <el-table-column
+          label="Logistics Order Number"
+          width="180"
+          align="center"
+        >
           <template v-slot="{ row }">
             <el-input size="small" v-model="row.deliverySn"></el-input>
           </template>
         </el-table-column>
       </el-table>
       <div style="margin-top: 15px; text-align: center">
-        <el-button @click="cancel">取消</el-button>
-        <el-button @click="confirm" type="primary">确定</el-button>
+        <el-button @click="cancel">Cancel</el-button>
+        <el-button @click="confirm" type="primary">Confirm</el-button>
       </div>
     </div>
   </div>
@@ -77,7 +81,7 @@ export default {
         this.list = [];
       }
     } catch (error) {
-      console.error("解析订单数据失败:", error);
+      console.error("Failed to parse order data:", error);
       this.list = [];
     }
   },
@@ -86,9 +90,9 @@ export default {
       this.$router.back();
     },
     confirm() {
-      this.$confirm("是否要进行发货操作?", "提示", {
-        confirmButtonText: "确定",
-        cancelButtonText: "取消",
+      this.$confirm("Do you want to perform a shipping operation?", "Tip", {
+        confirmButtonText: "OK",
+        cancelButtonText: "Cancel",
         type: "warning",
       })
         .then(() => {
@@ -96,14 +100,14 @@ export default {
             this.$router.back();
             this.$message({
               type: "success",
-              message: "发货成功!",
+              message: "Successful shipment!",
             });
           });
         })
         .catch(() => {
           this.$message({
             type: "info",
-            message: "已取消发货",
+            message: "Delivery cancelled",
           });
         });
     },

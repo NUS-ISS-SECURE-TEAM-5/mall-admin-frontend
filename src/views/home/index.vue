@@ -121,7 +121,9 @@
                 >
               </el-row>
               <el-row class="font-medium">
-                <el-col :span="6" class="overview-item-title">Offset</el-col>
+                <el-col :span="6" class="overview-item-title"
+                  >Unavailable</el-col
+                >
                 <el-col :span="6" class="overview-item-title">Available</el-col>
                 <el-col :span="6" class="overview-item-title"
                   >Inventory shortage</el-col
@@ -152,15 +154,11 @@
                 >
               </el-row>
               <el-row class="font-medium">
+                <el-col :span="6" class="overview-item-title">New today</el-col>
                 <el-col :span="6" class="overview-item-title"
-                  >New additions today</el-col
+                  >New yesterday</el-col
                 >
-                <el-col :span="6" class="overview-item-title"
-                  >Added yesterday</el-col
-                >
-                <el-col :span="6" class="overview-item-title"
-                  >New additions this month</el-col
-                >
+                <el-col :span="6" class="overview-item-title">New month</el-col>
                 <el-col :span="6" class="overview-item-title"
                   >Total number of members</el-col
                 >
@@ -184,7 +182,9 @@
               </div>
               <div>
                 <span class="color-success" style="font-size: 14px">+10%</span>
-                <span style="color: #c0c4cc; font-size: 14px">Year-year</span>
+                <span style="color: #c0c4cc; font-size: 14px">
+                  to last month</span
+                >
               </div>
             </div>
             <div style="margin-top: 20px">
@@ -196,8 +196,8 @@
               </div>
               <div>
                 <span class="color-danger" style="font-size: 14px">-10%</span>
-                <span style="color: #c0c4cc; font-size: 14px"
-                  >Year-year compared to last week</span
+                <span style="color: #c0c4cc; font-size: 14px">
+                  to last week</span
                 >
               </div>
             </div>
@@ -210,7 +210,9 @@
               </div>
               <div>
                 <span class="color-success" style="font-size: 14px">+10%</span>
-                <span style="color: #c0c4cc; font-size: 14px">Year-year</span>
+                <span style="color: #c0c4cc; font-size: 14px">
+                  to last month</span
+                >
               </div>
             </div>
             <div style="margin-top: 20px">
@@ -222,8 +224,8 @@
               </div>
               <div>
                 <span class="color-danger" style="font-size: 14px">-10%</span>
-                <span style="color: #c0c4cc; font-size: 14px"
-                  >Year-year compared to last week</span
+                <span style="color: #c0c4cc; font-size: 14px">
+                  to last week</span
                 >
               </div>
             </div>
