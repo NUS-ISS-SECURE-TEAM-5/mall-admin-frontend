@@ -1,5 +1,5 @@
 "use strict";
 
 module.exports = {
-  BASE_API: '"http://localhost:8201/mall-admin"'
+  BASE_API: '"https://mallsecuritynus.org/mall-admin"'
 };
